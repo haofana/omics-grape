@@ -2,9 +2,9 @@ import React, { SetStateAction, useState } from 'react';
 import { Button, ConfigProvider, Layout, Menu, theme } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
 import enUS from 'antd/locale/en_US';
-import { menu, menuZh } from '@/config';
+import { menu, menuZh } from '../config';
 import { useRouter } from 'next/navigation'
-import mytheme from '@/theme/themeConfig';
+import mytheme from '../theme/themeConfig';
 import './globals.css'
 
 const { Header, Content, Footer } = Layout;
