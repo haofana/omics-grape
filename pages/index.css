@@ -1,0 +1,52 @@
+.title-container {
+  text-align: center;
+  padding: 60px;
+
+}
+.title {
+  font-size: 60px;
+  font-weight: 400;
+  padding: 16px;
+}
+.description {
+  width: 620px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+.white-container {
+  color: #3c7963;
+  background-color: #fff;
+  padding: 40px 5%;
+  min-height: 280px;
+  text-align: center;
+  font-size: 16px;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.card {
+  font-size: 16px;
+  color: #3c7963;
+  border: 1px #3c7963 solid;
+  width: 150px;
+  height: 90px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item-title {
+  color: rgb(1, 38, 72);
+  font-size: 24px;
+  /*margin-bottom: 15px;*/
+  border-bottom: 3px solid #458c71;
+  padding-bottom: 10px;
+  margin: 20px 0;
+
+}
