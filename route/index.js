@@ -10,7 +10,7 @@ const route = createBrowserRouter([
         path: '/Browse',
         key: 'Browse',
       },{
-        path: '/Search',
+        path: '/GWAS',
         key: 'Search',
       },
       {

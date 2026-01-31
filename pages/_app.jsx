@@ -5,6 +5,7 @@ import enUS from 'antd/locale/en_US';
 import { menu, menuZh } from '@/config';
 import { useRouter } from 'next/navigation'
 import mytheme from '@/theme/themeConfig';
+import { usePathname } from 'next/navigation';
 import './globals.css'
 
 const { Header, Content, Footer } = Layout;
@@ -16,6 +17,8 @@ const HeaderMenu = ({ setLocale, currentLocale}) =>
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
   const router = useRouter()
+  const pathname = usePathname();
+  console.log(pathname, 'pathname');
   const goto = (url) => {
     console.log(url)
     router.push(url, { scroll: false })
@@ -27,30 +30,13 @@ const HeaderMenu = ({ setLocale, currentLocale}) =>
       setLocale(zhCN)
     }
   }
-  // const menuZh = menu.map((item) => {
-  //   let newChildren = [];
-  //   if (item.children && item.children.length > 0) {
-  //     newChildren = item.children.map(child => {
-  //        return {
-  //          ...child,
-  //          label: child.label_zh || child.label,
-  //        }
-  //      })
-  //   }
-  //   return {
-  //     ...item,
-  //     label: item.label_zh || item.label,
-  //     children: newChildren
-  //   }
-  // })
-  console.log('menuZh', menuZh)
   return (
     <Layout>
       <Header style={{ display: 'flex', alignItems: 'center', background: colorBgContainer, padding: '0 5%'}}>
-
         <Menu
           theme="dark"
           mode="horizontal"
+          selectedKeys={[pathname !== '/' ? pathname.replace('/', ''): pathname]}
           items={currentLocale === enUS ? menu : menuZh}
           style={{ flex: 1, minWidth: 0, background: colorBgContainer }}
           onSelect={({key} )=>goto(key)}

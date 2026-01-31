@@ -42,10 +42,8 @@ const Search = () => {
   const onCheckAllChange = e => {
     if (e.target.checked) {
       setCheckedList(plainOptions);
-      // setFilterColumn(columnConfig);
     } else {
       setCheckedList([]);
-      // setFilterColumn(columnConfig.filter(item => item.title == '序号' || item.title == '品种'));
     }
 
   };
