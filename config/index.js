@@ -8,7 +8,15 @@ export const menu = [
   },
   {
     label: 'Germplasm',
-    key: 'Germplasm',
+    key: 'germplasm',
+  },
+  {
+    label: 'Gene',
+    key: 'download',
+  },
+  {
+    label: 'Table ',
+    key: 'table',
   },
   {
     label: 'GWAS',
@@ -16,23 +24,23 @@ export const menu = [
   },
   {
     label: 'Transcription',
-    key: 'Transcription',
+    key: 'transcription',
   },
   {
     label: 'Metabolism ',
-    key: 'Metabolism',
+    key: 'metabolism',
   },
   {
-    label: 'Blast',
-    key: 'Blast',
-  },
-  {
-    label: 'Gene',
-    key: 'Download',
+    label: 'Tool',
+    key: 'tool',
   },
   {
     label: 'Literature',
     key: 'Literature',
+  },
+  {
+    label: 'News',
+    key: 'news',
   },
 ];
 
@@ -43,7 +51,15 @@ export const menuZh = [
   },
   {
     label: '种质资源',
-    key: 'Germplasm',
+    key: 'germplasm',
+  },
+  {
+    label: '表型组 ',
+    key: 'table',
+  },
+  {
+    label: '基因组 ',
+    key: 'download',
   },
   {
     label: 'GWAS',
@@ -51,23 +67,23 @@ export const menuZh = [
   },
   {
     label: '转录组',
-    key: 'Transcription',
+    key: 'transcription',
   },
   {
     label: '代谢组 ',
-    key: 'Metabolism',
+    key: 'metabolism',
   },
   {
-    label: 'Blast',
-    key: 'Blast',
-  },
-  {
-    label: '基因组 ',
-    key: 'Download',
+    label: '工具',
+    key: 'tool',
   },
   {
     label: '文献',
-    key: 'Literature',
+    key: 'literature',
+  },
+  {
+    label: '新闻',
+    key: 'news',
   },
 ];
 
@@ -89,7 +105,7 @@ export const quickTools = [
     ico: <SearchOutlined />
   },
   {
-    label: 'Download',
+    label: 'download',
     ico: <SearchOutlined />
   },
 ]

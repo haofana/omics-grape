@@ -52,7 +52,7 @@ const Search = () => {
     <Content style={{ padding: '16px 48px', backgroundColor: colorBorder, minHeight: 'calc(100vh - 64px)' }}>
       {/*<Breadcrumb*/}
       {/*  style={{ marginBottom: 24 }}*/}
-      {/*  items={[{ title: 'Download' }]}*/}
+      {/*  items={[{ title: 'download' }]}*/}
       {/*/>*/}
       <div className={'item-title '}>
         模拟数据

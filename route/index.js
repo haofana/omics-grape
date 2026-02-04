@@ -32,8 +32,8 @@ const route = createBrowserRouter([
         Component: <div>Germplasm</div>,
       },
       {
-        path: '/Download',
-        key: 'Download',
+        path: '/download',
+        key: 'download',
         Component: <div>Download</div>,
       },
       {
