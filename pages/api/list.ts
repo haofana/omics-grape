@@ -1,11 +1,12 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 // 导入封装好的 Prisma 客户端
 import db from '@/lib/prisma';
+import { Prisma } from '@prisma/client';
 
 // 定义返回数据的类型（TS 类型校验，JS 项目可删除）
 type Data = {
   success: boolean;
-  data?: any[]; // 实际可替换为 Germplasm 具体类型
+  data?: any[]; // 实际可替换为 germplasm 具体类型
   total?: number;
   msg?: string;
 };
@@ -27,19 +28,19 @@ export default async function handler(
 
     // 2. 构建查询条件（模糊查询品种名称，可扩展其他条件）
     const whereCondition = variety
-      ? { variety: { contains: String(variety), mode: 'insensitive' } } // 不区分大小写模糊查
+      ? { variety: { contains: String(variety), mode: Prisma.QueryMode.insensitive } } // 不区分大小写模糊查
       : {};
 
-    // 3. 执行数据库查询（Prisma 语法，适配 Germplasm 模型）
+    // 3. 执行数据库查询（Prisma 语法，适配 germplasm 模型）
     // 同时查询列表和总条数（方便分页）
     const [list, total] = await Promise.all([
-      db.Germplasm.findMany({
+      db.germplasm.findMany({
         where: whereCondition, // 查询条件
         skip: skip, // 分页跳过
         take: Number(size), // 每页条数
         orderBy: { id: 'asc' }, // 按导入时间倒序
       }),
-      db.Germplasm.count({ where: whereCondition }), // 统计符合条件的总条数
+      db.germplasm.count({ where: whereCondition }), // 统计符合条件的总条数
     ]);
 
     // 4. 返回成功数据
