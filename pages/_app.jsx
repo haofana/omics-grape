@@ -4,7 +4,7 @@ import zhCN from 'antd/locale/zh_CN';
 import enUS from 'antd/locale/en_US';
 import { menu, menuZh } from '@/config';
 import { useRouter } from 'next/navigation'
-import mytheme from '@/theme/themeConfig';
+import mytheme from '../theme/themeConfig';
 import { usePathname } from 'next/navigation';
 import './globals.css'
 

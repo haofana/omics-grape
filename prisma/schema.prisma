@@ -20,3 +20,13 @@ model DownloadList {
   mRNA          String?  @db.VarChar(50)
   Protein       String?  @db.VarChar(50)
 }
+model Germplasm {
+  id            Int         @id @default(autoincrement()) @map("id")
+  variety       String      @map("variety")
+  feature       String?     @map("feature")
+  stage         String?     @map("stage")
+  type          String?     @map("type")
+  unit          String?     @map("unit")
+
+  @@map("germplasm") // 映射到数据库表名
+}
