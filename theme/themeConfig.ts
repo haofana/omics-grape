@@ -25,6 +25,9 @@ const mytheme: ThemeConfig = {
     Select: {
       colorBgContainer: '#ffffffC8',
     },
+    Input: {
+      colorBgContainer: '#ffffffC8',
+    },
     Breadcrumb: {
       fontSize: 20,
     },

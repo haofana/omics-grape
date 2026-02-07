@@ -10,6 +10,11 @@ type Data = {
   total?: number;
   msg?: string;
 };
+type FieldType = {
+  variety?: string;
+  stage?: string;
+  type?: string;
+};
 
 // Page Router 的 API 接口核心：默认导出 async 函数，接收 req/res
 export default async function handler(
@@ -23,24 +28,32 @@ export default async function handler(
 
   try {
     // 1. 获取前端传参（如分页参数 page、size，条件参数 variety 等）
-    const { page = 1, size = 10, variety } = req.query;
+    const { page = 1, size = 10, params } = req.query;
+    const { variety, stage, type } = JSON.parse(params);
     const skip = (Number(page) - 1) * Number(size); // 计算分页跳过数
 
     // 2. 构建查询条件（模糊查询品种名称，可扩展其他条件）
-    const whereCondition = variety
-      ? { variety: { contains: String(variety), mode: Prisma.QueryMode.insensitive } } // 不区分大小写模糊查
-      : {};
+    const where: Record<string, any> = {};
+    if (variety) where.variety = { contains: String(variety), mode: Prisma.QueryMode.insensitive };
+    if (stage) where.stage = stage as string;
+    if (type) where.type = type as string;
+    // const whereCondition = {
+    //   variety: { contains: String(variety), mode: Prisma.QueryMode.insensitive },
+    //   stage: String(stage),
+    //   type: String(type)
+    // }
+    console.log(where, '!!!!!!!!!!!whrer')
 
     // 3. 执行数据库查询（Prisma 语法，适配 germplasm 模型）
     // 同时查询列表和总条数（方便分页）
     const [list, total] = await Promise.all([
       db.germplasm.findMany({
-        where: whereCondition, // 查询条件
+        where: where, // 查询条件
         skip: skip, // 分页跳过
         take: Number(size), // 每页条数
         orderBy: { id: 'asc' }, // 按导入时间倒序
       }),
-      db.germplasm.count({ where: whereCondition }), // 统计符合条件的总条数
+      db.germplasm.count({ where: where }), // 统计符合条件的总条数
     ]);
 
     // 4. 返回成功数据
