@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import type { TableProps } from 'antd';
 import type { FormProps } from 'antd';
 import '../index.css';
+import { useI18n } from '@/hooks/useI18n';
 
 interface GrapeItem {
   id: number,
@@ -20,40 +21,6 @@ type FieldType = {
 const stageOptions = ['早熟','早中熟','中熟','中晚熟','晚熟'];
 const typeOptions = ['东亚种','美洲种','欧亚种','欧美杂交种']
 const { Content } = Layout;
-const columns: TableProps<GrapeItem>['columns'] = [
-  // {
-  //   title: '序号',
-  //   dataIndex: 'id',
-  //   key: 'id',
-  // },
-  {
-    title: '葡萄品种',
-    dataIndex: 'variety',
-    key: 'variety',
-  },
-  {
-    title: '主要特性',
-    dataIndex: 'feature',
-    key: 'feature',
-    width: 800,
-  },
-  {
-    title: '成熟期',
-    dataIndex: 'stage',
-    key: 'stage',
-
-  },
-  {
-    title: '品种类型',
-    dataIndex: 'type',
-    key: 'type',
-  },
-  {
-    title: '选育单位',
-    dataIndex: 'unit',
-    key: 'unit',
-  },
-];
 
 const Home = () =>
 {
@@ -65,11 +32,46 @@ const Home = () =>
   const [params, setParams] = useState<FieldType>({});
   const [form] = Form.useForm();
 
+  const t = useI18n();
+  const columns: TableProps<GrapeItem>['columns'] = [
+    // {
+    //   title: '序号',
+    //   dataIndex: 'id',
+    //   key: 'id',
+    // },
+    {
+      title: t.variety,
+      dataIndex: 'variety',
+      key: 'variety',
+    },
+    {
+      title: t.feature,
+      dataIndex: 'feature',
+      key: 'feature',
+      width: 800,
+    },
+    {
+      title: t.stage,
+      dataIndex: 'stage',
+      key: 'stage',
+
+    },
+    {
+      title: t.type,
+      dataIndex: 'type',
+      key: 'type',
+    },
+    {
+      title: t.unit,
+      dataIndex: 'unit',
+      key: 'unit',
+    },
+  ];
   useEffect(() => {
     const fetchGrapeData = async () => {
       try {
         // 调用 Page Router 的 API 接口
-        const res = await fetch(`/api/list?page=${page}&size=${pageSize}&params=${JSON.stringify(params)}`);
+        const res = await fetch(`/api/list?table=germplasm&page=${page}&size=${pageSize}&params=${JSON.stringify(params)}`);
         if (!res.ok) {
           throw new Error('接口请求失败');
         }
@@ -105,9 +107,9 @@ const Home = () =>
   }
 
   return (
-    <Content style={{ padding: '16px 48px', backgroundColor: colorBorder, minHeight: 'calc(100vh - 64px)' }}>
+    <Content style={{ padding: '16px 48px', backgroundColor: colorBorder, minHeight: 'calc(100vh - 64px)', fontSize: '14px' }}>
       <div className={'item-title '}>
-        种质资源
+        {t.germplasm}
       </div>
       <div>
         <Form
@@ -121,14 +123,14 @@ const Home = () =>
           autoComplete="off"
         >
           <Form.Item<FieldType>
-            label="葡萄品种"
+            label={t.variety}
             name="variety"
             rules={[{ message: 'Please input your username!' }]}
           >
             <Input style={{ width: 200 }} allowClear={true} />
           </Form.Item>
           <Form.Item<FieldType>
-            label="成熟期"
+            label={t.stage}
             name="stage"
             rules={[{ message: 'Please input your username!' }]}
           >
@@ -139,7 +141,7 @@ const Home = () =>
             />
           </Form.Item>
           <Form.Item<FieldType>
-            label="品种类型"
+            label={t.type}
             name="type"
             rules={[{ message: 'Please input your username!' }]}
           >

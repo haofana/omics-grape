@@ -1,6 +1,7 @@
 import {
   SearchOutlined,
 } from '@ant-design/icons';
+
 export const menu = [
   {
     label: 'Home',
@@ -11,12 +12,16 @@ export const menu = [
     key: 'germplasm',
   },
   {
-    label: 'Gene',
-    key: 'download',
+    label: 'Phenomics ',
+    key: 'phenomics',
+    children: [
+      { label: 'Fruit Traits', key: 'berry' },
+      { label: 'Leaf Traits', key: 'leaf' },
+    ],
   },
   {
-    label: 'Table ',
-    key: 'table',
+    label: 'Gene',
+    key: 'download',
   },
   {
     label: 'GWAS',
@@ -55,7 +60,11 @@ export const menuZh = [
   },
   {
     label: '表型组 ',
-    key: 'table',
+    key: 'phenomics',
+    children: [
+      { label: '果实综合性状', key: 'berry' },
+      { label: '茎叶综合性状', key: 'leaf' },
+    ],
   },
   {
     label: '基因组 ',
@@ -89,11 +98,11 @@ export const menuZh = [
 
 export const quickTools = [
   {
-    label: 'Blast',
+    label: 'berry',
     ico: <SearchOutlined />
   },
   {
-    label: 'Search',
+    label: 'leaf',
     ico: <SearchOutlined />
   },
   {

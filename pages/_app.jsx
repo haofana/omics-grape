@@ -18,9 +18,7 @@ const HeaderMenu = ({ setLocale, currentLocale}) =>
   } = theme.useToken();
   const router = useRouter()
   const pathname = usePathname();
-  console.log(pathname, 'pathname');
   const goto = (url) => {
-    console.log(url)
     router.push(url, { scroll: false })
   }
   const changeLanguage = () => {
@@ -48,7 +46,9 @@ const HeaderMenu = ({ setLocale, currentLocale}) =>
 }
 
 const App = ({ Component, pageProps }) => {
-  const [currentLocale, setLocale] = useState(enUS);
+  const { locale } = pageProps;
+  const antdLocale = locale === 'zh-CN' ? zhCN : enUS;
+  const [currentLocale, setLocale] = useState(antdLocale);
   return (
     <ConfigProvider theme={mytheme} locale={currentLocale}>
       <HeaderMenu setLocale={setLocale} currentLocale={currentLocale} />
