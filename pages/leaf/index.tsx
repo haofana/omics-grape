@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Layout, Checkbox, theme, Divider, Table } from 'antd';
 import type { TableProps } from 'antd';
 import '../index.css';
+import type { CheckboxChangeEvent } from 'antd/es/checkbox';
 import { useI18n } from '@/hooks/useI18n';
 
 interface LeafItem {
@@ -118,7 +119,7 @@ const Home = () =>
       ),
     },
   ];
-  const plainOptions = leafColumns.slice(2).map(item => item.title)
+  const plainOptions = leafColumns.slice(2).map(item => item.title as string)
 
   const [filterColumn, setFilterColumn] = useState(leafColumns);
   const [checkedList, setCheckedList] = useState(plainOptions);
@@ -126,13 +127,13 @@ const Home = () =>
   const indeterminate = checkedList.length > 0 && checkedList.length < plainOptions.length;
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setFilterColumn(leafColumns.filter(item => checkedList.includes(item.title) || item.title == t.variety || item.title == t.scientific));
+    setFilterColumn(leafColumns.filter(item => checkedList.includes(item.title as string) || item.title == t.variety || item.title == t.scientific));
   }, [checkedList]);
 
-  const onChange = list => {
+  const onChange = (list: string[]) => {
     setCheckedList(list);
   };
-  const onCheckAllChange = e => {
+  const onCheckAllChange = (e: CheckboxChangeEvent) => {
     if (e.target.checked) {
       setCheckedList(plainOptions);
     } else {

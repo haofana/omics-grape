@@ -3,6 +3,7 @@ import { Layout, Checkbox, theme, Divider, Table } from 'antd';
 import type { TableProps } from 'antd';
 import '../index.css';
 import { useI18n } from '@/hooks/useI18n';
+import type { CheckboxProps } from 'antd/es/checkbox';
 
 interface BerryItem {
   no: number;
@@ -32,6 +33,7 @@ interface BerryItem {
   berryPhotos: string;
 }
 const { Content } = Layout;
+const CheckboxGroup = Checkbox.Group;
 
 const Home = () =>
 {
@@ -74,7 +76,7 @@ const Home = () =>
       }} />,
     }
   ]
-  const plainOptions = columns.slice(2).map(item => item.title)
+  const plainOptions = columns.slice(2).map(item => item.title as string)
 
   const [filterColumn, setFilterColumn] = useState(columns);
   const [checkedList, setCheckedList] = useState(plainOptions);
@@ -82,13 +84,13 @@ const Home = () =>
   const indeterminate = checkedList.length > 0 && checkedList.length < plainOptions.length;
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setFilterColumn(columns.filter(item => checkedList.includes(item.title) || item.title == t.variety || item.title == t.scientific));
+    setFilterColumn(columns.filter(item => checkedList.includes(item.title as string) || item.title == t.variety || item.title == t.scientific));
   }, [checkedList]);
 
-  const onChange = list => {
+  const onChange = (list: string[]) => {
     setCheckedList(list);
   };
-  const onCheckAllChange = e => {
+  const onCheckAllChange: CheckboxProps['onChange'] = e  => {
     if (e.target.checked) {
       setCheckedList(plainOptions);
     } else {
@@ -135,7 +137,7 @@ const Home = () =>
         <Checkbox indeterminate={indeterminate} onChange={onCheckAllChange} checked={checkAll}>
           {t.all}
         </Checkbox>
-        <Checkbox.Group options={plainOptions} value={checkedList} onChange={onChange} />
+        <CheckboxGroup options={plainOptions} value={checkedList} onChange={onChange} />
         <Divider />
       </div>
 
