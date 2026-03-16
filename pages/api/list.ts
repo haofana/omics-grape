@@ -100,8 +100,8 @@ export default async function handler(
     // 同时查询列表和总条数（方便分页）
     if (table === 'germplasm') {
       const [data, total] = await Promise.all([
-        db.Germplasm.findMany({ skip, take: Number(size), where, orderBy: { id: 'asc' } }),
-        db.Germplasm.count({ where: where }),
+        db.germplasm.findMany({ skip, take: Number(size), where, orderBy: { id: 'asc' } }),
+        db.germplasm.count({ where: where }),
       ]);
       return res.json({ success: true, data, total });
     }
@@ -109,8 +109,8 @@ export default async function handler(
     // 果实表
     if (table === 'PhenomicsFruit') {
       const [list, total] = await Promise.all([
-        db.PhenomicsFruit.findMany({ skip, take: Number(size), where, orderBy: { no: 'asc' } }),
-        db.PhenomicsFruit.count({ where: where }),
+        db.phenomicsFruit.findMany({ skip, take: Number(size), where, orderBy: { no: 'asc' } }),
+        db.phenomicsFruit.count({ where: where }),
       ]);
       // 🔥 批量生成图片签名URL
       const newList = await Promise.all(
@@ -124,8 +124,8 @@ export default async function handler(
     // 茎叶表
     if (table === 'PhenomicsLeaf') {
       const [list, total] = await Promise.all([
-        db.PhenomicsLeaf.findMany({ skip, take: Number(size), where, orderBy: { no: 'asc' } }),
-        db.PhenomicsLeaf.count({ where: where }),
+        db.phenomicsLeaf.findMany({ skip, take: Number(size), where, orderBy: { no: 'asc' } }),
+        db.phenomicsLeaf.count({ where: where }),
       ]);
       // 🔥 批量生成图片签名URL
       const newList = await Promise.all(
