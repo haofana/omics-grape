@@ -1,7 +1,13 @@
 .title-container {
+  display: flex;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
   padding: 60px;
-
+  color: #3c7963;
+  background-image: url("./img/pt.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .title {
   font-size: 60px;
@@ -9,7 +15,9 @@
   padding: 16px;
 }
 .description {
-  width: 620px;
+  /*width: 620px;*/
+  text-align: start;
+  text-indent: 2em;
   font-size: 18px;
   margin: 0 auto;
 }

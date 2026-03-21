@@ -1,5 +1,12 @@
 export const locales = {
   'zh-cn': {
+    // home
+    title: '葡萄种质资源与多组学数据库',
+    welcome: '欢迎访问',
+    paragraph1: '葡萄属（Vitis）是世界范围内重要的果树类群之一，广泛用于鲜食、酿酒、制干及加工等多个领域，在农业生产、食品工业和经济发展中具有重要地位。葡萄种质资源丰富，栽培品种繁多，遗传背景复杂，具有果实品质、抗逆性、成熟期、耐贮运性等多样化重要农艺性状，是开展遗传改良、分子育种和种质创新的重要基础材料。',
+    paragraph2: '我国是葡萄的重要起源与栽培利用地区之一，长期积累了丰富的葡萄种质资源，并在品种选育、栽培利用和基础研究方面取得了显著进展。随着基因组学、转录组学、代谢组学及表型组学等多组学技术的快速发展，系统整合葡萄种质资源信息与多维生物学数据，已成为解析重要性状形成机制、挖掘关键功能基因和服务精准育种的重要途径。',
+    paragraph3: '本数据库立足于葡萄种质资源保护、评价与利用，集成葡萄种质信息、表型数据、基因组数据、转录组数据、代谢组数据及相关功能注释信息，致力于构建服务于葡萄遗传学、生物学与育种研究的综合性数据平台。该数据库将为葡萄重要性状基因挖掘、分子机制解析、优异种质创制及产业应用提供有力的数据支撑和研究工具。',
+
     // 模块名称
     germplasm: '种质资源',
     fruitComprehensive: '葡萄果实综合性状',
@@ -14,6 +21,8 @@ export const locales = {
     type: '品种类型',
     unit: '选育单位',
     all: '全选',
+    reset: '重置',
+    query: '查询',
 
     // ================== 果实表 ==================
     aromaType: '香型',
@@ -76,6 +85,13 @@ export const locales = {
   },
 
   'en': {
+    // home
+    title: 'Grape Germplasm Resources and Multi-Omics Database（GGMD）',
+    welcome: 'Welcome to the ',
+    paragraph1: 'The genus Vitis is one of the most important fruit tree groups worldwide and is widely used for table grapes, winemaking, raisin production, and various processed products, playing a significant role in agricultural production, the food industry, and economic development. Grape germplasm resources are abundant, with numerous cultivated varieties, complex genetic backgrounds, and diverse important agronomic traits, including fruit quality, stress resistance, ripening time, and storability and transportability. These resources provide essential materials for genetic improvement, molecular breeding, and germplasm innovation.',
+    paragraph2: 'China is one of the important regions for the origin, cultivation, and utilization of grapes, with a long history of accumulating rich grape germplasm resources and achieving remarkable progress in variety breeding, cultivation, and basic research. With the rapid development of genomics, transcriptomics, metabolomics, and phenomics, the systematic integration of grape germplasm information with multidimensional biological data has become an important approach for elucidating the mechanisms underlying key traits, identifying functional genes, and supporting precision breeding.',
+    paragraph3: 'Based on the conservation, evaluation, and utilization of grape germplasm resources, this database integrates germplasm information, phenotypic data, genomic data, transcriptomic data, metabolomic data, and related functional annotation information. It is dedicated to building a comprehensive data platform for grape genetics, biology, and breeding research. This database will provide strong data support and research tools for the identification of genes controlling important traits, the dissection of molecular mechanisms, the creation of elite germplasm, and industrial applications in grapevine.',
+
     // 模块名称
     germplasm: 'Germplasm',
     fruitComprehensive: 'Comprehensive Fruit Traits',
@@ -90,6 +106,8 @@ export const locales = {
     type: 'Cultivar type',
     unit: 'Breeding institution',
     all: 'select all',
+    reset: 'reset',
+    query: 'query',
 
     // ================== 果实表 ==================
     aromaType: 'Aroma Type',

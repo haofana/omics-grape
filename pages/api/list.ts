@@ -7,26 +7,26 @@ import OSS from 'ali-oss';
 import type { PhenomicsFruit, PhenomicsLeaf } from '@prisma/client';
 
 // OSS 配置
-const ossClient = new OSS({
-  region: process.env.OSS_REGION as string,
-  accessKeyId: process.env.OSS_ACCESS_KEY_ID as string,
-  accessKeySecret: process.env.OSS_ACCESS_KEY_SECRET as string,
-  bucket: process.env.OSS_BUCKET as string,
-});
+// const ossClient = new OSS({
+//   region: process.env.OSS_REGION as string,
+//   accessKeyId: process.env.OSS_ACCESS_KEY_ID as string,
+//   accessKeySecret: process.env.OSS_ACCESS_KEY_SECRET as string,
+//   bucket: process.env.OSS_BUCKET as string,
+// });
 
 // 生成签名URL
-const getSignUrl = async (path: string | null): Promise<string | null> => {
-  if (!path) return null;
-  try {
-    // 强制指定https协议，解决http访问失败问题
-    return ossClient.signatureUrl(path.trim(), {
-      expires: 3600 * 24,
-    });
-  } catch (e) {
-    console.error('OSS签名失败：', e);
-    return null;
-  }
-};
+// const getSignUrl = async (path: string | null): Promise<string | null> => {
+//   if (!path) return null;
+//   try {
+//     // 强制指定https协议，解决http访问失败问题
+//     return ossClient.signatureUrl(path.trim(), {
+//       expires: 3600 * 24,
+//     });
+//   } catch (e) {
+//     console.error('OSS签名失败：', e);
+//     return null;
+//   }
+// };
 
 // 定义返回数据的类型（TS 类型校验，JS 项目可删除）
 type Data = {
@@ -114,13 +114,13 @@ export default async function handler(
         db.phenomicsFruit.count({ where: where }),
       ]);
       // 🔥 批量生成图片签名URL
-      const newList = await Promise.all(
-        list.map(async (item: PhenomicsFruit) => ({
-          ...item,
-          berryPhotos: await getSignUrl(`berry/${item.variety}.png`),
-        }))
-      );
-      return res.json({ success: true, data: newList as any, total });
+      // const newList = await Promise.all(
+      //   list.map(async (item: PhenomicsFruit) => ({
+      //     ...item,
+      //     berryPhotos: await getSignUrl(`berry/${item.variety}.png`),
+      //   }))
+      // );
+      return res.json({ success: true, data: list as any, total });
     }
     // 茎叶表
     if (table === 'PhenomicsLeaf') {
@@ -129,15 +129,15 @@ export default async function handler(
         db.phenomicsLeaf.count({ where: where }),
       ]);
       // 🔥 批量生成图片签名URL
-      const newList = await Promise.all(
-        list.map(async (item: PhenomicsLeaf) => ({
-          ...item,
-          youngShootAdaxialSide: await getSignUrl(`leaf/${item.variety} 嫩梢正.png`),
-          youngLeafAdaxialSide: await getSignUrl(`leaf/${item.variety} 幼叶正.png`),
-          matureLeafAdaxialSide: await getSignUrl(`leaf/${item.variety} 成龄叶正.png`),
-        }))
-      );
-      return res.json({ success: true, data: newList as any, total });
+      // const newList = await Promise.all(
+      //   list.map(async (item: PhenomicsLeaf) => ({
+      //     ...item,
+      //     youngShootAdaxialSide: await getSignUrl(`leaf/${item.variety} 嫩梢正.png`),
+      //     youngLeafAdaxialSide: await getSignUrl(`leaf/${item.variety} 幼叶正.png`),
+      //     matureLeafAdaxialSide: await getSignUrl(`leaf/${item.variety} 成龄叶正.png`),
+      //   }))
+      // );
+      return res.json({ success: true, data: list as any, total });
     }
 
   } catch (error) {

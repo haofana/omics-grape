@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-    import { Form, Col, Layout, Input, theme, Button, Select, Divider, Table } from 'antd';
+import { Form, Col, Layout, Input, theme, Button, Select, Spin, Table } from 'antd';
 import type { TableProps } from 'antd';
 import type { FormProps } from 'antd';
 import '../index.css';
@@ -30,6 +30,7 @@ const Home = () =>
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
   const [params, setParams] = useState<FieldType>({});
+  const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
 
   const t = useI18n();
@@ -71,6 +72,7 @@ const Home = () =>
     const fetchGrapeData = async () => {
       try {
         // 调用 Page Router 的 API 接口
+        setLoading(true);
         const res = await fetch(`/api/list?table=germplasm&page=${page}&size=${pageSize}&params=${JSON.stringify(params)}`);
         if (!res.ok) {
           throw new Error('接口请求失败');
@@ -86,7 +88,7 @@ const Home = () =>
         console.error('网络错误或服务器异常');
         console.error('请求失败：', err);
       } finally {
-        // setLoading(false);
+        setLoading(false);
       }
     };
 
@@ -153,23 +155,25 @@ const Home = () =>
           </Form.Item>
           <Form.Item label={null}>
             <Button type="primary" htmlType="submit">
-              查询
+              {t.query}
             </Button>
             <Button style={{ marginLeft: 20 }} htmlType="button" type="primary" onClick={onReset}>
-              重置
+              {t.reset}
             </Button>
           </Form.Item>
         </Form>
       </div>
-      <Table
-        // title={() => '葡萄属基因组'}
-        columns={columns}
-        rowKey={record => record.id}
-        dataSource={data}
-        scroll={{ x: 'max-content' }}
-        bordered
-        pagination={{ total, current: page, pageSize, onChange: onPageChange }}
-      />
+      <Spin description="Loading" size="large" spinning={loading}>
+        <Table
+          // title={() => '葡萄属基因组'}
+          columns={columns}
+          rowKey={record => record.id}
+          dataSource={data}
+          scroll={{ x: 'max-content' }}
+          bordered
+          pagination={{ total, current: page, pageSize, onChange: onPageChange }}
+        />
+      </Spin>
     </Content>
   );
 }

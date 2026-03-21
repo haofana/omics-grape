@@ -1,5 +1,5 @@
-import React, { SetStateAction, useState } from 'react';
-import { Button, ConfigProvider, Layout, Menu, theme } from 'antd';
+import React, { useEffect, useState } from 'react';
+import {Button, ConfigProvider, Divider, Layout, Menu, theme} from 'antd';
 import zhCN from 'antd/locale/zh_CN';
 import enUS from 'antd/locale/en_US';
 import { menu, menuZh } from '@/config';
@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation'
 import mytheme from '../theme/themeConfig';
 import { usePathname } from 'next/navigation';
 import './globals.css'
+import {useI18n} from "../hooks/useI18n";
 
 const { Header, Content, Footer } = Layout;
 
@@ -16,8 +17,15 @@ const HeaderMenu = ({ setLocale, currentLocale}) =>
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
+  const t = useI18n();
   const router = useRouter()
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const goto = (url) => {
     router.push(url, { scroll: false })
   }
@@ -30,15 +38,20 @@ const HeaderMenu = ({ setLocale, currentLocale}) =>
   }
   return (
     <Layout>
+      {/*<div className={'title-container'}>*/}
+      {/*  <div className={'title'}>{t.title}</div>*/}
+      {/*</div>*/}
       <Header style={{ display: 'flex', alignItems: 'center', background: colorBgContainer, padding: '0 5%'}}>
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          selectedKeys={[pathname !== '/' ? pathname.replace('/', ''): pathname]}
-          items={currentLocale === enUS ? menu : menuZh}
-          style={{ flex: 1, minWidth: 0, background: colorBgContainer }}
-          onSelect={({key} )=>goto(key)}
-        />
+
+        {mounted && (<Menu
+            theme="dark"
+            mode="horizontal"
+            selectedKeys={[pathname !== '/' ? pathname.replace('/', ''): pathname]}
+            items={currentLocale === enUS ? menu : menuZh}
+            style={{ flex: 1, minWidth: 0, background: colorBgContainer }}
+            onSelect={({key} )=>goto(key)}
+          />
+        )}
         <svg onClick={changeLanguage} style={{ cursor: 'pointer' }} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d=" M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "></path></svg>
       </Header>
     </Layout>

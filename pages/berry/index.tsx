@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Layout, Checkbox, theme, Divider, Table } from 'antd';
-import type { TableProps } from 'antd';
+import { Layout, Checkbox, theme, Divider, Table, Spin, Form, Input, Select, Button } from 'antd';
+import type { TableProps, FormProps } from 'antd';
 import '../index.css';
 import { useI18n } from '@/hooks/useI18n';
 import type { CheckboxProps } from 'antd/es/checkbox';
@@ -35,6 +35,10 @@ interface BerryItem {
 const { Content } = Layout;
 const CheckboxGroup = Checkbox.Group;
 
+type FieldType = {
+  variety?: string;
+};
+
 const Home = () =>
 {
   const t = useI18n();
@@ -43,6 +47,9 @@ const Home = () =>
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
+  const [loading, setLoading] = useState(false);
+  const [params, setParams] = useState<FieldType>({});
+  const [form] = Form.useForm();
 
   const columns: TableProps<BerryItem>['columns']  = [ { title: t.variety, dataIndex: 'variety', fixed: 'start', },
     { title: t.scientific, dataIndex: 'scientific', fixed: 'start', },
@@ -70,9 +77,12 @@ const Home = () =>
     {
       title: t.berryPhotos,
       dataIndex: 'berryPhotos',
-      render: (text: string) => <img alt={''} src={text} style={{ width: 120, height: 120, objectFit: 'contain' }} onError={(e) => {
-        e.currentTarget.style.display = 'none';
-        e.currentTarget.parentElement!.innerHTML = '<div style="color: #dddddd">暂无图片</div>';
+      render: (text: string, record: BerryItem) => <img alt={''} src={`/berry/${record.variety}.png`} style={{ width: 120, height: 120, objectFit: 'contain' }} onError={(e) => {
+        const img = e.currentTarget;
+        if (img.parentElement) {
+          e.currentTarget.style.display = 'none';
+          e.currentTarget.parentElement!.innerHTML = '<div style="color: #dddddd">暂无图片</div>';
+        }
       }} />,
     }
   ]
@@ -101,8 +111,9 @@ const Home = () =>
   useEffect(() => {
     const fetchGrapeData = async () => {
       try {
+        setLoading(true);
         // 调用 Page Router 的 API 接口
-        const res = await fetch(`/api/list?table=PhenomicsFruit&page=${page}&size=${pageSize}`);
+        const res = await fetch(`/api/list?table=PhenomicsFruit&page=${page}&size=${pageSize}&params=${JSON.stringify(params)}`);
         if (!res.ok) {
           throw new Error('接口请求失败');
         }
@@ -117,12 +128,21 @@ const Home = () =>
         console.error('网络错误或服务器异常');
         console.error('请求失败：', err);
       } finally {
-        // setLoading(false);
+        setLoading(false);
       }
     };
     fetchGrapeData();
-  }, [page, pageSize]);
+  }, [page, pageSize, params]);
 
+  const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
+    setParams(values)
+    setPage(1)
+  };
+  const onReset = () => {
+    form.resetFields();
+    setPage(1)
+    setParams({})
+  };
   const onPageChange = (page: number, pageSize: number) => {
     setPage(page);
     setPageSize(pageSize);
@@ -133,6 +153,34 @@ const Home = () =>
       <div className={'item-title '}>
         {t.fruitComprehensive}
       </div>
+      <div>
+        <Form
+          form={form}
+          name="search"
+          layout="inline"
+          style={{ width: '100%', marginBottom: 20 }}
+          initialValues={{ remember: true }}
+          onFinish={onFinish}
+          // onFinishFailed={onFinishFailed}
+          autoComplete="off"
+        >
+          <Form.Item<FieldType>
+            label={t.variety}
+            name="variety"
+            rules={[{ message: 'Please input your username!' }]}
+          >
+            <Input style={{ width: 200 }} allowClear={true} />
+          </Form.Item>
+          <Form.Item label={null}>
+            <Button type="primary" htmlType="submit">
+              {t.query}
+            </Button>
+            <Button style={{ marginLeft: 20 }} htmlType="button" type="primary" onClick={onReset}>
+              {t.reset}
+            </Button>
+          </Form.Item>
+        </Form>
+      </div>
       <div style={{ color: '#012648' }}>
         <Checkbox indeterminate={indeterminate} onChange={onCheckAllChange} checked={checkAll}>
           {t.all}
@@ -140,16 +188,18 @@ const Home = () =>
         <CheckboxGroup options={plainOptions} value={checkedList} onChange={onChange} />
         <Divider />
       </div>
+      <Spin description="Loading" size="large" spinning={loading}>
+        <Table
+          // title={() => '葡萄属基因组'}
+          columns={filterColumn}
+          rowKey={record => record.variety}
+          dataSource={data}
+          scroll={{ x: 'max-content' }}
+          bordered
+          pagination={{ total, current: page, pageSize, onChange: onPageChange }}
+        />
+      </Spin>
 
-      <Table
-        // title={() => '葡萄属基因组'}
-        columns={filterColumn}
-        rowKey={record => record.variety}
-        dataSource={data}
-        scroll={{ x: 'max-content' }}
-        bordered
-        pagination={{ total, current: page, pageSize, onChange: onPageChange }}
-      />
     </Content>
   );
 }
