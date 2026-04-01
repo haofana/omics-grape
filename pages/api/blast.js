@@ -123,7 +123,11 @@ export default async function handler(req, res) {
 
   // 遍历用户勾选的所有库
   for (const dbname of dblist) {
-    const db = path.join(process.cwd(), 'blastdb', dbname)
+    // 自适应路径：本地 / 服务器 都能用
+    const BLAST_DB_DIR = process.env.NODE_ENV === 'production'
+      ? '/home/omics-grape/multi-omics-grape/blastdb' // 服务器路径
+      : path.join(process.cwd(), 'blastdb'); // 本地路径
+    const db = path.join(BLAST_DB_DIR, dbname)
 
     await new Promise((resolve) => {
       const child = spawn(program, [
