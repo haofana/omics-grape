@@ -1,3 +1,7 @@
-https://vercel.com/lyons-projects-d71e4f67/
-https://omics-grape.vercel.app/
-omics-grape
+
+# 生产：omics-grape.cn
+
+## VITVri588271河岸葡萄
+## VITVlaGREM4美洲葡萄
+## VITVrpB38沙地葡萄
+## VITMroTrayshed圆叶葡萄

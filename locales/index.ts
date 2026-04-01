@@ -23,6 +23,7 @@ export const locales = {
     all: '全选',
     reset: '重置',
     query: '查询',
+    inverse: '清空',
 
     // ================== 果实表 ==================
     aromaType: '香型',
@@ -82,6 +83,9 @@ export const locales = {
     youngShootAdaxialSide: '嫩梢正面图',
     youngLeafAdaxialSide: '幼叶正面图',
     matureLeafAdaxialSide: '成龄叶正面图',
+
+    // ================== blast ==================
+    start: '开始比对'
   },
 
   'en': {
@@ -108,6 +112,7 @@ export const locales = {
     all: 'select all',
     reset: 'reset',
     query: 'query',
+    inverse: 'Inverse',
 
     // ================== 果实表 ==================
     aromaType: 'Aroma Type',
@@ -167,5 +172,8 @@ export const locales = {
     youngShootAdaxialSide: 'Young Shoot (Adaxial)',
     youngLeafAdaxialSide: 'Young Leaf (Adaxial)',
     matureLeafAdaxialSide: 'Mature Leaf (Adaxial)',
+
+    // ================== blast ==================
+    start: 'Search',
   },
 };

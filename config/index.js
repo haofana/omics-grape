@@ -20,8 +20,8 @@ export const menu = [
     ],
   },
   {
-    label: 'Gene',
-    key: 'download',
+    label: 'Genome',
+    key: 'genome',
   },
   {
     label: 'GWAS',
@@ -38,6 +38,12 @@ export const menu = [
   {
     label: 'Tool',
     key: 'tool',
+    children: [
+      {
+        label: 'Blast ',
+        key: 'blast',
+      },
+    ]
   },
   {
     label: 'Literature',
@@ -85,6 +91,12 @@ export const menuZh = [
   {
     label: '工具',
     key: 'tool',
+    children: [
+      {
+        label: 'Blast ',
+        key: 'blast',
+      },
+    ]
   },
   {
     label: '文献',
