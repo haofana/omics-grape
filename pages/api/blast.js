@@ -2,6 +2,9 @@ import { spawn } from 'child_process'
 import fs from 'fs'
 import path from 'path'
 
+const BLAST_DB_DIR = process.env.NODE_ENV === 'production'
+  ? '/home/omics-grape/multi-omics-grape/blastdb' // 服务器路径
+  : path.join(process.cwd(), 'blastdb'); // 本地路径
 // 解析 BLAST 输出，提取 4 大模块数据
 const parseBlastOutput = (raw, dbname) => {
   const lines = raw.split('\n');
@@ -110,7 +113,7 @@ const parseBlastOutput = (raw, dbname) => {
 
 export default async function handler(req, res) {
   const { sequence, program, dblist, wordSize, evalue, maxTarget } = req.body
-  const queryFile = path.join(process.cwd(), 'blastdb/_query.fasta')
+  const queryFile = path.join(BLAST_DB_DIR, '_query.fasta')
   fs.writeFileSync(queryFile, `>query\n${sequence}`)
 
   const fullData = {
@@ -124,9 +127,6 @@ export default async function handler(req, res) {
   // 遍历用户勾选的所有库
   for (const dbname of dblist) {
     // 自适应路径：本地 / 服务器 都能用
-    const BLAST_DB_DIR = process.env.NODE_ENV === 'production'
-      ? '/home/omics-grape/multi-omics-grape/blastdb' // 服务器路径
-      : path.join(process.cwd(), 'blastdb'); // 本地路径
     const db = path.join(BLAST_DB_DIR, dbname)
 
     await new Promise((resolve) => {
