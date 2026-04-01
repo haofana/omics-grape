@@ -3,7 +3,7 @@ import fs from 'fs'
 import path from 'path'
 
 const BLAST_DB_DIR = process.env.NODE_ENV === 'production'
-  ? '/home/omics-grape/multi-omics-grape/blastdb' // 服务器路径
+  ? '/home/omics-grape/blastdb' // 服务器路径
   : path.join(process.cwd(), 'blastdb'); // 本地路径
 // 解析 BLAST 输出，提取 4 大模块数据
 const parseBlastOutput = (raw, dbname) => {
