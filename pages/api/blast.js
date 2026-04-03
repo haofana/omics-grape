@@ -2,6 +2,8 @@ import { spawn } from 'child_process'
 import fs from 'fs'
 import path from 'path'
 
+const BLASTN_PATH = '/usr/local/ncbi-blast/bin/blastn';
+
 const BLAST_DB_DIR = process.env.NODE_ENV === 'production'
   ? '/home/admin/omics-grape/blastdb' // 服务器路径
   : path.join(process.cwd(), 'blastdb'); // 本地路径
