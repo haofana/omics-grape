@@ -76,7 +76,7 @@ const Home = () =>
           infinite
           arrows
           dots={{ className: 'custom-dots' }}
-          slidesToShow={5} // 桌面端一屏5张，自适应
+          slidesToShow={7} // 桌面端一屏5张，自适应
           slidesToScroll={1}
           speed={800}
           responsive={[
