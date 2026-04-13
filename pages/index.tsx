@@ -4,7 +4,7 @@ import './globals.css';
 import Image from 'next/image'
 import img from './img/pt.png';
 import img3 from './img/pt3.png';
-import img1 from './img/pt2.png';
+import img1 from './img/img.png';
 import img2 from './img/pt2.jpg';
 import './index.css';
 import { quickTools } from '../config'
@@ -42,7 +42,7 @@ const Home = () =>
     <div>
       <Divider size={'small'} />
       <Content style={{ padding: '0 5%' }}>
-        <div className="w-full flex flex-col lg:flex-row gap-6 my-8">
+        <div className="w-full flex flex-col lg:flex-row gap-6 my-4">
           <div className="lg:w-[60%] p-6 bg-white rounded-2xl shadow-sm" style={{
             height: 612,
             overflow: 'auto',
@@ -88,7 +88,7 @@ const Home = () =>
           className="grape-carousel"
         >
           {bannerImages.map((item, index) => (
-            <div key={index} className="px-3 py-2 h-[200px] img-bg" >
+            <div key={index} className="px-3 py-2 h-[170px] img-bg" >
               <Image
                 src={item.src}
                 alt={item.alt}
@@ -101,21 +101,11 @@ const Home = () =>
           ))}
         </Carousel>
       </div>
-      {/*<Footer className={'white-container'}>*/}
-      {/*  <Divider style={{ borderColor: colorBgContainer, color: colorBgContainer }} >*/}
-      {/*    Quick Tools*/}
-      {/*  </Divider>*/}
-      {/*  <div className={'cards-container'}>*/}
-      {/*    {*/}
-      {/*      quickTools.map((item, index) => (*/}
-      {/*        <div className={'card'} key={item.label} onClick={() => goto(item.label)} >*/}
-      {/*          {item.ico}*/}
-      {/*          <div key={index}>{item.label}</div>*/}
-      {/*        </div>*/}
-      {/*      ))*/}
-      {/*    }*/}
-      {/*  </div>*/}
-      {/*</Footer>*/}
+      <Footer style={{ textAlign: 'center' }}>
+        <a style={{ textDecoration: 'underline' }} href="https://beian.miit.gov.cn" target="_blank">浙ICP备2026020442号-1</a>
+        <span className="mx-2">|</span>
+        <span>Copyright © 2025-2026 浙江万里学院植物生理与分子改良实验室</span>
+      </Footer>
     </div>
   );
 }

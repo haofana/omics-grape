@@ -38,11 +38,10 @@ const HeaderMenu = ({ setLocale, currentLocale}) =>
   }
   return (
     <Layout>
-      {/*<div className={'title-container'}>*/}
-      {/*  <div className={'title'}>{t.title}</div>*/}
-      {/*</div>*/}
+      <div className={'title-container'}>
+        {t.title}
+      </div>
       <Header style={{ display: 'flex', alignItems: 'center', background: colorBgContainer, padding: '0 5%'}}>
-
         {mounted && (<Menu
             theme="dark"
             mode="horizontal"

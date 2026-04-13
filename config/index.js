@@ -46,12 +46,8 @@ export const menu = [
     ]
   },
   {
-    label: 'Literature',
-    key: 'Literature',
-  },
-  {
-    label: 'News',
-    key: 'news',
+    label: 'About',
+    key: 'about',
   },
 ];
 
@@ -74,7 +70,7 @@ export const menuZh = [
   },
   {
     label: '基因组 ',
-    key: 'download',
+    key: 'genome',
   },
   {
     label: 'GWAS',
@@ -99,12 +95,8 @@ export const menuZh = [
     ]
   },
   {
-    label: '文献',
-    key: 'literature',
-  },
-  {
-    label: '新闻',
-    key: 'news',
+    label: '关于团队',
+    key: 'about',
   },
 ];
 

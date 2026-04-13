@@ -1,13 +1,9 @@
 .title-container {
-  display: flex;
-  height: 100px;
-  line-height: 100px;
   text-align: center;
-  padding: 60px;
-  color: #3c7963;
-  background-image: url("./img/pt.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 12px;
+  font-size: 30px;
+  background-color: #3c7963;
+  color: white;
 }
 .title {
   font-size: 40px;
