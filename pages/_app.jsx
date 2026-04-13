@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {Button, ConfigProvider, Divider, Layout, Menu, theme} from 'antd';
+import { ConfigProvider, Layout, Menu, theme } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
 import enUS from 'antd/locale/en_US';
 import { menu, menuZh } from '@/config';

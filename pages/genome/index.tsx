@@ -117,7 +117,7 @@ const dataSource2: DataType[] = [
   },
 ]
 
-const Home = () =>
+const Genome = () =>
 {
   const {
     token: { colorBorder, borderRadiusLG },
@@ -150,4 +150,4 @@ const Home = () =>
   );
 }
 
-export default Home;
+export default Genome;

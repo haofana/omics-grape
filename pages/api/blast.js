@@ -30,7 +30,7 @@ const parseBlastOutput = (raw, dbname) => {
     const trim = line.trim();
 
     // ==============================
-    // 1. 抓 Description（表格）
+    // 抓 Description（表格）
     // ==============================
     if (trim.startsWith('>') || trim.startsWith('Sequences producing')) {
       if (currentDesc) {
@@ -50,7 +50,7 @@ const parseBlastOutput = (raw, dbname) => {
     }
 
     // ==============================
-    // 2. 抓 Alignment（比对详情）
+    // 抓 Alignment（比对详情）
     // ==============================
     if (trim.startsWith('>') || trim.startsWith('Query=')) {
       if (currentAlign) data.alignments.push(currentAlign);
@@ -74,7 +74,7 @@ const parseBlastOutput = (raw, dbname) => {
     }
 
     // ==============================
-    // 3. 抓 Graphic 坐标
+    // 抓 Graphic 坐标
     // ==============================
     if (line.includes('Identities =') && currentAlign) {
       const prevLines = [
@@ -155,7 +155,7 @@ export default async function handler(req, res) {
     })
   }
 
-  // 按 E-value 排序
+  // 排序
   fullData.descriptions.sort((a, b) => a.evalue - b.evalue)
   fullData.graphicHits.sort((a, b) => a.pident - b.pident)
 

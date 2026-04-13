@@ -48,7 +48,7 @@ const { Content } = Layout;
 type FieldType = {
   variety?: string;
 };
-const Home = () =>
+const Leaf = () =>
 {
   const t = useI18n();
   const { token: { colorBorder, borderRadiusLG }, } = theme.useToken();
@@ -252,4 +252,4 @@ const Home = () =>
   );
 }
 
-export default Home;
+export default Leaf;

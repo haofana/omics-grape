@@ -22,7 +22,7 @@ const stageOptions = ['早熟','早中熟','中熟','中晚熟','晚熟'];
 const typeOptions = ['东亚种','美洲种','欧亚种','欧美杂交种']
 const { Content } = Layout;
 
-const Home = () =>
+const Germplasm = () =>
 {
   const { token: { colorBorder, borderRadiusLG }, } = theme.useToken();
   const [data, setData] = useState<GrapeItem[]>([]);
@@ -178,4 +178,4 @@ const Home = () =>
   );
 }
 
-export default Home;
+export default Germplasm;
