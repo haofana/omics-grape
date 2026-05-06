@@ -1,13 +1,13 @@
-import img1 from './img_1.png';
-import img2 from './img_2.png';
-import img3 from './img_3.png';
-import img4 from './img_4.png';
-import img5 from './img_5.png';
-import img6 from './img_6.png';
-import img7 from './img_7.png';
+import img1 from '../pages/transcription/img_1.png';
+import img2 from '../pages/transcription/img_2.png';
+import img3 from '../pages/transcription/img_3.png';
+import img4 from '../pages/transcription/img_4.png';
+import img5 from '../pages/transcription/img_5.png';
+import img6 from '../pages/transcription/img_6.png';
+import img7 from '../pages/transcription/img_7.png';
 
 
-const items = [
+const tranItems = [
   {
     key: 'fruitDevelopment',
     label: '果实发育',
@@ -64,4 +64,4 @@ const items = [
     img: img7
   }]
 
-export default items;
+export default tranItems;

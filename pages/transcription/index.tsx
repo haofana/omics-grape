@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Col, Layout, Input, theme, Button, Select, Spin, Table, Tabs } from 'antd';
 import type { FormProps } from 'antd';
-import items from './items';
+import tranItems from '../../config/tranItems';
 import '../index.css';
 import { useI18n } from '@/hooks/useI18n';
 import Modal1 from './Modal1';
@@ -390,7 +390,7 @@ const Metabolism = () =>
           </Form.Item>
         </Form>
       </div>
-      <Tabs activeKey={activeKey} items={items} onChange={onChange} />
+      <Tabs activeKey={activeKey} items={tranItems} onChange={onChange} />
       <Spin description="Loading" size="large" spinning={loading}>
         <Modal1 activeKey={activeKey} open={open} onCancel={()=>setOpen(false)} />
         <Button className={'mb-4'} type="primary" onClick={()=>setOpen(true)}>

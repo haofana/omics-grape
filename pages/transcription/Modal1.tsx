@@ -2,7 +2,7 @@ import { Modal, Table, theme } from 'antd';
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import img from './img_1.png';
-import items from './items';
+import tranItems from '../../config/tranItems';
 
 
 interface TreatmentModalProps {
@@ -44,7 +44,7 @@ const data = [
 
 const TreatmentModal: React.FC<TreatmentModalProps> = ({ open, onCancel, activeKey }) => {
   const { token: { colorBorder, borderRadiusLG }, } = theme.useToken();
-  const localItem= items.find(item => item.key === activeKey);
+  const localItem= tranItems.find(item => item.key === activeKey);
   return (
     <Modal
       title={localItem?.label}
