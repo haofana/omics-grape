@@ -26,6 +26,13 @@ export const menu = [
   {
     label: 'GWAS',
     key: 'GWAS',
+    children: [
+      { label: 'Fruit Color', key: 'fruitColor' },
+      { label: 'Fruit Firmness', key: 'fruitFirmness' },
+      { label: 'Fruit Fiber', key: 'fruitFiber' },
+      { label: 'Glandular trichome and downy hair traits', key: 'fruitFuzz' },
+      { label: 'Coloration of nutrient organs', key: 'fruitOrgan' },
+    ]
   },
   {
     label: 'Transcription',
@@ -40,8 +47,12 @@ export const menu = [
     key: 'tool',
     children: [
       {
-        label: 'Blast ',
+        label: 'Blast',
         key: 'blast',
+      },
+      {
+        label: 'GO enrichment',
+        key: 'go',
       },
     ]
   },
@@ -75,6 +86,13 @@ export const menuZh = [
   {
     label: 'GWAS',
     key: 'GWAS',
+    children: [
+      { label: '果实颜色', key: 'fruitColor' },
+      { label: '果实硬度', key: 'fruitFirmness' },
+      { label: '纤维素', key: 'fruitFiber' },
+      { label: '腺毛绒毛性状', key: 'fruitFuzz' },
+      { label: '营养器官着色', key: 'fruitOrgan' },
+    ]
   },
   {
     label: '转录组',
@@ -91,6 +109,10 @@ export const menuZh = [
       {
         label: 'Blast ',
         key: 'blast',
+      },
+      {
+        label: 'GO富集分析',
+        key: 'go',
       },
     ]
   },

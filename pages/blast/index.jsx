@@ -41,6 +41,9 @@ export default function BlastMultiDB() {
       key: 'blastp',
       label: 'Blastp protein'
     }]
+  const onChange = key => {
+    setProgram(key)
+  }
 
   const onFinish = async (values) => {
     // setParams(values)
@@ -67,9 +70,7 @@ export default function BlastMultiDB() {
     setLoading(false)
   };
   const {token: { colorBorder, borderRadiusLG },} = theme.useToken();
-  const onChange = key => {
-    setProgram(key)
-  }
+
   const selectAll = () => {
     form.setFieldValue( 'databaseList', DBOptions.map(item=>item.name))
   }

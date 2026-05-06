@@ -14,6 +14,7 @@ const mytheme: ThemeConfig = {
     },
     Table: {
       colorBgContainer: '#ffffffC8',
+      fontSize: 14,
       // footerBg: '#ffffffC8',
     },
     Pagination: {

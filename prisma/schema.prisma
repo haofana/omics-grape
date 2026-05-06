@@ -98,3 +98,581 @@ model PhenomicsLeaf {
 
   @@map("phenomics_leaf")
 }
+
+model MatOther {
+  metabolite       String
+  metab_id         String
+  library_id       String?
+  kegg_compound_id String?
+  quant_mass       Int?
+  retention_time   Int?
+  score            Int?
+  ri               Int?
+  library_ri       Int?
+  riscore          Int?
+  odour            String?
+  odour_zh         String?
+  mode             String?
+  formula          String?
+  cas_id           String?
+  rsd              Int?
+  hrfscore         Int?
+  matchscore       Int?
+  clmgck_1         Int?
+  clmgck_2         Int?
+  clmgck_3         Int?
+  clmgck_4         Int?
+  clmgck_5         Int?
+  clmgbr_3_1       Int?
+  clmgbr_3_2       Int?
+  clmgbr_3_3       Int?
+  clmgbr_3_4       Int?
+  clmgbr_3_5       Int?
+  clmggr_3_1       Int?
+  clmggr_3_2       Int?
+  clmggr_3_3       Int?
+  clmggr_3_4       Int?
+  clmggr_3_5       Int?
+  clmgmel_2_1      Int?
+  clmgmel_2_2      Int?
+  clmgmel_2_3      Int?
+  clmgmel_2_4      Int?
+  clmgmel_2_5      Int?
+  mlxck_1          Int?
+  mlxck_2          Int?
+  mlxck_3          Int?
+  mlxck_4          Int?
+  mlxck_5          Int?
+  mlxbr_3_1        Int?
+  mlxbr_3_2        Int?
+  mlxbr_3_3        Int?
+  mlxbr_3_4        Int?
+  mlxbr_3_5        Int?
+  mlxgr_3_1        Int?
+  mlxgr_3_2        Int?
+  mlxgr_3_3        Int?
+  mlxgr_3_4        Int?
+  mlxgr_3_5        Int?
+  mlxmel_2_1       Int?
+  mlxmel_2_2       Int?
+  mlxmel_2_3       Int?
+  mlxmel_2_4       Int?
+  mlxmel_2_5       Int?
+  pzmck_1          Int?
+  pzmck_2          Int?
+  pzmck_3          Int?
+  pzmck_4          Int?
+  pzmck_5          Int?
+  pzmbr_3_1        Int?
+  pzmbr_3_2        Int?
+  pzmbr_3_3        Int?
+  pzmbr_3_4        Int?
+  pzmbr_3_5        Int?
+  pzmgr_3_1        Int?
+  pzmgr_3_2        Int?
+  pzmgr_3_3        Int?
+  pzmgr_3_4        Int?
+  pzmgr_3_5        Int?
+  pzmmel_2_1       Int?
+  pzmmel_2_2       Int?
+  pzmmel_2_3       Int?
+  pzmmel_2_4       Int?
+  pzmmel_2_5       Int?
+  qc01             Int?
+  qc02             Int?
+  qc03             Int?
+  qc04             Int?
+  no               Int     @id @default(autoincrement())
+
+  @@map("mat_other")
+}
+
+model MatUnvolatilize {
+  id                              String?
+  metabolite                      String?
+  metab_id                        String?
+  library_id                      String?
+  level                           String?
+  kegg_compound_id                String?
+  m_z                             Int?    @map("m/z")
+  retention_time                  Int?
+  mode                            String?
+  adducts                         String?
+  formula                         String?
+  fragmentation_score             Int?
+  theoretical_fragmentation_score Int?
+  mass_error                      Int?
+  cas_id                          String?
+  rsd                             Int?
+  no                              Int     @id @default(autoincrement())
+
+  @@map("mat_unvolatilize")
+}
+
+model MatVolatilize {
+  metabolite       String?
+  metab_id         String?
+  library_id       String?
+  kegg_compound_id String?
+  quant_mass       Int?
+  retention_time   Int?
+  score            Int?
+  ri               Int?
+  library_ri       Int?
+  riscore          Int?
+  odour            String?
+  odour_zh         String?
+  mode             String?
+  formula          String?
+  cas_id           String?
+  rsd              Int?
+  hrfscore         Int?
+  matchscore       Int?
+  g2_1             Int?
+  g2_2             Int?
+  g2_3             Int?
+  g2_4             Int?
+  g2_5             Int?
+  g2_6             Int?
+  t_1              Int?
+  t_2              Int?
+  t_3              Int?
+  t_4              Int?
+  t_5              Int?
+  t_6              Int?
+  ck_1             Int?
+  ck_2             Int?
+  ck_3             Int?
+  ck_4             Int?
+  ck_5             Int?
+  ck_6             Int?
+  qc1              Int?
+  qc2              Int?
+  qc3              Int?
+  no               Int     @id @default(autoincrement())
+
+  @@map("mat_volatilize")
+}
+
+model FruitAroma {
+  gene_id          String?
+  g2_1_count       Int?
+  g2_2_count       Int?
+  g2_3_count       Int?
+  t_1_count        Int?
+  t_2_count        Int?
+  t_3_count        Int?
+  ck_1_count       Int?
+  ck_2_count       Int?
+  ck_3_count       Int?
+  g2_1_tpm         Int?
+  g2_2_tpm         Int?
+  g2_3_tpm         Int?
+  t_1_tpm          Int?
+  t_2_tpm          Int?
+  t_3_tpm          Int?
+  ck_1_tpm         Int?
+  ck_2_tpm         Int?
+  ck_3_tpm         Int?
+  g2_tpm_average   Int?
+  t_tpm_average    Int?
+  ck_tpm_average   Int?
+  fc_g2_t_         Int?    @map("fc(g2/t)")
+  log2fc_g2_t_     Int?    @map("log2fc(g2/t)")
+  pvalue_g2_t_     Int?    @map("pvalue(g2/t)")
+  padjust_g2_t_    Int?    @map("padjust(g2/t)")
+  fc_t_ck_         Int?    @map("fc(t/ck)")
+  log2fc_t_ck_     Int?    @map("log2fc(t/ck)")
+  pvalue_t_ck_     Int?    @map("pvalue(t/ck)")
+  padjust_t_ck_    Int?    @map("padjust(t/ck)")
+  fc_g2_ck_        Int?    @map("fc(g2/ck)")
+  log2fc_g2_ck_    Int?    @map("log2fc(g2/ck)")
+  pvalue_g2_ck_    Int?    @map("pvalue(g2/ck)")
+  padjust_g2_ck_   Int?    @map("padjust(g2/ck)")
+  gene_name        String?
+  gene_chr         String?
+  gene_start       Int?
+  gene_end         Int?
+  gene_strand      String?
+  gene_length      Int?
+  gene_biotype     String?
+  gene_description String?
+  no               Int     @id @default(autoincrement())
+
+  @@map("fruit_aroma")
+}
+
+model FruitAstringent {
+  gene_id          String?
+  br_1_1_count     Int?
+  br_1_2_count     Int?
+  br_1_3_count     Int?
+  ck_1_count       Int?
+  ck_2_count       Int?
+  ck_3_count       Int?
+  gr_3_1_count     Int?
+  gr_3_2_count     Int?
+  gr_3_3_count     Int?
+  br_1_1_tpm       Int?
+  br_1_2_tpm       Int?
+  br_1_3_tpm       Int?
+  ck_1_tpm         Int?
+  ck_2_tpm         Int?
+  ck_3_tpm         Int?
+  gr_3_1_tpm       Int?
+  gr_3_2_tpm       Int?
+  gr_3_3_tpm       Int?
+  br_1_tpm_average Int?
+  ck_tpm_average   Int?
+  gr_3_tpm_average Int?
+  fc               Int?
+  log2fc           Int?
+  pvalue           Int?
+  padjust          Int?
+  fc_1             Int?
+  log2fc_1         Int?
+  pvalue_1         Int?
+  padjust_1        Int?
+  gene_name        String?
+  gene_chr         String?
+  gene_start       Int?
+  gene_end         Int?
+  gene_strand      String?
+  gene_length      Int?
+  gene_biotype     String?
+  gene_description String?
+  tf_family        String?
+  no               Int     @id @default(autoincrement())
+
+  @@map("fruit_astringent")
+}
+
+model FruitDevelopment {
+  gene_id  String?
+  fpkm_s1a Int?
+  fpkm_s1b Int?
+  fpkm_s1c Int?
+  fpkm_s2a Int?
+  fpkm_s2b Int?
+  fpkm_s2c Int?
+  fpkm_s3a Int?
+  fpkm_s3b Int?
+  fpkm_s3c Int?
+  fpkm_s4a Int?
+  fpkm_s4b Int?
+  fpkm_s4c Int?
+  fpkm_t1a Int?
+  fpkm_t1b Int?
+  fpkm_t1c Int?
+  fpkm_t2a Int?
+  fpkm_t2b Int?
+  fpkm_t2c Int?
+  fpkm_t3a Int?
+  fpkm_t3b Int?
+  fpkm_t3c Int?
+  no       Int     @id @default(autoincrement())
+
+  @@map("fruit_development")
+}
+
+model FruitFirmness1 {
+  gene_id    String?
+  fpkm_ck_1  Int?
+  fpkm_ck_2  Int?
+  fpkm_ck_3  Int?
+  fpkm_ga_1  Int?
+  fpkm_ga_2  Int?
+  fpkm_ga_3  Int?
+  fpkm_lh_1  Int?
+  fpkm_lh_2  Int?
+  fpkm_lh_3  Int?
+  fpkm_snp_1 Int?
+  fpkm_snp_2 Int?
+  fpkm_snp_3 Int?
+  fpkm_ta_1  Int?
+  fpkm_ta_2  Int?
+  fpkm_ta_3  Int?
+  no         Int     @id @default(autoincrement())
+
+  @@map("fruit_firmness_1")
+}
+
+model FruitFirmness2 {
+  gene_id      String
+  t0_1_fpkm    Int?    @map("t0-1_fpkm")
+  t0_2_fpkm    Int?    @map("t0-2_fpkm")
+  t0_3_fpkm    Int?    @map("t0-3_fpkm")
+  t1_1_fpkm    Int?    @map("t1-1_fpkm")
+  t1_2_fpkm    Int?    @map("t1-2_fpkm")
+  t1_3_fpkm    Int?    @map("t1-3_fpkm")
+  t2_1_fpkm    Int?    @map("t2-1_fpkm")
+  t2_2_fpkm    Int?    @map("t2-2_fpkm")
+  t2_3_fpkm    Int?    @map("t2-3_fpkm")
+  y0_1_fpkm    Int?    @map("y0-1_fpkm")
+  y0_2_fpkm    Int?    @map("y0-2_fpkm")
+  y0_3_fpkm    Int?    @map("y0-3_fpkm")
+  y1_1_fpkm    Int?    @map("y1-1_fpkm")
+  y1_2_fpkm    Int?    @map("y1-2_fpkm")
+  y1_3_fpkm    Int?    @map("y1-3_fpkm")
+  y2_1_fpkm    Int?    @map("y2-1_fpkm")
+  y2_2_fpkm    Int?    @map("y2-2_fpkm")
+  y2_3_fpkm    Int?    @map("y2-3_fpkm")
+  t0_1_count   Int?    @map("t0-1_count")
+  t0_2_count   Int?    @map("t0-2_count")
+  t0_3_count   Int?    @map("t0-3_count")
+  t1_1_count   Int?    @map("t1-1_count")
+  t1_2_count   Int?    @map("t1-2_count")
+  t1_3_count   Int?    @map("t1-3_count")
+  t2_1_count   Int?    @map("t2-1_count")
+  t2_2_count   Int?    @map("t2-2_count")
+  t2_3_count   Int?    @map("t2-3_count")
+  y0_1_count   Int?    @map("y0-1_count")
+  y0_2_count   Int?    @map("y0-2_count")
+  y0_3_count   Int?    @map("y0-3_count")
+  y1_1_count   Int?    @map("y1-1_count")
+  y1_2_count   Int?    @map("y1-2_count")
+  y1_3_count   Int?    @map("y1-3_count")
+  y2_1_count   Int?    @map("y2-1_count")
+  y2_2_count   Int?    @map("y2-2_count")
+  y2_3_count   Int?    @map("y2-3_count")
+  symbol       String?
+  description  String?
+  kegg_a_class String?
+  kegg_b_class String?
+  pathway      String?
+  k_id         String?
+  go_component String?
+  go_function  String?
+  go_process   String?
+  tf_family    String?
+  no           Int     @id @default(autoincrement())
+
+  @@map("fruit_firmness_2")
+}
+
+model FruitMetabolism {
+  gene_id        String?
+  ck_1_fpkm      Int?
+  ck_2_fpkm      Int?
+  ck_3_fpkm      Int?
+  suc150_1_fpkm  Int?
+  suc150_2_fpkm  Int?
+  suc150_3_fpkm  Int?
+  ck_1_count     Int?
+  ck_2_count     Int?
+  ck_3_count     Int?
+  suc150_1_count Int?
+  suc150_2_count Int?
+  suc150_3_count Int?
+  symbol         String?
+  description    String?
+  kegg_a_class   String?
+  kegg_b_class   String?
+  pathway        String?
+  k_id           String?
+  go_component   String?
+  go_function    String?
+  go_process     String?
+  tf_family      String?
+  no             Int     @id @default(autoincrement())
+
+  @@map("fruit_metabolism")
+}
+
+model FruitShape1 {
+  gene_id   String?
+  fpkm_c1_1 Int?
+  fpkm_c1_2 Int?
+  fpkm_c1_3 Int?
+  fpkm_ck_1 Int?
+  fpkm_ck_3 Int?
+  fpkm_z1_1 Int?
+  fpkm_z1_2 Int?
+  fpkm_z1_3 Int?
+  no        Int     @id @default(autoincrement())
+
+  @@map("fruit_shape_1")
+}
+
+model FruitShape2 {
+  gene_id      String?
+  t0_1_fpkm    Int?    @map("t0-1_fpkm")
+  t0_2_fpkm    Int?    @map("t0-2_fpkm")
+  t0_3_fpkm    Int?    @map("t0-3_fpkm")
+  t1_1_fpkm    Int?    @map("t1-1_fpkm")
+  t1_2_fpkm    Int?    @map("t1-2_fpkm")
+  t1_3_fpkm    Int?    @map("t1-3_fpkm")
+  t2_1_fpkm    Int?    @map("t2-1_fpkm")
+  t2_2_fpkm    Int?    @map("t2-2_fpkm")
+  t2_3_fpkm    Int?    @map("t2-3_fpkm")
+  t3_1_fpkm    Int?    @map("t3-1_fpkm")
+  t3_2_fpkm    Int?    @map("t3-2_fpkm")
+  t3_3_fpkm    Int?    @map("t3-3_fpkm")
+  g2_1_fpkm    Int?    @map("g2-1_fpkm")
+  g2_2_fpkm    Int?    @map("g2-2_fpkm")
+  g2_3_fpkm    Int?    @map("g2-3_fpkm")
+  c2_1_fpkm    Int?    @map("c2-1_fpkm")
+  c2_2_fpkm    Int?    @map("c2-2_fpkm")
+  c2_3_fpkm    Int?    @map("c2-3_fpkm")
+  t0_1_count   Int?    @map("t0-1_count")
+  t0_2_count   Int?    @map("t0-2_count")
+  t0_3_count   Int?    @map("t0-3_count")
+  t1_1_count   Int?    @map("t1-1_count")
+  t1_2_count   Int?    @map("t1-2_count")
+  t1_3_count   Int?    @map("t1-3_count")
+  t2_1_count   Int?    @map("t2-1_count")
+  t2_2_count   Int?    @map("t2-2_count")
+  t2_3_count   Int?    @map("t2-3_count")
+  t3_1_count   Int?    @map("t3-1_count")
+  t3_2_count   Int?    @map("t3-2_count")
+  t3_3_count   Int?    @map("t3-3_count")
+  g2_1_count   Int?    @map("g2-1_count")
+  g2_2_count   Int?    @map("g2-2_count")
+  g2_3_count   Int?    @map("g2-3_count")
+  c2_1_count   Int?    @map("c2-1_count")
+  c2_2_count   Int?    @map("c2-2_count")
+  c2_3_count   Int?    @map("c2-3_count")
+  symbol       String?
+  description  String?
+  kegg_a_class String?
+  kegg_b_class String?
+  pathway      String?
+  k_id         String?
+  go_component String?
+  go_function  String?
+  go_process   String?
+  tf_family    String?
+  no           Int     @id @default(autoincrement())
+
+  @@map("fruit_shape_2")
+}
+
+model GwasColorFruit {
+  chromosome            Int?
+  position              Int?
+  snp                   String?
+  p_value_2023          Int?    @map("p.value_2023")
+  p_value_2024          Int?    @map("p.value_2024")
+  model                 String?
+  gene_names            String?
+  functional_annotation String?
+  start                 String?
+  end                   String?
+  orientation           String?
+  no                    Int    @id @default(autoincrement())
+
+  @@map("gwas_color_fruit")
+}
+
+model GwasColorPeel {
+  chromosome            Int?
+  position              String?
+  snp                   String?
+  p_value_2023          String? @map("p.value_2023")
+  p_value_2024          String? @map("p.value_2024")
+  model                 String?
+  gene_names            String?
+  functional_annotation String?
+  start                 String?
+  end                   String?
+  orientation           String?
+  no                    Int     @id @default(autoincrement())
+
+  @@map("gwas_color_peel")
+}
+
+model GwasFiberFruit {
+  chromosome            String?
+  position              Int?
+  snp                   String?
+  p_value               String? @map("p.value")
+  model                 String?
+  gene_names            String?
+  functional_annotation String?
+  start                 String?
+  end                   String?
+  orientation           String?
+  no                    Int    @id @default(autoincrement())
+
+  @@map("gwas_fiber_fruit")
+}
+
+model GwasFiberFeer {
+  chromosome            String?
+  position              Int?
+  snp                   String?
+  p_value               String? @map("p.value")
+  model                 String?
+  gene_names            String?
+  functional_annotation String?
+  start                 String?
+  end                   String?
+  orientation           String?
+  no                    Int    @id @default(autoincrement())
+
+  @@map("gwas_fiber_peer")
+}
+
+model GwasFirmnessFruit {
+  chromosome            String?
+  position              Int?
+  snp                   String?
+  p_value               String? @map("p.value")
+  model                 String?
+  gene_names            String?
+  functional_annotation String?
+  start                 String?
+  end                   String?
+  orientation           String?
+  no                    Int    @id @default(autoincrement())
+
+  @@map("gwas_firmness_fruit")
+}
+
+model GwasFirmnessPeer {
+  chromosome            String?
+  position              Int?
+  snp                   String?
+  p_value               String? @map("p.value")
+  model                 String?
+  gene_names            String?
+  functional_annotation String?
+  start                 String?
+  end                   String?
+  orientation           String?
+  no                    Int    @id @default(autoincrement())
+
+  @@map("gwas_firmness_peer")
+}
+
+model GwasFuzz {
+  trait                 String?
+  chromosome            Int?
+  position              Int?
+  snp                   String?
+  p_value               String? @map("p.value")
+  model                 String?
+  gene_names            String?
+  functional_annotation String?
+  start                 Int?
+  end                   Int?
+  no                    Int    @id @default(autoincrement())
+
+  @@map("gwas_fuzz")
+}
+
+model GwasOrgan {
+  traits                String?
+  chromosome            Int?
+  position              Int?
+  snp                   String?
+  p_value_2023          Int?    @map("p.value_2023")
+  p_value_2024          Int?    @map("p.value_2024")
+  model                 String?
+  gene_names            String?
+  functional_annotation String?
+  length                String?
+  no                    Int    @id @default(autoincrement())
+
+  @@map("gwas_organ")
+}

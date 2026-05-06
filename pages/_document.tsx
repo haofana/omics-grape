@@ -7,6 +7,7 @@ const MyDocument = () => (
   <Html lang="en">
     <Head />
     <body>
+      <title>葡萄种质资源与多组学数据库</title>
       <Main />
       <NextScript />
     </body>
