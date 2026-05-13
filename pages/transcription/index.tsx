@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Col, Layout, Input, theme, Button, Select, Spin, Table, Tabs } from 'antd';
+import { Form, Segmented, Layout, Input, theme, Button, Select, Spin, Table, Tabs } from 'antd';
 import type { FormProps } from 'antd';
-import tranItems from '../../config/tranItems';
 import '../index.css';
 import { useI18n } from '@/hooks/useI18n';
 import Modal1 from './Modal1';
@@ -302,6 +301,31 @@ const Metabolism = () =>
   ];
 
   const [activeColumn, setActiveColumn] = useState(fruitAromaColumns);
+  const tabItems = [
+    {
+      key: 'fruitDevelopment',
+      label: t.fruit_development,
+    },
+    {
+      key: 'fruitAroma',
+      label: t.fruit_aroma,
+    },
+    {
+      key: 'fruitAstringent',
+      label: t.fruit_astringency,
+    },
+    {
+      key: 'fruitFirmness1',
+      label: t.fruit_firmness,
+    },
+    {
+      key: 'fruitMetabolism',
+      label: t.sugar_acid_metabolism,
+    },
+    {
+      key: 'fruitShape1',
+      label: t.fruitShape,
+    }]
   useEffect(() => {
     const fetchGrapeData = async () => {
       try {
@@ -337,6 +361,10 @@ const Metabolism = () =>
     }
     fetchGrapeData();
   }, [page, pageSize, params, activeKey, t]);
+  useEffect(()=> {
+
+
+  }, [activeKey])
   const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
     setParams(values)
     setPage(1)
@@ -390,12 +418,28 @@ const Metabolism = () =>
           </Form.Item>
         </Form>
       </div>
-      <Tabs activeKey={activeKey} items={tranItems} onChange={onChange} />
+      <Tabs defaultActiveKey={activeKey} items={tabItems} onChange={onChange} />
       <Spin description="Loading" size="large" spinning={loading}>
         <Modal1 activeKey={activeKey} open={open} onCancel={()=>setOpen(false)} />
-        <Button className={'mb-4'} type="primary" onClick={()=>setOpen(true)}>
+        <Button className={'mb-4 mr-4'} type="primary" onClick={()=>setOpen(true)}>
           {t.explanation}
         </Button>
+        {
+          (activeKey === 'fruitFirmness1' || activeKey === 'fruitFirmness2') &&
+          <Segmented
+            value={activeKey === 'fruitFirmness1' ? t._ga_no : t._br}
+            options={[t._ga_no, t._br]}
+            onChange={(value) => { t._ga_no === value ? setActiveKey('fruitFirmness1') : setActiveKey('fruitFirmness2') }}
+          />
+        }
+        {
+          (activeKey === 'fruitShape1' || activeKey === 'fruitShape2') &&
+          <Segmented
+            value={activeKey === 'fruitShape1' ? t._ga_6ba : t._strigolactone}
+            options={[t._ga_6ba, t._strigolactone]}
+            onChange={(value) => { t._ga_6ba === value ? setActiveKey('fruitShape1') : setActiveKey('fruitShape2') }}
+          />
+        }
         <Table
           columns={activeColumn}
           dataSource={data}

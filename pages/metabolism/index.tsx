@@ -34,14 +34,14 @@ const Metabolism = () =>
   const items = [
     {
       key: 'matUnvolatilize',
-      label: '寒香蜜-非挥发'
+      label: t.hanxiangmi_non_volatile
     }, {
       key: 'matVolatilize',
-      label: '寒香蜜-挥发'
+      label: t.hanxiangmi_volatile
     },
     {
       key: 'matOther',
-      label: '葡之梦、丛林玫瑰、茉莉香'
+      label: t.puzhimeng_conglin_meigui_molixiang
     }]
   const onChange = (key: string) => {
     setActiveKey(key)
@@ -153,100 +153,59 @@ const Metabolism = () =>
       width: 80,
     },
     {
-      title: t.id,
-      dataIndex: 'id',
-      key: 'id',
-      width: 100,
-    },
-    {
       title: t.metabolite,
       dataIndex: 'metabolite',
       key: 'metabolite',
-      ellipsis: true,
     },
     {
       title: t.metab_id,
       dataIndex: 'metab_id',
       key: 'metab_id',
-      width: 120,
     },
     {
-      title: t.library_id,
-      dataIndex: 'library_id',
-      key: 'library_id',
-      width: 120,
+      title: t.vip_pls_da,
+      dataIndex: 'vip_pls_da',
+      key: 'vip_pls_da',
     },
     {
-      title: t.level,
-      dataIndex: 'level',
-      key: 'level',
-      width: 100,
+      title: t.p_value,
+      dataIndex: 'p_value',
+      key: 'p_value',
     },
     {
-      title: t.kegg_compound_id,
-      dataIndex: 'kegg_compound_id',
-      key: 'kegg_compound_id',
-      width: 160,
+      title: t.fdr,
+      dataIndex: 'fdr',
+      key: 'fdr',
     },
     {
-      title: t.m_z,
-      dataIndex: 'm_z',
-      key: 'm_z',
-      width: 100,
+      title: t.ck_mean,
+      dataIndex: 'ck_mean',
+      key: 'ck_mean',
     },
     {
-      title: t.retention_time,
-      dataIndex: 'retention_time',
-      key: 'retention_time',
-      width: 120,
+      title: t.ck_sd,
+      dataIndex: 'ck_sd',
+      key: 'ck_sd',
     },
     {
-      title: t.mode,
-      dataIndex: 'mode',
-      key: 'mode',
-      width: 100,
+      title: t.t_mean,
+      dataIndex: 't_mean',
+      key: 't_mean',
     },
     {
-      title: t.adducts,
-      dataIndex: 'adducts',
-      key: 'adducts',
-      width: 120,
+      title: t.t_sd,
+      dataIndex: 't_sd',
+      key: 't_sd',
     },
     {
-      title: t.formula,
-      dataIndex: 'formula',
-      key: 'formula',
-      width: 140,
+      title: t.g2_mean,
+      dataIndex: 'g2_mean',
+      key: 'g2_mean',
     },
     {
-      title: t.fragmentation_score,
-      dataIndex: 'fragmentation_score',
-      key: 'fragmentation_score',
-      width: 120,
-    },
-    {
-      title: t.theoretical_fragmentation_score,
-      dataIndex: 'theoretical_fragmentation_score',
-      key: 'theoretical_fragmentation_score',
-      width: 120,
-    },
-    {
-      title: t.mass_error,
-      dataIndex: 'mass_error',
-      key: 'mass_error',
-      width: 120,
-    },
-    {
-      title: t.cas_id,
-      dataIndex: 'cas_id',
-      key: 'cas_id',
-      width: 120,
-    },
-    {
-      title: t.rsd,
-      dataIndex: 'rsd',
-      key: 'rsd',
-      width: 80,
+      title: t.g2_sd,
+      dataIndex: 'g2_sd',
+      key: 'g2_sd',
     },
   ];
   const columnsMatVolatilize = [

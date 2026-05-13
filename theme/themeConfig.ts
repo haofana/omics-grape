@@ -32,6 +32,13 @@ const mytheme: ThemeConfig = {
     Breadcrumb: {
       fontSize: 20,
     },
+    Segmented: {
+      itemSelectedBg: '#3c7963',
+      // trackBg: '#3c7963',
+      itemSelectedColor: '#ffffff',
+      // itemColor: '#ffffffC8',
+      itemHoverColor: '#3c7963',
+    }
   }
 };
 

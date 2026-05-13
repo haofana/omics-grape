@@ -32,7 +32,7 @@ const Metabolism = () =>
   const items = [
     {
       key: 'gwasFuzz',
-      label: '葡萄腺毛茸毛性状'
+      label: t.grape_glandular_pubescent_traits
     }]
   const onChange = (key: string) => {
     setActiveKey(key)

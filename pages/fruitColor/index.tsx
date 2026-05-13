@@ -31,10 +31,10 @@ const Metabolism = () =>
   const items = [
     {
       key: 'gwasColorFruit',
-      label: '葡萄果皮颜色'
+      label: t.grape_skin_color
     }, {
       key: 'gwasColorPeel',
-      label: '葡萄果肉颜色'
+      label: t.grape_flesh_color
     }]
   const onChange = (key: string) => {
     setActiveKey(key)

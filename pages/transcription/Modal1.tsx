@@ -1,8 +1,14 @@
 import { Modal, Table, theme } from 'antd';
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
-import img from './img_1.png';
-import tranItems from '../../config/tranItems';
+import img1 from '@/pages/transcription/img_1.png';
+import img2 from '@/pages/transcription/img_2.png';
+import img3 from '@/pages/transcription/img_3.png';
+import img4 from '@/pages/transcription/img_4.png';
+import img5 from '@/pages/transcription/img_5.png';
+import img6 from '@/pages/transcription/img_6.png';
+import img7 from '@/pages/transcription/img_7.png';
+import { useI18n } from '@/hooks/useI18n';
 
 
 interface TreatmentModalProps {
@@ -44,6 +50,56 @@ const data = [
 
 const TreatmentModal: React.FC<TreatmentModalProps> = ({ open, onCancel, activeKey }) => {
   const { token: { colorBorder, borderRadiusLG }, } = theme.useToken();
+  const t = useI18n();
+  const tranItems = [
+    {
+      key: 'fruitDevelopment',
+      label: t.fruit_development,
+      description: t.fruitDevelopment_des,
+      img: img1
+    },
+    {
+      key: 'fruitAroma',
+      label: t.fruit_aroma,
+      description: t.fruit_aroma_des,
+      img: img2
+    },
+    {
+      key: 'fruitAstringent',
+      label: t.fruit_astringency,
+      description: t.fruit_astringency_des,
+      table: true,
+      img: img3
+    },
+    {
+      key: 'fruitFirmness1',
+      label: t.fruit_firmness + '-' + t._ga_no,
+      description: t.fruitFirmness1_des,
+      img: img4
+    },
+    {
+      key: 'fruitFirmness2',
+      label: t.fruit_firmness + '-' + t._br,
+      description: t.fruitFirmness2_des,
+    },
+    {
+      key: 'fruitMetabolism',
+      label: t.sugar_acid_metabolism,
+      description: t.fruitMetabolism_des,
+      img: img5
+    },
+    {
+      key: 'fruitShape1',
+      label: t.fruitShape + '-' + t._ga_6ba,
+      description: t.fruitShape1_des,
+      img: img6
+    },
+    {
+      key: 'fruitShape2',
+      label: t.fruitShape + '-' + t._strigolactone,
+      description: t.fruitShape2_des,
+      img: img7
+    }]
   const localItem= tranItems.find(item => item.key === activeKey);
   return (
     <Modal
@@ -53,9 +109,9 @@ const TreatmentModal: React.FC<TreatmentModalProps> = ({ open, onCancel, activeK
       footer={null}
       width={'60vw'}
     >
-      <p style={{ marginBottom: 16, color: '#666' }}>
+      <div style={{ marginBottom: 16, color: '#666', whiteSpace: 'pre-line' }}>
         {localItem?.description}
-      </p>
+      </div>
       {
         localItem?.table &&
         <Table

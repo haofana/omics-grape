@@ -31,10 +31,10 @@ const Metabolism = () =>
   const items = [
     {
       key: 'gwasFiberFruit',
-      label: '葡萄果皮颜色'
+      label: t.grape_skin_cellulose
     }, {
       key: 'gwasFiberFeer',
-      label: '葡萄果肉颜色'
+      label: t.grape_flesh_cellulose
     }]
   const onChange = (key: string) => {
     setActiveKey(key)

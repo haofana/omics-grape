@@ -30,6 +30,15 @@ export const locales = {
     tf_family: "转录因子家族",
     gene_id: "基因ID",
 
+    // ================== 基因组 ==================
+    species: '物种',
+    geneGroup: '葡萄属基因组',
+    cultivated: '栽培种基因组序列',
+    riparia: '河岸葡萄',
+    labrusca: '美洲葡萄',
+    rupestris: '沙地葡萄',
+    rotundifolia: '圆叶葡萄',
+
     // ================== 果实表 ==================
     aromaType: '香型',
     aromaIntensity: '香气强度',
@@ -92,7 +101,18 @@ export const locales = {
     // ================== 代谢组 ==================
     metabolism: '代谢组',
     explanation: '说明',
+    hanxiangmi_non_volatile: "寒香蜜-非挥发",
+    hanxiangmi_volatile: "寒香蜜-挥发",
+    puzhimeng_conglin_meigui_molixiang: "葡之梦、丛林玫瑰、茉莉香",
 
+    vip_pls_da: "VIP(PLS-DA)",
+    fdr: "FDR(多组)",
+    ck_mean: "CK均值",
+    ck_sd: "CK标准差",
+    t_mean: "T组均值",
+    t_sd: "T组标准差",
+    g2_mean: "G2组均值",
+    g2_sd: "G2组标准差",
     metabolite: '代谢物名称',
     metab_id: '代谢物ID',
     library_id: '数据库ID',
@@ -176,6 +196,25 @@ export const locales = {
     qc03: 'QC03',
     qc04: 'QC04',
 
+    // ================== 转录组 ==================
+    fruit_development: "果实发育",
+    fruit_aroma: "果实香气",
+    fruit_astringency: "果实涩味",
+    fruit_firmness: "果实硬度",
+    _ga_no: "赤霉素和NO处理",
+    _br: "油菜素内酯处理",
+    sugar_acid_metabolism: "糖酸代谢",
+    _ga_6ba: "赤霉素和6-BA处理",
+    _strigolactone: "独脚金内脂处理",
+    fruitDevelopment_des: '采集鄞红葡萄幼果期（S1）、膨大Ⅱ期（S2）、转色期（S3）和成熟期（S4），甜蜜蓝宝石葡萄膨大Ⅱ期（T1）、转色期（T2）和成熟期（T3）果实进行转录组测序。',
+    fruit_aroma_des: '对10年生‘寒香蜜’葡萄的硬核期果实，采用外源植物生长调节剂为2.0 μmol L-1独角金内酯（G2）、1.0 μmol/L 独角金内酯抑制剂（T）和清水（CK）进行处理。选择成熟期果实进行转录组测序。',
+    fruit_astringency_des: '选择生长势一致、无明显病虫害的5年生鲜食葡萄‘黑皇’（Black Emperor）植株，于果实硬核后期，分别采用独脚金内酯（GR24）、独脚金内酯合成抑制剂（Tis108）、油菜素内酯（BR）、油菜素内酯合成抑制剂（BRZ）、褪黑素（Mel）浸泡果穗，具体处理浓度见表1。采集成熟期果实选择差异最显著的材料（CK、BR-1和GR-3）进行转录组测序。',
+    fruitFirmness1_des: '对15年生‘鄞红’葡萄的硬核期果实，喷施清水（TK）、2.5 μmol/L SNP、5μmol/L SNP、10μmol/L SNP、20μmol/L SNP、40μmol/L SNP、1.5mmol/L GA3、3mmol/LGA3、6mmol/LGA3、12mmol/LGA3、24mmol/L GA3和 SNP/GA3联合处理（LH）。选择成熟期果实进行转录组测序。',
+    fruitFirmness2_des: '对 ‘鄞红’葡萄的硬核期果实，喷施0（CK）、0.2、0.4、0.6和0.8 mg/L 油菜素内酯（BR）以及0.5和1 mg/L油菜素内酯抑制剂（BZR）。选择成熟期果实硬度差异最显著的材料（0.2 mg/L BR和0.5 mg/L BZR的果皮、0.6 mg/L BR和1 mg/L BZR果肉）分别进行转录组测序。\nT0  果肉CK \nT1  果肉0.6 mg/L\nT2  果肉BZR 1 mg/L\nY0  果皮CK\nY1  果皮0.2 mg/L\nY2  果皮BZR0.5 mg/L',
+    fruitMetabolism_des: '选取幼果期的‘鄞红’葡萄植株，分别用0、20、50、100和150 mM的蔗糖溶液进行根施处理。每隔12 d根施一次，每隔6 d采集一次样品。选择差异最显著的0和150 mM的转色期果实进行转录组测序。',
+    fruitShape1_des: '在5年生‘阳光玫瑰’葡萄（Vitis vinifera ‘Shine-Muscat’）盛花期后15 d，使用清水（CK）、22.5 mg/L GA3 + 6 mg/L 6-BA（C1）和15.25 mg/L GA3 + 2 mg/L 6-BA（Z1）浸泡5min。幼果期、膨大I期、膨大Ⅱ期和成熟期葡萄果实形状差异明显。选择成熟期果实进行转录组测序。',
+    fruitShape2_des: '在5年生‘阳光玫瑰’葡萄（Vitis vinifera ‘Shine-Muscat’）盛花期后15 d，使用清水（CK）、CPUU 2 μM（C2）、GA3 20 μM（G2）、独脚金内酯GR24 1 μM（T1）、独脚金内酯抑制剂Tis108 1 μM（T2）和GR24 1 μM + TIS108 1 μM（T3）浸泡5min。在幼果期（YS）、膨大I期（ESI）、膨大II期（ESII）和成熟期（MS）采集样品。选择果实形状差异最显著的膨大II期果实进行转录组测序。',
+
     id: '编号',
     level: '等级',
     m_z: 'm/z',
@@ -205,7 +244,6 @@ export const locales = {
     qc1: 'QC1',
     qc2: 'QC2',
     qc3: 'QC3',
-    // ================== 代谢组 ==================
 
     g2_1_count: "G2-1 表达计数",
     g2_2_count: "G2-2 表达计数",
@@ -411,6 +449,14 @@ export const locales = {
     traits: "性状",
     length: "长度",
     abbreviation: "缩写对照表",
+    grape_skin_color: '葡萄果皮颜色',
+    grape_flesh_color: "葡萄果肉颜色",
+    grape_skin_hardness: "葡萄果皮硬度",
+    grape_flesh_hardness: "葡萄果肉硬度",
+    grape_skin_cellulose: "葡萄果皮纤维素",
+    grape_flesh_cellulose: "葡萄果肉纤维素",
+    grape_glandular_pubescent_traits: "葡萄腺毛茸毛性状",
+    grape_vegetative_organ_coloration: "葡萄营养器官着色"
 },
 
   'en': {
@@ -444,6 +490,15 @@ export const locales = {
     gene_id: "Gene ID",
     id: "ID",
     tf_family: "TF Family",
+
+    // ================== 基因组 ==================
+    species: 'species',
+    geneGroup: 'Genus Vitis Genome',
+    cultivated: 'Cultivated Grape Genomes',
+    riparia: 'Vitis riparia',
+    labrusca: 'Vitis labrusca',
+    rupestris: 'Vitis rupestris',
+    rotundifolia: 'Vitis rotundifolia',
 
     // ================== 果实表 ==================
     aromaType: 'Aroma Type',
@@ -504,9 +559,21 @@ export const locales = {
     youngLeafAdaxialSide: 'Young Leaf (Adaxial)',
     matureLeafAdaxialSide: 'Mature Leaf (Adaxial)',
 
-    // ================== 转录组 ==================
+    // ================== 代谢组 ==================
     metabolism: 'Metabolism',
     explanation: 'Explanation',
+    hanxiangmi_non_volatile: "Vitis 'Reliance' - Non-volatile Compounds",
+    hanxiangmi_volatile: "Vitis 'Reliance' - Volatile Compounds",
+    puzhimeng_conglin_meigui_molixiang: "'Puzhimeng', 'Conglin Meigui', 'Vitis vinifera L.'",
+
+    "vip_pls_da": "VIP(PLS-DA)",
+    "fdr": "FDR",
+    "ck_mean": "ck_mean",
+    "ck_sd": "ck_sd",
+    "t_mean": "t_mean",
+    "t_sd": "t_sd",
+    "g2_mean": "g2_mean",
+    "g2_sd": "g2_sd",
 
     metabolite: 'Metabolite',
     metab_id: 'Metabolite ID',
@@ -622,6 +689,26 @@ export const locales = {
     qc3: 'QC3',
 
     // ================== 转录组 ==================
+
+    fruit_development: "Grape Development",
+    fruit_aroma: "Grape Aroma",
+    fruit_astringency: "Grape Astringency",
+    fruit_firmness: "Grape Firmness",
+    _ga_no: "GA & NO Treatments",
+    _br: "Brassinosteroid Treatment",
+    sugar_acid_metabolism: "Grape Sugar-Acid Metabolism",
+    _ga_6ba: "GA & 6-BA Treatments",
+    _strigolactone: 'Strigolactone Treatment',
+
+    fruitDevelopment_des: 'Fruits were collected for transcriptome sequencing from \'Yinhong\' grape at the young fruit stage (S1), the second expansion stage (S2), the veraison stage (S3), and the ripening stage (S4), and from \'Sweet Sapphire\' grape at the third expansion stage (T1), the veraison stage (T2), and the ripening stage (T3).',
+    fruit_aroma_des: 'The berries of 10-year-old \'Hanxiangmi\' grapevines at the stone-hardening stage were treated with exogenous plant growth regulators: 2.0 μmol·L⁻¹ strigolactone (G2), 1.0 μmol·L⁻¹ strigolactone inhibitor (T), and water (CK). Mature berries were selected for transcriptome sequencing.',
+    fruit_astringency_des: 'Five-year-old table grape \'Black Emperor\' vines with uniform growth vigor and no obvious pests or diseases were selected. At the late stage of berry stone-hardening, the fruit clusters were dipped in solutions of strigolactone (GR24), strigolactone biosynthesis inhibitor (Tis108), brassinolide (BR), brassinolide biosynthesis inhibitor (BRZ), and melatonin (Mel), respectively. The specific treatment concentrations are shown in Table 1. Mature berries were harvested, and the materials showing the most significant differences (CK, BR-1, and GR-3) were chosen for transcriptome sequencing.',
+    fruitFirmness1_des: 'The berries of 15-year-old \'Yinhong\' grapevines at the stone-hardening stage were sprayed with water (TK), 2.5 μmol/L SNP, 5 μmol/L SNP, 10 μmol/L SNP, 20 μmol/L SNP, 40 μmol/L SNP, 1.5 mmol/L GA₃, 3 mmol/L GA₃, 6 mmol/L GA₃, 12 mmol/L GA₃, 24 mmol/L GA₃, and a combined SNP/GA₃ treatment (LH). Mature berries were selected for transcriptome sequencing.',
+    fruitFirmness2_des: 'The berries of \'Yinhong\' grapevines at the stone-hardening stage were sprayed with 0 (CK), 0.2, 0.4, 0.6, and 0.8 mg/L brassinolide (BR), as well as 0.5 and 1 mg/L brassinolide inhibitor (BZR). The mature berry materials exhibiting the most significant differences in firmness—peel from the 0.2 mg/L BR and 0.5 mg/L BZR treatments, and flesh from the 0.6 mg/L BR and 1 mg/L BZR treatments—were separately selected for transcriptome sequencing.',
+    fruitMetabolism_des: 'Yinhong\' grapevines at the young fruit stage were selected and treated with 0, 20, 50, 100, and 150 mM sucrose solutions via root application. The root application was performed every 12 days, and samples were collected every 6 days. The berries at véraison from the 0 and 150 mM treatments, which showed the most significant differences, were selected for transcriptome sequencing.',
+    fruitShape1_des: 'At 15 days after full bloom, fruit clusters of five-year-old \'Shine-Muscat\' grapevines (Vitis vinifera \'Shine-Muscat\') were immersed for 5 min in water (CK), 22.5 mg/L GA₃ + 6 mg/L 6-BA (C1), and 15.25 mg/L GA₃ + 2 mg/L 6-BA (Z1). Fruit shape differed markedly among the young fruit, expansion I, expansion II, and mature stages. Mature berries were selected for transcriptome sequencing.',
+    fruitShape2_des: 'At 15 days after full bloom, fruit clusters of five-year-old \'Shine-Muscat\' grapevines were immersed for 5 min in water (CK), 2 μM CPUU (C2), 20 μM GA₃ (G2), 1 μM strigolactone GR24 (T1), 1 μM strigolactone inhibitor Tis108 (T2), and 1 μM GR24 + 1 μM Tis108 (T3). Samples were collected at the young fruit stage (YS), expansion stage I (ESI), expansion stage II (ESII), and mature stage (MS). Berries at expansion stage II, which showed the most significant differences in fruit shape, were selected for transcriptome sequencing.',
+
     g2_1_count: "G2-1 Count",
     g2_2_count: "G2-2 Count",
     g2_3_count: "G2-3 Count",
@@ -818,5 +905,13 @@ export const locales = {
     traits: "Traits",
     length: "Length",
     abbreviation: "Abbreviation Reference Table",
+    grape_skin_color: "Grape Skin Color",
+    grape_flesh_color: "Grape Flesh Color",
+    grape_skin_hardness: "Grape Skin Hardness",
+    grape_flesh_hardness: "Grape Flesh Hardness",
+    grape_glandular_pubescent_traits: "Grape Glandular and Pubescent Traits",
+    grape_vegetative_organ_coloration: "Grape Vegetative Organ Coloration",
+    grape_skin_cellulose: "Grape Skin Cellulose",
+    grape_flesh_cellulose: "Grape Flesh Cellulose",
   },
 };

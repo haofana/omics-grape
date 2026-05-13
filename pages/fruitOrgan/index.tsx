@@ -32,7 +32,7 @@ const Metabolism = () =>
   const items = [
     {
       key: 'gwasOrgan',
-      label: '葡萄营养器官着色'
+      label: t.grape_vegetative_organ_coloration
     }]
   const onChange = (key: string) => {
     setActiveKey(key)

@@ -103,8 +103,8 @@ const Home = () =>
       </div>
       <Footer style={{ textAlign: 'center' }}>
         <a style={{ textDecoration: 'underline' }} href="https://beian.miit.gov.cn" target="_blank">浙ICP备2026020442号-1</a>
-        <span className="mx-2">|</span>
-        <span>Copyright © 2025-2026 浙江万里学院植物生理与分子改良实验室</span>
+        {/*<span className="mx-2">|</span>*/}
+        {/*<span>Copyright © 2025-2026 浙江万里学院植物生理与分子改良实验室</span>*/}
       </Footer>
     </div>
   );

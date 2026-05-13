@@ -188,23 +188,18 @@ model MatOther {
 }
 
 model MatUnvolatilize {
-  id                              String?
-  metabolite                      String?
-  metab_id                        String?
-  library_id                      String?
-  level                           String?
-  kegg_compound_id                String?
-  m_z                             Int?    @map("m/z")
-  retention_time                  Int?
-  mode                            String?
-  adducts                         String?
-  formula                         String?
-  fragmentation_score             Int?
-  theoretical_fragmentation_score Int?
-  mass_error                      Int?
-  cas_id                          String?
-  rsd                             Int?
-  no                              Int     @id @default(autoincrement())
+  metabolite String?
+  metab_id   String?
+  vip_pls_da Int?    @map("vip_pls-da")
+  p_value    Int?    @map("多组_p_value")
+  fdr        Int?    @map("多组_fdr")
+  ck_mean    Int?
+  ck_sd      Int?
+  t_mean     Int?
+  t_sd       Int?
+  g2_mean    Int?
+  g2_sd      Int?
+  no         Int   @id  @default(autoincrement())
 
   @@map("mat_unvolatilize")
 }
@@ -559,7 +554,7 @@ model GwasColorFruit {
   start                 String?
   end                   String?
   orientation           String?
-  no                    Int    @id @default(autoincrement())
+  no                    Int     @id @default(autoincrement())
 
   @@map("gwas_color_fruit")
 }
@@ -592,7 +587,7 @@ model GwasFiberFruit {
   start                 String?
   end                   String?
   orientation           String?
-  no                    Int    @id @default(autoincrement())
+  no                    Int     @id @default(autoincrement())
 
   @@map("gwas_fiber_fruit")
 }
@@ -608,7 +603,7 @@ model GwasFiberFeer {
   start                 String?
   end                   String?
   orientation           String?
-  no                    Int    @id @default(autoincrement())
+  no                    Int     @id @default(autoincrement())
 
   @@map("gwas_fiber_peer")
 }
@@ -624,7 +619,7 @@ model GwasFirmnessFruit {
   start                 String?
   end                   String?
   orientation           String?
-  no                    Int    @id @default(autoincrement())
+  no                    Int     @id @default(autoincrement())
 
   @@map("gwas_firmness_fruit")
 }
@@ -640,7 +635,7 @@ model GwasFirmnessPeer {
   start                 String?
   end                   String?
   orientation           String?
-  no                    Int    @id @default(autoincrement())
+  no                    Int     @id @default(autoincrement())
 
   @@map("gwas_firmness_peer")
 }
@@ -656,7 +651,7 @@ model GwasFuzz {
   functional_annotation String?
   start                 Int?
   end                   Int?
-  no                    Int    @id @default(autoincrement())
+  no                    Int     @id @default(autoincrement())
 
   @@map("gwas_fuzz")
 }
@@ -672,7 +667,7 @@ model GwasOrgan {
   gene_names            String?
   functional_annotation String?
   length                String?
-  no                    Int    @id @default(autoincrement())
+  no                    Int     @id @default(autoincrement())
 
   @@map("gwas_organ")
 }

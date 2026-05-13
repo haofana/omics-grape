@@ -29,7 +29,7 @@ export const menu = [
     children: [
       { label: 'Fruit Color', key: 'fruitColor' },
       { label: 'Fruit Firmness', key: 'fruitFirmness' },
-      { label: 'Fruit Fiber', key: 'fruitFiber' },
+      { label: 'Fruit Cellulose', key: 'fruitCellulose' },
       { label: 'Glandular trichome and downy hair traits', key: 'fruitFuzz' },
       { label: 'Coloration of nutrient organs', key: 'fruitOrgan' },
     ]
@@ -57,7 +57,7 @@ export const menu = [
     ]
   },
   {
-    label: 'About',
+    label: 'Laboratory',
     key: 'about',
   },
 ];
@@ -89,7 +89,7 @@ export const menuZh = [
     children: [
       { label: '果实颜色', key: 'fruitColor' },
       { label: '果实硬度', key: 'fruitFirmness' },
-      { label: '纤维素', key: 'fruitFiber' },
+      { label: '纤维素', key: 'fruitCellulose' },
       { label: '腺毛绒毛性状', key: 'fruitFuzz' },
       { label: '营养器官着色', key: 'fruitOrgan' },
     ]
@@ -117,7 +117,7 @@ export const menuZh = [
     ]
   },
   {
-    label: '关于团队',
+    label: '实验室',
     key: 'about',
   },
 ];

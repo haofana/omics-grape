@@ -31,10 +31,10 @@ const Metabolism = () =>
   const items = [
     {
       key: 'gwasFirmnessFruit',
-      label: '葡萄果皮硬度'
+      label: t.grape_skin_hardness
     }, {
       key: 'gwasFirmnessPeer',
-      label: '葡萄果肉硬度'
+      label: t.grape_flesh_hardness
     }]
   const onChange = (key: string) => {
     setActiveKey(key)

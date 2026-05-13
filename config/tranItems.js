@@ -7,7 +7,7 @@ import img6 from '../pages/transcription/img_6.png';
 import img7 from '../pages/transcription/img_7.png';
 
 
-const tranItems = [
+export const tranItems = [
   {
     key: 'fruitDevelopment',
     label: '果实发育',
@@ -63,5 +63,3 @@ const tranItems = [
     description: '在5年生‘阳光玫瑰’葡萄（Vitis vinifera ‘Shine-Muscat’）盛花期后15 d，使用清水（CK）、CPUU 2 μM（C2）、GA3 20 μM（G2）、独脚金内酯GR24 1 μM（T1）、独脚金内酯抑制剂Tis108 1 μM（T2）和GR24 1 μM + TIS108 1 μM（T3）浸泡5min。在幼果期（YS）、膨大I期（ESI）、膨大II期（ESII）和成熟期（MS）采集样品。选择果实形状差异最显著的膨大II期果实进行转录组测序。',
     img: img7
   }]
-
-export default tranItems;

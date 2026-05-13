@@ -80,8 +80,8 @@ export default async function handler(
     }
     if (table === 'matVolatilize') {
       const [list, total] = await Promise.all([
-        db.matOther.findMany({ skip, take: Number(size), where, orderBy: { no: 'asc' } }),
-        db.matOther.count({ where: where }),
+        db.matVolatilize.findMany({ skip, take: Number(size), where, orderBy: { no: 'asc' } }),
+        db.matVolatilize.count({ where: where }),
       ]);
       return res.json({ success: true, data: list as any, total });
     }
