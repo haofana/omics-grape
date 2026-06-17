@@ -4,7 +4,6 @@ import {
   Table, Divider, Layout, theme
 } from 'antd'
 import { SendOutlined } from '@ant-design/icons'
-import ReactMarkdown from 'react-markdown';
 import '../index.css'
 
 const { Title } = Typography
