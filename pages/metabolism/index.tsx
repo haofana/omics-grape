@@ -14,7 +14,7 @@ type FieldType = {
 
 const { Content } = Layout;
 
-const Metabolism = () =>
+const Metabolism = ({ type } : { type: string }) =>
 {
   const t = useI18n();
   const { token: { colorBorder, borderRadiusLG }, } = theme.useToken();
@@ -29,7 +29,7 @@ const Metabolism = () =>
   const [title, setTitle] = React.useState('');
 
 
-  const [activeKey, setActiveKey] = useState('matUnvolatilize')
+  const [activeKey, setActiveKey] = useState(type)
   // tab分页
   const items = [
     {
@@ -45,6 +45,7 @@ const Metabolism = () =>
     }]
   const onChange = (key: string) => {
     setActiveKey(key)
+    setPage(1)
     setTitle(items.filter(item=>item.key === key)[0].label)
   }
   const columnsMatOther = [
@@ -386,7 +387,7 @@ const Metabolism = () =>
           </Form.Item>
         </Form>
       </div>
-      <Tabs activeKey={activeKey} items={items} onChange={onChange} />
+      {/*<Tabs activeKey={activeKey} items={items} onChange={onChange} />*/}
       <Spin description="Loading" size="large" spinning={loading}>
         {
           activeKey !== 'matOther' ?
@@ -401,6 +402,7 @@ const Metabolism = () =>
           dataSource={data}
           scroll={{ x: 'max-content' }}
           bordered
+          rowKey={'no'}
           pagination={{ total, current: page, pageSize, onChange: onPageChange }}
         />
       </Spin>

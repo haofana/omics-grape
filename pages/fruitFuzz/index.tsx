@@ -36,6 +36,7 @@ const Metabolism = () =>
     }]
   const onChange = (key: string) => {
     setActiveKey(key)
+    setPage(1)
   }
   const fuzzColumns = [
     { title: t.no, dataIndex: 'no', key: 'no' },

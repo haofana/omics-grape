@@ -112,12 +112,12 @@ const Genome = () =>
   ];
   const dataSource2: DataType[] = [
     {
-      Species: '‘黑比诺’葡萄12X',
+      Species: t['12X'],
       key: '2022',
       filename: 'Vitis_vinifera.12X'
     },
     {
-      Species: '‘黑比诺’葡萄PN_T2T',
+      Species: t['PN_T2T'],
       key: '2023',
       filename: 'Vitis_vinifera.PN40024.v4'
     },

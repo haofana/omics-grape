@@ -38,6 +38,7 @@ const Metabolism = () =>
     }]
   const onChange = (key: string) => {
     setActiveKey(key)
+    setPage(1)
   }
   const colorFruitColumns = [
     { title: t.no, dataIndex: 'no', key: 'no' },

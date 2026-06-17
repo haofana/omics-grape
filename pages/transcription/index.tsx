@@ -12,7 +12,7 @@ type FieldType = {
 
 const { Content } = Layout;
 
-const Metabolism = () =>
+const Transcription = ({ type }: { type: string } ) =>
 {
   const t = useI18n();
   const { token: { colorBorder, borderRadiusLG }, } = theme.useToken();
@@ -26,10 +26,11 @@ const Metabolism = () =>
   const [open, setOpen] = React.useState(false);
 
 
-  const [activeKey, setActiveKey] = useState('fruitDevelopment')
+  const [activeKey, setActiveKey] = useState(type)
   // tab分页
   const onChange = (key: string) => {
     setActiveKey(key)
+    setPage(1)
   }
   const fruitAromaColumns = [
     { title: t.no, dataIndex: 'no', key: 'no', width: 80 },
@@ -361,10 +362,6 @@ const Metabolism = () =>
     }
     fetchGrapeData();
   }, [page, pageSize, params, activeKey, t]);
-  useEffect(()=> {
-
-
-  }, [activeKey])
   const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
     setParams(values)
     setPage(1)
@@ -418,7 +415,7 @@ const Metabolism = () =>
           </Form.Item>
         </Form>
       </div>
-      <Tabs defaultActiveKey={activeKey} items={tabItems} onChange={onChange} />
+      {/*<Tabs defaultActiveKey={activeKey} items={tabItems} onChange={onChange} />*/}
       <Spin description="Loading" size="large" spinning={loading}>
         <Modal1 activeKey={activeKey} open={open} onCancel={()=>setOpen(false)} />
         <Button className={'mb-4 mr-4'} type="primary" onClick={()=>setOpen(true)}>
@@ -429,7 +426,7 @@ const Metabolism = () =>
           <Segmented
             value={activeKey === 'fruitFirmness1' ? t._ga_no : t._br}
             options={[t._ga_no, t._br]}
-            onChange={(value) => { t._ga_no === value ? setActiveKey('fruitFirmness1') : setActiveKey('fruitFirmness2') }}
+            onChange={(value) => {  setPage(1); t._ga_no === value ? setActiveKey('fruitFirmness1') : setActiveKey('fruitFirmness2') }}
           />
         }
         {
@@ -437,7 +434,7 @@ const Metabolism = () =>
           <Segmented
             value={activeKey === 'fruitShape1' ? t._ga_6ba : t._strigolactone}
             options={[t._ga_6ba, t._strigolactone]}
-            onChange={(value) => { t._ga_6ba === value ? setActiveKey('fruitShape1') : setActiveKey('fruitShape2') }}
+            onChange={(value) => { ; setPage(1); t._ga_6ba === value ? setActiveKey('fruitShape1') : setActiveKey('fruitShape2') }}
           />
         }
         <Table
@@ -452,4 +449,4 @@ const Metabolism = () =>
   );
 }
 
-export default Metabolism;
+export default Transcription;

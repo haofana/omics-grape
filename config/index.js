@@ -37,10 +37,23 @@ export const menu = [
   {
     label: 'Transcription',
     key: 'transcription',
+    children: [
+      { label: 'Grape Development', key: 'transcription_1' },
+      { label: 'Grape Aroma', key: 'transcription_2' },
+      { label: 'Grape Astringency', key: 'transcription_3' },
+      { label: 'Grape Firmness', key: 'transcription_4' },
+      { label: 'Grape Sugar-Acid Metabolism', key: 'transcription_5' },
+      { label: 'Fruit Shape', key: 'transcription_6' },
+    ]
   },
   {
     label: 'Metabolism ',
     key: 'metabolism',
+    children: [
+      { label: 'Vitis \'Reliance\' - Non-volatile Compounds', key: 'metabolism_1' },
+      { label: 'Vitis \'Reliance\' - Volatile Compounds', key: 'metabolism_2' },
+      { label: '\'Puzhimeng\', \'Conglin Meigui\', \'Vitis vinifera L.\'', key: 'metabolism_3' },
+    ]
   },
   {
     label: 'Tool',
@@ -57,9 +70,17 @@ export const menu = [
     ]
   },
   {
-    label: 'Laboratory',
+    label: 'AI Assistant',
+    key: 'assistant',
+  },
+  {
+    label: 'R&D team',
     key: 'about',
   },
+  {
+    label: 'Reference',
+    key: 'reference',
+  }
 ];
 
 export const menuZh = [
@@ -97,10 +118,23 @@ export const menuZh = [
   {
     label: '转录组',
     key: 'transcription',
+    children: [
+      { label: '果实发育', key: 'transcription_1' },
+      { label: '果实香气', key: 'transcription_2' },
+      { label: '果实涩味', key: 'transcription_3' },
+      { label: '果实硬度', key: 'transcription_4' },
+      { label: '糖酸代谢', key: 'transcription_5' },
+      { label: '果实形状', key: 'transcription_6' },
+    ]
   },
   {
     label: '代谢组 ',
     key: 'metabolism',
+    children: [
+      { label: '寒香蜜-非挥发', key: 'metabolism_1' },
+      { label: '寒香蜜-挥发', key: 'metabolism_2' },
+      { label: '葡之梦、丛林玫瑰、茉莉香', key: 'metabolism_3' },
+    ]
   },
   {
     label: '工具',
@@ -117,9 +151,17 @@ export const menuZh = [
     ]
   },
   {
-    label: '实验室',
+    label: 'AI 助手',
+    key: 'assistant',
+  },
+  {
+    label: '研发团队',
     key: 'about',
   },
+  {
+    label: '相关文献',
+    key: 'reference',
+  }
 ];
 
 export const quickTools = [

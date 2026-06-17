@@ -29,6 +29,7 @@ export const locales = {
     description: "基因描述",
     tf_family: "转录因子家族",
     gene_id: "基因ID",
+    reference: "文献",
 
     // ================== 基因组 ==================
     species: '物种',
@@ -38,6 +39,9 @@ export const locales = {
     labrusca: '美洲葡萄',
     rupestris: '沙地葡萄',
     rotundifolia: '圆叶葡萄',
+    '12X': '‘黑比诺’葡萄12X',
+    'PN_T2T': '‘黑比诺’葡萄PN_T2T',
+
 
     // ================== 果实表 ==================
     aromaType: '香型',
@@ -432,6 +436,19 @@ export const locales = {
     ck_2_fpkm: "CK-2 FPKM",
     ck_3_fpkm: "CK-3 FPKM",
     fpkm_c1_3: "C1-3 FPKM",
+    "GO Enrichment Analysis": "GO 富集分析",
+    "Upload Gene List": "上传基因列表",
+    "Start Analysis": "开始分析",
+    "Analysis completed": "分析完成",
+    "Analysis failed": "分析失败",
+    "Please run analysis": "请点击开始分析",
+    "Type": "类型",
+    "Gene Count": "基因数量",
+    "Gene List": "基因列表",
+    "Bar Plot": "柱状图",
+    "Bubble Plot": "气泡图",
+    "Export": "导出结果",
+
 
     // ================== GWAS==================
     chromosome: "染色体",
@@ -499,6 +516,8 @@ export const locales = {
     labrusca: 'Vitis labrusca',
     rupestris: 'Vitis rupestris',
     rotundifolia: 'Vitis rotundifolia',
+    '12X': 'Pinot Noir Grape 12X',
+    'PN_T2T': 'Pinot Noir Grape PN_T2T',
 
     // ================== 果实表 ==================
     aromaType: 'Aroma Type',
@@ -889,6 +908,20 @@ export const locales = {
     c2_3_count: "C2-3 Count",
     fpkm_c1_3: "C1-3 FPKM",
 
+    // go
+    "GO Enrichment Analysis": "GO Enrichment Analysis",
+    "Upload Gene List": "Upload Gene List",
+    "Start Analysis": "Start Analysis",
+    "Analysis completed": "Analysis completed",
+    "Analysis failed": "Analysis failed",
+    "Please run analysis": "Please run analysis",
+    "Type": "Type",
+    "Gene Count": "Gene Count",
+    "Gene List": "Gene List",
+    "Bar Plot": "Bar Plot",
+    "Bubble Plot": "Bubble Plot",
+    "Export": "Export",
+
     // ================== GWAS==================
     chromosome: "Chromosome",
     position: "Position",
@@ -913,5 +946,6 @@ export const locales = {
     grape_vegetative_organ_coloration: "Grape Vegetative Organ Coloration",
     grape_skin_cellulose: "Grape Skin Cellulose",
     grape_flesh_cellulose: "Grape Flesh Cellulose",
+    reference: "Reference",
   },
 };
