@@ -124,7 +124,7 @@ ${breedingRules}
           Authorization: `Bearer ${API_KEY}`,
         },
         body: JSON.stringify({
-          model: 'qwen3.7-max-2026-06-08',
+          model: 'qwen3.7-max-2026-05-20',
           input: { messages: [{ role: 'system', content: systemPrompt }, ...messages] },
           parameters: { result_format: 'message' },
         }),
