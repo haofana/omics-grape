@@ -1,5 +1,4 @@
 import db from '@/lib/prisma';
-import { Prisma } from '@prisma/client';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -138,6 +137,6 @@ ${breedingRules}
     return res.status(200).json({ success: true, content })
   } catch (err) {
     console.error(err)
-    return res.status(500).json({ success: false, content: '服务异常，请稍后重试' })
+    return res.status(500).json({ success: false, content: 'err' })
   }
 }
