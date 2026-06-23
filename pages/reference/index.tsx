@@ -18,86 +18,86 @@ const Reference = () =>
     {
       title: t.reference,
       dataIndex: 'reference',
-      render: (text, record) => <a href={`/reference/${record.reference}.pdf`} target="_blank" >{text}</a>,
+      render: (text, record) => <a href={`/reference/${record.url}.pdf`} target="_blank" >{text}</a>,
     },
     {
       title: t.download,
       dataIndex: 'url',
-      render: (text, record) => <a href={`/reference/${record.reference}.pdf`} download>PDF</a>,
+      render: (text, record) => <a href={`/reference/${record.url}.pdf`} download>PDF</a>,
     },
   ];
   const dataSource: DataType[] = [
     {
       reference: '2025-Identifying Candidate Genes for Grape (Vitis vinifera L.) Fruit Firmness through Genome-Wide As',
-      url: ''
+      url: '2025-Identifying Candidate Genes for Grape (Vitis vinifera L.) Fruit Firmness through Genome-Wide As'
     },
     {
       reference: '不同砧木对\'阳光玫瑰\'葡萄果实品质及糖异生相关基因表达的影响_沈乐意',
-      url: ''
+      url: '不同砧木对\'阳光玫瑰\'葡萄果实品质及糖异生相关基因表达的影响_沈乐意'
     },
     {
       reference: '葡萄纤维素合酶超家族基因鉴定及其表达分析',
-      url: ''
+      url: '葡萄纤维素合酶超家族基因鉴定及其表达分析'
     },
     {
       reference: '葡萄CLE基因家族鉴定及表达分析',
-      url: ''
+      url: '葡萄CLE基因家族鉴定及表达分析'
     },
     {
       reference: '葡萄CYP707A基因家族的鉴定及对果实成熟的功能验证_龚丽丽',
-      url: ''
+      url: '葡萄CYP707A基因家族的鉴定及对果实成熟的功能验证_龚丽丽'
     },
     {
       reference: '葡萄TST基因家族鉴定及表达分析_杨杰',
-      url: ''
+      url: '葡萄TST基因家族鉴定及表达分析_杨杰'
     },
     {
       reference: 'Effects of Girdling and Foliar Fertilization with K on Physicochemical Parameters, Phenolic and Volatile Composition in \'Hanxiangmi\' Table Grape',
-      url: ''
+      url: '1'
     },
     {
       reference: 'Effects of Rootstock and Exogenous Plant Growth Regulators on Volatile Aroma Profiles and Terpenoid-Mediated Defense in Table Grape Fruit',
-      url: ''
+      url: 'Effects of Rootstock and Exogenous Plant Growth Regulators on Volatile Aroma Profiles and Terpenoid-Mediated Defense in Table Grape Fruit'
     },
     {
       reference: 'Food Science  Nutrition - 2026 - Cai - Identification of Key Determinants for Perceived Sweetness and Sourness in Fresh (1)',
-      url: ''
+      url: '2'
     },
     {
       reference: 'Genome-Wide Association Study Identifies Candidate Genes Associated with Vegetative Organ Coloration in Grapevine (Vitis vinifera L.)',
-      url: ''
+      url: 'Genome-Wide Association Study Identifies Candidate Genes Associated with Vegetative Organ Coloration in Grapevine (Vitis vinifera L.)'
     },
     {
       reference: 'Genome-Wide Association Study Identifies Candidate Genes',
-      url: ''
+      url: 'Genome-Wide Association Study Identifies Candidate Genes'
     },
     {
       reference: 'Genome-Wide Identification and Characterization of the USP Gene Family in Grapes (Vitis vinifera L.)',
-      url: ''
+      url: '3'
     },
     {
       reference: 'Genome-Wide Identification of the BZR Gene Family and Expression Validation of VvBZR7 in Grape (Vitis vinifera L.)',
-      url: ''
+      url: 'Genome-Wide Identification of the BZR Gene Family and Expression Validation of VvBZR7 in Grape (Vitis vinifera L.)'
     },
     {
       reference: 'Identification of ABA Signaling Pathway Genes and Their Differential Regulation in Response to Suboptimal Light Stress in Grape (Vitis vinifera L.)',
-      url: ''
+      url: 'Identification of ABA Signaling Pathway Genes and Their Differential Regulation in Response to Suboptimal Light Stress in Grape (Vitis vinifera L.)'
     },
     {
       reference: 'Pre-harvest treatment with gibberellin (GA',
-      url: ''
+      url: 'Pre-harvest treatment with gibberellin (GA'
     },
     {
       reference: 'Regulation of Cell Metabolism and Changes in Berry Shape of Shine Muscat Gra...Growth Regulators Gibberellin A3 and N-(2-Chloro-4-Pyridyl)-N\'-Phenylurea',
-      url: ''
+      url: '4'
     },
     {
       reference: 'The PEPCK and FBP Genes Regulate Gluconeogenesis',
-      url: ''
+      url: 'The PEPCK and FBP Genes Regulate Gluconeogenesis'
     },
     {
       reference: 'Transcriptomic and free monoterpene ',
-      url: ''
+      url: 'Transcriptomic and free monoterpene '
     }
   ];
   return (
