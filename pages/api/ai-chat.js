@@ -14,11 +14,11 @@ export default async function handler(req, res) {
     const { messages } = req.body
 
     // 读取果实表
-    const fruitData = await prisma.phenomicsFruit.findMany({
+    const fruitData = await db.phenomicsFruit.findMany({
       orderBy: { no: 'asc' }
     })
     // 读取叶片表
-    const leafData = await prisma.phenomicsLeaf.findMany({
+    const leafData = await db.phenomicsLeaf.findMany({
       orderBy: { no: 'asc' }
     })
 
