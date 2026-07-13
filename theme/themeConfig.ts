@@ -32,6 +32,9 @@ const mytheme: ThemeConfig = {
     Breadcrumb: {
       fontSize: 20,
     },
+    Card: {
+      colorBgContainer: '#ffffffC8',
+    },
     Segmented: {
       itemSelectedBg: '#3c7963',
       // trackBg: '#3c7963',

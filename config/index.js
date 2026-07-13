@@ -67,6 +67,10 @@ export const menu = [
         label: 'GO enrichment',
         key: 'go',
       },
+      {
+        label: 'KEGG enrichment',
+        key: 'kegg',
+      },
     ]
   },
   {
@@ -147,6 +151,10 @@ export const menuZh = [
       {
         label: 'GO富集分析',
         key: 'go',
+      },
+      {
+        label: 'KEGG富集分析',
+        key: 'kegg',
       },
     ]
   },

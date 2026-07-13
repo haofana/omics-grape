@@ -1,17 +1,16 @@
 import React from 'react';
-import { Layout, Row, Col, theme, Divider, Carousel } from 'antd';
+import { Layout, theme, Divider, Carousel } from 'antd';
 import './globals.css';
 import Image from 'next/image'
 import img from './img/pt.png';
-import img3 from './img/pt3.png';
 import img1 from './img/img.png';
 import img2 from './img/pt2.jpg';
+import img4 from './img/new.jpg';
 import './index.css';
-import { quickTools } from '../config'
 import { useRouter } from 'next/navigation';
 import { useI18n } from '@/hooks/useI18n';
 
-const { Header, Content, Footer } = Layout;
+const { Content, Footer } = Layout;
 
 const bannerImages = [
   { src: '/home/甬夏艳.png', alt: '甬夏艳' },
@@ -63,7 +62,7 @@ const Home = () =>
             {/*<Image alt='' src={img} style={{ paddingTop: 60, paddingLeft: 40, width: '100%', height: '100%', objectFit: 'cover' }} />*/}
             {/*<Row justify="space-between">*/}
               <div className="relative w-full h-full rounded-xl overflow-hidden shadow"><Image alt='' src={img2} className={'img-container'}/></div>
-              <div className="relative w-full h-full rounded-xl overflow-hidden shadow"><Image alt='' src={img3} className={'img-container'}/></div>
+              <div className="relative w-full h-full rounded-xl overflow-hidden shadow"><Image alt='' src={img4} className={'img-container'}/></div>
               <div className="relative w-full h-full rounded-xl overflow-hidden shadow"><Image alt='' src={img} className={'img-container'}/></div>
               <div className="relative w-full h-full rounded-xl overflow-hidden shadow"><Image alt='' src={img1} className={'img-container'}/></div>
             {/*</Row>*/}

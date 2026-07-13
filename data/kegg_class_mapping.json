@@ -1,0 +1,986 @@
+[
+  {
+    "gene_id": "Vitvi07g00242,Vitvi18g01570,Vitvi01g00672,Vitvi01g00787,Vitvi17g00664,Vitvi10g01778,Vitvi02g00263,Vitvi16g02061,Vitvi17g00786",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi07g00242,Vitvi18g01570,Vitvi01g00672,Vitvi01g00787,Vitvi17g00664,Vitvi10g01778,Vitvi02g00263,Vitvi16g02061,Vitvi17g00786",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi19g00654,Vitvi10g00224",
+    "kegg_class": "Glycan biosynthesis and metabolism"
+  },
+  {
+    "gene_id": "Vitvi19g00654,Vitvi10g00224",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi03g01138,Vitvi17g01440,Vitvi10g01066",
+    "kegg_class": "Global and overview maps"
+  },
+  {
+    "gene_id": "Vitvi03g01138,Vitvi17g01440,Vitvi10g01066",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi11g01261,Vitvi02g00032,Vitvi04g01589,Vitvi02g00533,Vitvi05g00539,Vitvi15g01093,Vitvi10g04049,Vitvi14g01472,Vitvi12g04526,Vitvi12g02119,Vitvi08g01767,Vitvi19g00654,Vitvi14g01289,Vitvi12g04066,Vitvi08g00816,Vitvi12g00270,Vitvi10g00224,Vitvi12g00445,Vitvi02g00225",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi11g01261,Vitvi02g00032,Vitvi04g01589,Vitvi02g00533,Vitvi05g00539,Vitvi15g01093,Vitvi10g04049,Vitvi14g01472,Vitvi12g04526,Vitvi12g02119,Vitvi08g01767,Vitvi19g00654,Vitvi14g01289,Vitvi12g04066,Vitvi08g00816,Vitvi12g00270,Vitvi10g00224,Vitvi12g00445,Vitvi02g00225",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi05g00616,Vitvi07g00054",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi05g00616,Vitvi07g00054",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi01g00787,Vitvi15g01089,Vitvi07g00824",
+    "kegg_class": "Metabolism of cofactors and vitamins"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi01g00787,Vitvi15g01089,Vitvi07g00824",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi09g01542",
+    "kegg_class": "Metabolism of cofactors and vitamins"
+  },
+  {
+    "gene_id": "Vitvi09g01542",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi08g01301,Vitvi04g01421,Vitvi00g04191,Vitvi14g01424,Vitvi03g00048,Vitvi15g00690",
+    "kegg_class": "Energy metabolism"
+  },
+  {
+    "gene_id": "Vitvi08g01301,Vitvi04g01421,Vitvi00g04191,Vitvi14g01424,Vitvi03g00048,Vitvi15g00690",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi06g01061,Vitvi02g00020,Vitvi02g01286,Vitvi18g01304,Vitvi04g02210,Vitvi06g01539,Vitvi04g02205,Vitvi10g00821,Vitvi02g01288,Vitvi03g00533,Vitvi12g00084,Vitvi08g01401,Vitvi02g01811,Vitvi04g01293,Vitvi08g01402,Vitvi19g01356,Vitvi02g01269,Vitvi05g00963",
+    "kegg_class": "Metabolism of terpenoids and polyketides"
+  },
+  {
+    "gene_id": "Vitvi06g01061,Vitvi02g00020,Vitvi02g01286,Vitvi18g01304,Vitvi04g02210,Vitvi06g01539,Vitvi04g02205,Vitvi10g00821,Vitvi02g01288,Vitvi03g00533,Vitvi12g00084,Vitvi08g01401,Vitvi02g01811,Vitvi04g01293,Vitvi08g01402,Vitvi19g01356,Vitvi02g01269,Vitvi05g00963",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi10g01600,Vitvi10g04282,Vitvi19g01432,Vitvi15g00782",
+    "kegg_class": "Metabolism of terpenoids and polyketides"
+  },
+  {
+    "gene_id": "Vitvi10g01600,Vitvi10g04282,Vitvi19g01432,Vitvi15g00782",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi15g01518,Vitvi07g02555,Vitvi10g00938,Vitvi15g00795,Vitvi07g04623,Vitvi07g03085,Vitvi07g02561,Vitvi07g03083",
+    "kegg_class": "Metabolism of terpenoids and polyketides"
+  },
+  {
+    "gene_id": "Vitvi15g01518,Vitvi07g02555,Vitvi10g00938,Vitvi15g00795,Vitvi07g04623,Vitvi07g03085,Vitvi07g02561,Vitvi07g03083",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi11g01303",
+    "kegg_class": "Metabolism of terpenoids and polyketides"
+  },
+  {
+    "gene_id": "Vitvi11g01303",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi06g00172,Vitvi13g01614,Vitvi16g01046,Vitvi06g00169,Vitvi08g02412",
+    "kegg_class": "Metabolism of terpenoids and polyketides"
+  },
+  {
+    "gene_id": "Vitvi06g00172,Vitvi13g01614,Vitvi16g01046,Vitvi06g00169,Vitvi08g02412",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi11g00878,Vitvi10g04220",
+    "kegg_class": "Metabolism of terpenoids and polyketides"
+  },
+  {
+    "gene_id": "Vitvi11g00878,Vitvi10g04220",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi02g01613,Vitvi02g01067,Vitvi07g00320,Vitvi13g00832,Vitvi02g01614,Vitvi02g01615,Vitvi02g01609,Vitvi14g00996,Vitvi02g01618,Vitvi17g00234,Vitvi07g02608,Vitvi18g00730,Vitvi07g02198,Vitvi06g01203,Vitvi10g00037,Vitvi00g04572,Vitvi04g01589",
+    "kegg_class": "Metabolism of other amino acids"
+  },
+  {
+    "gene_id": "Vitvi02g01613,Vitvi02g01067,Vitvi07g00320,Vitvi13g00832,Vitvi02g01614,Vitvi02g01615,Vitvi02g01609,Vitvi14g00996,Vitvi02g01618,Vitvi17g00234,Vitvi07g02608,Vitvi18g00730,Vitvi07g02198,Vitvi06g01203,Vitvi10g00037,Vitvi00g04572,Vitvi04g01589",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g01472",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g01472",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi05g01467,Vitvi09g00762",
+    "kegg_class": "Metabolism of cofactors and vitamins"
+  },
+  {
+    "gene_id": "Vitvi05g01467,Vitvi09g00762",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi05g00576,Vitvi14g01472",
+    "kegg_class": "Biosynthesis of other secondary metabolites"
+  },
+  {
+    "gene_id": "Vitvi05g00576,Vitvi14g01472",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi02g00437,Vitvi06g01261,Vitvi18g02571,Vitvi14g01472,Vitvi07g02608,Vitvi14g01874,Vitvi05g00485,Vitvi05g00483,Vitvi02g00680,Vitvi08g00816,Vitvi17g00898",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi02g00437,Vitvi06g01261,Vitvi18g02571,Vitvi14g01472,Vitvi07g02608,Vitvi14g01874,Vitvi05g00485,Vitvi05g00483,Vitvi02g00680,Vitvi08g00816,Vitvi17g00898",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi10g01568,Vitvi08g01664,Vitvi14g01938,Vitvi08g01301,Vitvi10g00553,Vitvi04g01421,Vitvi01g00787,Vitvi02g00533,Vitvi04g01671,Vitvi17g00786,Vitvi11g00686,Vitvi03g00048,Vitvi18g02571,Vitvi06g00021,Vitvi18g01223,Vitvi00g04634,Vitvi08g01836,Vitvi08g01259,Vitvi15g01026",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi10g01568,Vitvi08g01664,Vitvi14g01938,Vitvi08g01301,Vitvi10g00553,Vitvi04g01421,Vitvi01g00787,Vitvi02g00533,Vitvi04g01671,Vitvi17g00786,Vitvi11g00686,Vitvi03g00048,Vitvi18g02571,Vitvi06g00021,Vitvi18g01223,Vitvi00g04634,Vitvi08g01836,Vitvi08g01259,Vitvi15g01026",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi02g00680",
+    "kegg_class": "Metabolism of cofactors and vitamins"
+  },
+  {
+    "gene_id": "Vitvi02g00680",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi07g00522,Vitvi03g00206,Vitvi15g04599,Vitvi17g01440,Vitvi03g01138,Vitvi15g01037,Vitvi05g01575,Vitvi05g02249,Vitvi11g00634,Vitvi05g02251,Vitvi05g00089,Vitvi05g01583,Vitvi05g01578,Vitvi05g01579,Vitvi10g01066,Vitvi11g01488",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi07g00522,Vitvi03g00206,Vitvi15g04599,Vitvi17g01440,Vitvi03g01138,Vitvi15g01037,Vitvi05g01575,Vitvi05g02249,Vitvi11g00634,Vitvi05g02251,Vitvi05g00089,Vitvi05g01583,Vitvi05g01578,Vitvi05g01579,Vitvi10g01066,Vitvi11g01488",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi11g00893,Vitvi08g01957,Vitvi08g01454,Vitvi17g00820,Vitvi01g00682,Vitvi05g00403,Vitvi06g00250,Vitvi14g01720,Vitvi08g01646,Vitvi18g00326,Vitvi17g00819,Vitvi16g01559",
+    "kegg_class": "Energy metabolism"
+  },
+  {
+    "gene_id": "Vitvi11g00893,Vitvi08g01957,Vitvi08g01454,Vitvi17g00820,Vitvi01g00682,Vitvi05g00403,Vitvi06g00250,Vitvi14g01720,Vitvi08g01646,Vitvi18g00326,Vitvi17g00819,Vitvi16g01559",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi07g00736,Vitvi04g00880,Vitvi01g00893,Vitvi16g01501,Vitvi15g01736,Vitvi05g04186,Vitvi07g00286,Vitvi07g02188,Vitvi08g01129,Vitvi07g00283,Vitvi01g00889,Vitvi17g01382,Vitvi04g00252,Vitvi01g01700,Vitvi06g00372,Vitvi14g00169,Vitvi06g01727,Vitvi08g01137,Vitvi12g00080",
+    "kegg_class": "Metabolism of other amino acids"
+  },
+  {
+    "gene_id": "Vitvi07g00736,Vitvi04g00880,Vitvi01g00893,Vitvi16g01501,Vitvi15g01736,Vitvi05g04186,Vitvi07g00286,Vitvi07g02188,Vitvi08g01129,Vitvi07g00283,Vitvi01g00889,Vitvi17g01382,Vitvi04g00252,Vitvi01g01700,Vitvi06g00372,Vitvi14g00169,Vitvi06g01727,Vitvi08g01137,Vitvi12g00080",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00234,Vitvi11g01261,Vitvi07g00320,Vitvi14g00996,Vitvi17g00438,Vitvi07g02198,Vitvi02g01003,Vitvi02g01001,Vitvi18g00879,Vitvi10g00037,Vitvi07g01288,Vitvi14g00338",
+    "kegg_class": "Biosynthesis of other secondary metabolites"
+  },
+  {
+    "gene_id": "Vitvi17g00234,Vitvi11g01261,Vitvi07g00320,Vitvi14g00996,Vitvi17g00438,Vitvi07g02198,Vitvi02g01003,Vitvi02g01001,Vitvi18g00879,Vitvi10g00037,Vitvi07g01288,Vitvi14g00338",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi01g00787",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi01g00787",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi12g00065,Vitvi17g00898,Vitvi01g00787,Vitvi13g01673,Vitvi07g00824,Vitvi05g00485,Vitvi05g00483,Vitvi17g00786",
+    "kegg_class": "Metabolism of other amino acids"
+  },
+  {
+    "gene_id": "Vitvi12g00065,Vitvi17g00898,Vitvi01g00787,Vitvi13g01673,Vitvi07g00824,Vitvi05g00485,Vitvi05g00483,Vitvi17g00786",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi13g01833,Vitvi16g00922",
+    "kegg_class": "Metabolism of cofactors and vitamins"
+  },
+  {
+    "gene_id": "Vitvi13g01833,Vitvi16g00922",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g01765,Vitvi05g00403,Vitvi06g01261,Vitvi16g01559,Vitvi06g00666,Vitvi08g00816,Vitvi18g00730",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g01765,Vitvi05g00403,Vitvi06g01261,Vitvi16g01559,Vitvi06g00666,Vitvi08g00816,Vitvi18g00730",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi05g01314,Vitvi01g01357,Vitvi05g00381,Vitvi02g04155,Vitvi01g01564,Vitvi08g01884,Vitvi05g00778,Vitvi17g00130",
+    "kegg_class": "Global and overview maps"
+  },
+  {
+    "gene_id": "Vitvi05g01314,Vitvi01g01357,Vitvi05g00381,Vitvi02g04155,Vitvi01g01564,Vitvi08g01884,Vitvi05g00778,Vitvi17g00130",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi00g04634",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi00g04634",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi11g01303,Vitvi01g01564",
+    "kegg_class": "Metabolism of cofactors and vitamins"
+  },
+  {
+    "gene_id": "Vitvi11g01303,Vitvi01g01564",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi11g01463",
+    "kegg_class": "Glycan biosynthesis and metabolism"
+  },
+  {
+    "gene_id": "Vitvi11g01463",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi02g00437,Vitvi06g01261,Vitvi16g01036,Vitvi05g00403,Vitvi00g04191,Vitvi07g02608,Vitvi00g04634,Vitvi02g00680,Vitvi08g01646,Vitvi19g01352,Vitvi02g00338",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi02g00437,Vitvi06g01261,Vitvi16g01036,Vitvi05g00403,Vitvi00g04191,Vitvi07g02608,Vitvi00g04634,Vitvi02g00680,Vitvi08g01646,Vitvi19g01352,Vitvi02g00338",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi06g01203,Vitvi00g04572,Vitvi13g00832",
+    "kegg_class": "Biosynthesis of other secondary metabolites"
+  },
+  {
+    "gene_id": "Vitvi06g01203,Vitvi00g04572,Vitvi13g00832",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00898,Vitvi06g00522,Vitvi05g00485,Vitvi18g00362,Vitvi05g00483,Vitvi13g00343,Vitvi12g00270",
+    "kegg_class": "Biosynthesis of other secondary metabolites"
+  },
+  {
+    "gene_id": "Vitvi17g00898,Vitvi06g00522,Vitvi05g00485,Vitvi18g00362,Vitvi05g00483,Vitvi13g00343,Vitvi12g00270",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g01938,Vitvi02g01187,Vitvi07g00457,Vitvi17g00885,Vitvi14g01717,Vitvi14g00065,Vitvi10g00436,Vitvi01g00714,Vitvi09g00193",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g01938,Vitvi02g01187,Vitvi07g00457,Vitvi17g00885,Vitvi14g01717,Vitvi14g00065,Vitvi10g00436,Vitvi01g00714,Vitvi09g00193",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi05g00381,Vitvi17g00130,Vitvi05g00778,Vitvi05g01314,Vitvi01g01357",
+    "kegg_class": "Nucleotide metabolism"
+  },
+  {
+    "gene_id": "Vitvi05g00381,Vitvi17g00130,Vitvi05g00778,Vitvi05g01314,Vitvi01g01357",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g01938,Vitvi08g01301,Vitvi04g01421,Vitvi11g00686,Vitvi15g00690,Vitvi01g01700,Vitvi03g00048",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g01938,Vitvi08g01301,Vitvi04g01421,Vitvi11g00686,Vitvi15g00690,Vitvi01g01700,Vitvi03g00048",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi06g01946,Vitvi18g01517,Vitvi12g00380,Vitvi18g00362,Vitvi10g00088,Vitvi12g00270,Vitvi14g00338",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi06g01946,Vitvi18g01517,Vitvi12g00380,Vitvi18g00362,Vitvi10g00088,Vitvi12g00270,Vitvi14g00338",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi11g01257,Vitvi12g00270,Vitvi14g01588,Vitvi01g01561,Vitvi06g00803,Vitvi11g01045,Vitvi10g01734,Vitvi10g01735,Vitvi11g00924",
+    "kegg_class": "Metabolism of cofactors and vitamins"
+  },
+  {
+    "gene_id": "Vitvi11g01257,Vitvi12g00270,Vitvi14g01588,Vitvi01g01561,Vitvi06g00803,Vitvi11g01045,Vitvi10g01734,Vitvi10g01735,Vitvi11g00924",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi18g00368,Vitvi14g02043,Vitvi02g00533,Vitvi00g04190,Vitvi12g00065",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi18g00368,Vitvi14g02043,Vitvi02g00533,Vitvi00g04190,Vitvi12g00065",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi12g00188,Vitvi12g00189",
+    "kegg_class": "Metabolism of cofactors and vitamins"
+  },
+  {
+    "gene_id": "Vitvi12g00188,Vitvi12g00189",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi10g01568,Vitvi08g01664,Vitvi01g00787,Vitvi14g02043,Vitvi08g01836,Vitvi18g01223,Vitvi00g04190,Vitvi04g01671,Vitvi06g00021,Vitvi18g00368,Vitvi00g04634,Vitvi17g00786,Vitvi08g01259,Vitvi02g00533",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi10g01568,Vitvi08g01664,Vitvi01g00787,Vitvi14g02043,Vitvi08g01836,Vitvi18g01223,Vitvi00g04190,Vitvi04g01671,Vitvi06g00021,Vitvi18g00368,Vitvi00g04634,Vitvi17g00786,Vitvi08g01259,Vitvi02g00533",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi08g01349,Vitvi10g00436",
+    "kegg_class": "Glycan biosynthesis and metabolism"
+  },
+  {
+    "gene_id": "Vitvi08g01349,Vitvi10g00436",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi01g00787,Vitvi13g01673,Vitvi17g00786,Vitvi14g01283,Vitvi14g01289,Vitvi03g00054",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi01g00787,Vitvi13g01673,Vitvi17g00786,Vitvi14g01283,Vitvi14g01289,Vitvi03g00054",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g02950,Vitvi02g04155,Vitvi08g01884,Vitvi05g00576,Vitvi01g01564,Vitvi12g02499",
+    "kegg_class": "Nucleotide metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g02950,Vitvi02g04155,Vitvi08g01884,Vitvi05g00576,Vitvi01g01564,Vitvi12g02499",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi01g00698",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi01g00698",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi06g00119",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi06g00119",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi03g01426",
+    "kegg_class": "Metabolism of other amino acids"
+  },
+  {
+    "gene_id": "Vitvi03g01426",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi10g00764,Vitvi08g01905,Vitvi06g00534",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi10g00764,Vitvi08g01905,Vitvi06g00534",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi06g01100,Vitvi11g01290,Vitvi16g00156",
+    "kegg_class": "Biosynthesis of other secondary metabolites"
+  },
+  {
+    "gene_id": "Vitvi06g01100,Vitvi11g01290,Vitvi16g00156",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi09g00564,Vitvi07g01658,Vitvi18g00717,Vitvi09g00562,Vitvi07g01657,Vitvi07g04690,Vitvi07g04693,Vitvi07g04688",
+    "kegg_class": "Biosynthesis of other secondary metabolites"
+  },
+  {
+    "gene_id": "Vitvi09g00564,Vitvi07g01658,Vitvi18g00717,Vitvi09g00562,Vitvi07g01657,Vitvi07g04690,Vitvi07g04693,Vitvi07g04688",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi13g00622,Vitvi01g02210,Vitvi06g00803,Vitvi18g02476,Vitvi06g00771,Vitvi07g02029,Vitvi00g04609,Vitvi18g01221,Vitvi10g01020,Vitvi12g02158,Vitvi13g00235,Vitvi12g01598,Vitvi13g04710,Vitvi00g04594,Vitvi08g00821,Vitvi08g00822,Vitvi12g02235,Vitvi11g01045,Vitvi06g04091,Vitvi15g00237,Vitvi11g01257,Vitvi01g01514,Vitvi03g01816,Vitvi14g01588,Vitvi04g01412,Vitvi02g00263,Vitvi16g02061,Vitvi01g02205,Vitvi11g00924,Vitvi04g01585,Vitvi14g01757,Vitvi12g00153,Vitvi01g01561,Vitvi13g01305,Vitvi04g01237,Vitvi10g04509,Vitvi18g00473",
+    "kegg_class": "Biosynthesis of other secondary metabolites"
+  },
+  {
+    "gene_id": "Vitvi13g00622,Vitvi01g02210,Vitvi06g00803,Vitvi18g02476,Vitvi06g00771,Vitvi07g02029,Vitvi00g04609,Vitvi18g01221,Vitvi10g01020,Vitvi12g02158,Vitvi13g00235,Vitvi12g01598,Vitvi13g04710,Vitvi00g04594,Vitvi08g00821,Vitvi08g00822,Vitvi12g02235,Vitvi11g01045,Vitvi06g04091,Vitvi15g00237,Vitvi11g01257,Vitvi01g01514,Vitvi03g01816,Vitvi14g01588,Vitvi04g01412,Vitvi02g00263,Vitvi16g02061,Vitvi01g02205,Vitvi11g00924,Vitvi04g01585,Vitvi14g01757,Vitvi12g00153,Vitvi01g01561,Vitvi13g01305,Vitvi04g01237,Vitvi10g04509,Vitvi18g00473",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi01g01514,Vitvi16g01149,Vitvi03g01816,Vitvi18g02538,Vitvi03g04153,Vitvi06g00803,Vitvi13g00055,Vitvi11g01045,Vitvi18g02541,Vitvi11g00924",
+    "kegg_class": "Biosynthesis of other secondary metabolites"
+  },
+  {
+    "gene_id": "Vitvi01g01514,Vitvi16g01149,Vitvi03g01816,Vitvi18g02538,Vitvi03g04153,Vitvi06g00803,Vitvi13g00055,Vitvi11g01045,Vitvi18g02541,Vitvi11g00924",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi01g04438,Vitvi01g02263",
+    "kegg_class": "Biosynthesis of other secondary metabolites"
+  },
+  {
+    "gene_id": "Vitvi01g04438,Vitvi01g02263",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi18g00368,Vitvi14g02043,Vitvi09g00342,Vitvi00g04190,Vitvi02g00128",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi18g00368,Vitvi14g02043,Vitvi09g00342,Vitvi00g04190,Vitvi02g00128",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi13g01779,Vitvi08g01168,Vitvi18g00269,Vitvi08g01915,Vitvi08g04123",
+    "kegg_class": "Metabolism of cofactors and vitamins"
+  },
+  {
+    "gene_id": "Vitvi13g01779,Vitvi08g01168,Vitvi18g00269,Vitvi08g01915,Vitvi08g04123",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi08g04019,Vitvi00g04351,Vitvi10g04258,Vitvi11g01208,Vitvi10g04257,Vitvi00g04582,Vitvi14g02960,Vitvi10g04002,Vitvi10g00399,Vitvi01g02307",
+    "kegg_class": "Energy metabolism"
+  },
+  {
+    "gene_id": "Vitvi08g04019,Vitvi00g04351,Vitvi10g04258,Vitvi11g01208,Vitvi10g04257,Vitvi00g04582,Vitvi14g02960,Vitvi10g04002,Vitvi10g00399,Vitvi01g02307",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi00g04871,Vitvi13g00384,Vitvi18g00619,Vitvi04g02063,Vitvi00g04882,Vitvi00g04318,Vitvi00g04187,Vitvi01g02307,Vitvi14g02960,Vitvi18g04151,Vitvi18g00272",
+    "kegg_class": "Energy metabolism"
+  },
+  {
+    "gene_id": "Vitvi00g04871,Vitvi13g00384,Vitvi18g00619,Vitvi04g02063,Vitvi00g04882,Vitvi00g04318,Vitvi00g04187,Vitvi01g02307,Vitvi14g02960,Vitvi18g04151,Vitvi18g00272",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi12g00050,Vitvi08g01360,Vitvi01g01648,Vitvi12g02485",
+    "kegg_class": "Energy metabolism"
+  },
+  {
+    "gene_id": "Vitvi12g00050,Vitvi08g01360,Vitvi01g01648,Vitvi12g02485",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi16g01559,Vitvi05g00403",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi16g01559,Vitvi05g00403",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi01g00787",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi01g00787",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi18g03225,Vitvi04g01421,Vitvi03g00048,Vitvi14g01938,Vitvi08g01301",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi18g03225,Vitvi04g01421,Vitvi03g00048,Vitvi14g01938,Vitvi08g01301",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00234,Vitvi18g00955,Vitvi07g00320,Vitvi04g00831,Vitvi02g00236,Vitvi02g01187,Vitvi14g00996,Vitvi06g01058,Vitvi19g00557,Vitvi03g01572,Vitvi09g00607,Vitvi12g00221,Vitvi07g02198,Vitvi18g00384,Vitvi10g00037,Vitvi16g00712,Vitvi09g00193,Vitvi11g00380",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00234,Vitvi18g00955,Vitvi07g00320,Vitvi04g00831,Vitvi02g00236,Vitvi02g01187,Vitvi14g00996,Vitvi06g01058,Vitvi19g00557,Vitvi03g01572,Vitvi09g00607,Vitvi12g00221,Vitvi07g02198,Vitvi18g00384,Vitvi10g00037,Vitvi16g00712,Vitvi09g00193,Vitvi11g00380",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi03g00792,Vitvi08g01259,Vitvi01g00787",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi03g00792,Vitvi08g01259,Vitvi01g00787",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi08g01349",
+    "kegg_class": "Glycan biosynthesis and metabolism"
+  },
+  {
+    "gene_id": "Vitvi08g01349",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi10g00436",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi10g00436",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00898,Vitvi05g00485,Vitvi10g04292,Vitvi18g00362,Vitvi10g04287,Vitvi05g00483,Vitvi10g04288,Vitvi12g00270",
+    "kegg_class": "Biosynthesis of other secondary metabolites"
+  },
+  {
+    "gene_id": "Vitvi17g00898,Vitvi05g00485,Vitvi10g04292,Vitvi18g00362,Vitvi10g04287,Vitvi05g00483,Vitvi10g04288,Vitvi12g00270",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi02g01222,Vitvi04g00283,Vitvi12g01053,Vitvi01g00787,Vitvi04g00623,Vitvi09g04207,Vitvi17g00786,Vitvi12g01121,Vitvi09g00691,Vitvi14g00388,Vitvi11g00555,Vitvi08g01259,Vitvi10g00436",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi02g01222,Vitvi04g00283,Vitvi12g01053,Vitvi01g00787,Vitvi04g00623,Vitvi09g04207,Vitvi17g00786,Vitvi12g01121,Vitvi09g00691,Vitvi14g00388,Vitvi11g00555,Vitvi08g01259,Vitvi10g00436",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi13g01409,Vitvi18g00597,Vitvi00g00786,Vitvi18g00901,Vitvi06g00648,Vitvi06g00649,Vitvi17g00095,Vitvi07g01352,Vitvi07g00105,Vitvi08g01644",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi13g01409,Vitvi18g00597,Vitvi00g00786,Vitvi18g00901,Vitvi06g00648,Vitvi06g00649,Vitvi17g00095,Vitvi07g01352,Vitvi07g00105,Vitvi08g01644",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi18g01572,Vitvi12g01053,Vitvi18g00159,Vitvi18g00639,Vitvi04g00598,Vitvi14g01500,Vitvi04g00480,Vitvi10g00561,Vitvi17g00095,Vitvi12g01121,Vitvi11g00447,Vitvi11g00469,Vitvi01g00362,Vitvi06g00234,Vitvi14g01639,Vitvi02g01817",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi18g01572,Vitvi12g01053,Vitvi18g00159,Vitvi18g00639,Vitvi04g00598,Vitvi14g01500,Vitvi04g00480,Vitvi10g00561,Vitvi17g00095,Vitvi12g01121,Vitvi11g00447,Vitvi11g00469,Vitvi01g00362,Vitvi06g00234,Vitvi14g01639,Vitvi02g01817",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi04g00598,Vitvi17g00095,Vitvi04g00480,Vitvi18g00159,Vitvi11g00469",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi04g00598,Vitvi17g00095,Vitvi04g00480,Vitvi18g00159,Vitvi11g00469",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g00234,Vitvi05g00472,Vitvi09g00085",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g00234,Vitvi05g00472,Vitvi09g00085",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi18g00886,Vitvi18g02142,Vitvi18g01223,Vitvi07g01108,Vitvi18g03162,Vitvi03g00395,Vitvi18g02139,Vitvi18g02138,Vitvi00g04371,Vitvi00g04372,Vitvi06g00234,Vitvi18g00639,Vitvi14g01808,Vitvi04g01671,Vitvi18g02763,Vitvi09g00085,Vitvi18g02761,Vitvi18g00124,Vitvi18g04623,Vitvi10g00561,Vitvi14g01246,Vitvi01g00246,Vitvi02g01817",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi18g00886,Vitvi18g02142,Vitvi18g01223,Vitvi07g01108,Vitvi18g03162,Vitvi03g00395,Vitvi18g02139,Vitvi18g02138,Vitvi00g04371,Vitvi00g04372,Vitvi06g00234,Vitvi18g00639,Vitvi14g01808,Vitvi04g01671,Vitvi18g02763,Vitvi09g00085,Vitvi18g02761,Vitvi18g00124,Vitvi18g04623,Vitvi10g00561,Vitvi14g01246,Vitvi01g00246,Vitvi02g01817",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi00g04362,Vitvi01g01514,Vitvi16g04351,Vitvi03g01816,Vitvi10g04623,Vitvi00g04408,Vitvi00g04407,Vitvi16g01485,Vitvi16g04346,Vitvi16g04347,Vitvi06g00803,Vitvi16g04353,Vitvi11g01045,Vitvi16g04348,Vitvi16g04349,Vitvi11g00924",
+    "kegg_class": "Biosynthesis of other secondary metabolites"
+  },
+  {
+    "gene_id": "Vitvi00g04362,Vitvi01g01514,Vitvi16g04351,Vitvi03g01816,Vitvi10g04623,Vitvi00g04408,Vitvi00g04407,Vitvi16g01485,Vitvi16g04346,Vitvi16g04347,Vitvi06g00803,Vitvi16g04353,Vitvi11g01045,Vitvi16g04348,Vitvi16g04349,Vitvi11g00924",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi05g00576,Vitvi07g01039,Vitvi12g02139,Vitvi02g00225",
+    "kegg_class": "Metabolism of other amino acids"
+  },
+  {
+    "gene_id": "Vitvi05g00576,Vitvi07g01039,Vitvi12g02139,Vitvi02g00225",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi19g00150,Vitvi12g02758,Vitvi05g00485,Vitvi10g04292,Vitvi04g01671,Vitvi18g00362,Vitvi10g04287,Vitvi05g00483,Vitvi10g04288,Vitvi12g00270,Vitvi18g01223,Vitvi17g00898",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi19g00150,Vitvi12g02758,Vitvi05g00485,Vitvi10g04292,Vitvi04g01671,Vitvi18g00362,Vitvi10g04287,Vitvi05g00483,Vitvi10g04288,Vitvi12g00270,Vitvi18g01223,Vitvi17g00898",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi16g01920,Vitvi16g01418,Vitvi02g00553,Vitvi05g00953,Vitvi07g00787,Vitvi01g00456,Vitvi17g00977,Vitvi14g01745,Vitvi09g00017,Vitvi08g02375,Vitvi08g02373,Vitvi08g02394,Vitvi10g00031,Vitvi01g00593,Vitvi01g04175,Vitvi06g01152,Vitvi15g00704,Vitvi14g04048,Vitvi06g01870,Vitvi08g01259,Vitvi02g00022,Vitvi07g00350,Vitvi08g01857,Vitvi16g00717,Vitvi06g04331",
+    "kegg_class": "Carbohydrate metabolism"
+  },
+  {
+    "gene_id": "Vitvi16g01920,Vitvi16g01418,Vitvi02g00553,Vitvi05g00953,Vitvi07g00787,Vitvi01g00456,Vitvi17g00977,Vitvi14g01745,Vitvi09g00017,Vitvi08g02375,Vitvi08g02373,Vitvi08g02394,Vitvi10g00031,Vitvi01g00593,Vitvi01g04175,Vitvi06g01152,Vitvi15g00704,Vitvi14g04048,Vitvi06g01870,Vitvi08g01259,Vitvi02g00022,Vitvi07g00350,Vitvi08g01857,Vitvi16g00717,Vitvi06g04331",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00278,Vitvi13g00110",
+    "kegg_class": "Glycan biosynthesis and metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00278,Vitvi13g00110",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi02g01189,Vitvi08g01631",
+    "kegg_class": "Glycan biosynthesis and metabolism"
+  },
+  {
+    "gene_id": "Vitvi02g01189,Vitvi08g01631",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi05g00539,Vitvi07g02608,Vitvi02g00680,Vitvi14g01874",
+    "kegg_class": "Metabolism of cofactors and vitamins"
+  },
+  {
+    "gene_id": "Vitvi05g00539,Vitvi07g02608,Vitvi02g00680,Vitvi14g01874",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi04g01589,Vitvi12g00381,Vitvi10g00224,Vitvi05g00576,Vitvi19g01394,Vitvi19g00654,Vitvi10g00086,Vitvi10g00398",
+    "kegg_class": "Energy metabolism"
+  },
+  {
+    "gene_id": "Vitvi04g01589,Vitvi12g00381,Vitvi10g00224,Vitvi05g00576,Vitvi19g01394,Vitvi19g00654,Vitvi10g00086,Vitvi10g00398",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi12g00188,Vitvi12g00189,Vitvi09g00762,Vitvi15g01089,Vitvi01g00787,Vitvi06g00236,Vitvi14g01765,Vitvi08g01259,Vitvi03g00792,Vitvi07g02608,Vitvi13g01779,Vitvi07g00824,Vitvi17g00786,Vitvi01g01564,Vitvi09g01542,Vitvi07g01730,Vitvi05g01467,Vitvi01g00632,Vitvi13g01833,Vitvi10g01734,Vitvi10g01735",
+    "kegg_class": "Global and overview maps"
+  },
+  {
+    "gene_id": "Vitvi12g00188,Vitvi12g00189,Vitvi09g00762,Vitvi15g01089,Vitvi01g00787,Vitvi06g00236,Vitvi14g01765,Vitvi08g01259,Vitvi03g00792,Vitvi07g02608,Vitvi13g01779,Vitvi07g00824,Vitvi17g00786,Vitvi01g01564,Vitvi09g01542,Vitvi07g01730,Vitvi05g01467,Vitvi01g00632,Vitvi13g01833,Vitvi10g01734,Vitvi10g01735",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi07g00012,Vitvi18g01001,Vitvi15g01106,Vitvi07g00011,Vitvi08g00944,Vitvi11g00835,Vitvi02g01227,Vitvi14g00388",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi07g00012,Vitvi18g01001,Vitvi15g01106,Vitvi07g00011,Vitvi08g00944,Vitvi11g00835,Vitvi02g01227,Vitvi14g00388",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi09g00086,Vitvi04g01278,Vitvi11g00424,Vitvi09g00516",
+    "kegg_class": "Metabolism of terpenoids and polyketides"
+  },
+  {
+    "gene_id": "Vitvi09g00086,Vitvi04g01278,Vitvi11g00424,Vitvi09g00516",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00898,Vitvi13g00622,Vitvi05g00485,Vitvi18g00362,Vitvi05g00483,Vitvi12g00270,Vitvi00g04609,Vitvi06g04091",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00898,Vitvi13g00622,Vitvi05g00485,Vitvi18g00362,Vitvi05g00483,Vitvi12g00270,Vitvi00g04609,Vitvi06g04091",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi14g01765,Vitvi05g00381,Vitvi07g01730,Vitvi01g00632,Vitvi12g02499,Vitvi06g00236",
+    "kegg_class": "Metabolism of cofactors and vitamins"
+  },
+  {
+    "gene_id": "Vitvi14g01765,Vitvi05g00381,Vitvi07g01730,Vitvi01g00632,Vitvi12g02499,Vitvi06g00236",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi09g00342,Vitvi08g00816,Vitvi12g00065,Vitvi01g00787",
+    "kegg_class": "Amino acid metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi09g00342,Vitvi08g00816,Vitvi12g00065,Vitvi01g00787",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi02g00128,Vitvi18g01223,Vitvi04g01671,Vitvi01g00787",
+    "kegg_class": "Lipid metabolism"
+  },
+  {
+    "gene_id": "Vitvi17g00786,Vitvi02g00128,Vitvi18g01223,Vitvi04g01671,Vitvi01g00787",
+    "kegg_class": "Metabolism"
+  },
+  {
+    "gene_id": "Vitvi04g02109",
+    "kegg_class": "Replication and repair"
+  },
+  {
+    "gene_id": "Vitvi04g02109",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi02g01447,Vitvi02g01446,Vitvi16g01103,Vitvi03g04065,Vitvi08g01631,Vitvi13g02016,Vitvi13g02017,Vitvi04g01799,Vitvi13g02014,Vitvi02g01189,Vitvi11g00724,Vitvi16g01352,Vitvi07g00405,Vitvi13g00471,Vitvi13g00451,Vitvi04g04041,Vitvi13g00410,Vitvi04g00135,Vitvi09g00599,Vitvi19g00403,Vitvi01g01512,Vitvi04g01795,Vitvi04g01794,Vitvi19g01760,Vitvi04g01796,Vitvi13g00491,Vitvi13g00490,Vitvi04g01793,Vitvi18g02423,Vitvi06g00811,Vitvi05g04404,Vitvi13g02024,Vitvi02g00025,Vitvi16g00681,Vitvi13g00405,Vitvi18g01181,Vitvi06g00443,Vitvi13g00409",
+    "kegg_class": "Folding, sorting and degradation"
+  },
+  {
+    "gene_id": "Vitvi02g01447,Vitvi02g01446,Vitvi16g01103,Vitvi03g04065,Vitvi08g01631,Vitvi13g02016,Vitvi13g02017,Vitvi04g01799,Vitvi13g02014,Vitvi02g01189,Vitvi11g00724,Vitvi16g01352,Vitvi07g00405,Vitvi13g00471,Vitvi13g00451,Vitvi04g04041,Vitvi13g00410,Vitvi04g00135,Vitvi09g00599,Vitvi19g00403,Vitvi01g01512,Vitvi04g01795,Vitvi04g01794,Vitvi19g01760,Vitvi04g01796,Vitvi13g00491,Vitvi13g00490,Vitvi04g01793,Vitvi18g02423,Vitvi06g00811,Vitvi05g04404,Vitvi13g02024,Vitvi02g00025,Vitvi16g00681,Vitvi13g00405,Vitvi18g01181,Vitvi06g00443,Vitvi13g00409",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi04g02109,Vitvi10g04308,Vitvi17g00373",
+    "kegg_class": "Replication and repair"
+  },
+  {
+    "gene_id": "Vitvi04g02109,Vitvi10g04308,Vitvi17g00373",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi11g00724,Vitvi12g00913,Vitvi06g00443",
+    "kegg_class": "Transcription"
+  },
+  {
+    "gene_id": "Vitvi11g00724,Vitvi12g00913,Vitvi06g00443",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi02g00136,Vitvi03g00172",
+    "kegg_class": "Folding, sorting and degradation"
+  },
+  {
+    "gene_id": "Vitvi02g00136,Vitvi03g00172",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi06g01344,Vitvi04g00388,Vitvi03g04065,Vitvi06g00811,Vitvi10g01764",
+    "kegg_class": "Folding, sorting and degradation"
+  },
+  {
+    "gene_id": "Vitvi06g01344,Vitvi04g00388,Vitvi03g04065,Vitvi06g00811,Vitvi10g01764",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi13g01833",
+    "kegg_class": "Folding, sorting and degradation"
+  },
+  {
+    "gene_id": "Vitvi13g01833",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi04g02109,Vitvi01g01169,Vitvi06g01402,Vitvi06g01470",
+    "kegg_class": "Replication and repair"
+  },
+  {
+    "gene_id": "Vitvi04g02109,Vitvi01g01169,Vitvi06g01402,Vitvi06g01470",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi09g01607,Vitvi08g04017",
+    "kegg_class": "Transcription"
+  },
+  {
+    "gene_id": "Vitvi09g01607,Vitvi08g04017",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi01g01875",
+    "kegg_class": "Transcription"
+  },
+  {
+    "gene_id": "Vitvi01g01875",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi16g01016",
+    "kegg_class": "Folding, sorting and degradation"
+  },
+  {
+    "gene_id": "Vitvi16g01016",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi07g01039",
+    "kegg_class": "Translation"
+  },
+  {
+    "gene_id": "Vitvi07g01039",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi04g02109,Vitvi07g01731",
+    "kegg_class": "Replication and repair"
+  },
+  {
+    "gene_id": "Vitvi04g02109,Vitvi07g01731",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi14g00189",
+    "kegg_class": "Chromosome"
+  },
+  {
+    "gene_id": "Vitvi14g00189",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi03g04065,Vitvi06g00811,Vitvi03g01615,Vitvi05g01641",
+    "kegg_class": "Chromosome"
+  },
+  {
+    "gene_id": "Vitvi03g04065,Vitvi06g00811,Vitvi03g01615,Vitvi05g01641",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi06g00848",
+    "kegg_class": "Replication and repair"
+  },
+  {
+    "gene_id": "Vitvi06g00848",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi08g01561,Vitvi14g01939",
+    "kegg_class": "Translation"
+  },
+  {
+    "gene_id": "Vitvi08g01561,Vitvi14g01939",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi17g04083,Vitvi17g00179",
+    "kegg_class": "Translation"
+  },
+  {
+    "gene_id": "Vitvi17g04083,Vitvi17g00179",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi15g04660,Vitvi05g04073,Vitvi01g00190",
+    "kegg_class": "Translation"
+  },
+  {
+    "gene_id": "Vitvi15g04660,Vitvi05g04073,Vitvi01g00190",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi08g01561,Vitvi14g01938,Vitvi11g00058",
+    "kegg_class": "Folding, sorting and degradation"
+  },
+  {
+    "gene_id": "Vitvi08g01561,Vitvi14g01938,Vitvi11g00058",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi01g00775,Vitvi05g01641,Vitvi07g00060",
+    "kegg_class": "Information processing in viruses"
+  },
+  {
+    "gene_id": "Vitvi01g00775,Vitvi05g01641,Vitvi07g00060",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi11g01433,Vitvi06g00243",
+    "kegg_class": "Folding, sorting and degradation"
+  },
+  {
+    "gene_id": "Vitvi11g01433,Vitvi06g00243",
+    "kegg_class": "Genetic Information Processing"
+  },
+  {
+    "gene_id": "Vitvi17g00165,Vitvi04g00756,Vitvi02g00231,Vitvi18g00567,Vitvi01g00940,Vitvi18g00154,Vitvi11g01641,Vitvi08g00793,Vitvi14g00183,Vitvi10g00063,Vitvi19g00147,Vitvi12g00387,Vitvi07g01737,Vitvi07g00522,Vitvi11g01188,Vitvi02g00032,Vitvi10g00522,Vitvi02g00114,Vitvi02g00039,Vitvi16g01213,Vitvi14g01473,Vitvi10g00572,Vitvi11g00037,Vitvi07g01323,Vitvi01g01680,Vitvi06g00518,Vitvi07g02070,Vitvi18g00849,Vitvi17g00862,Vitvi01g01803,Vitvi12g01676,Vitvi06g00185,Vitvi12g01323,Vitvi12g00148,Vitvi14g01907,Vitvi11g01392,Vitvi19g00528,Vitvi01g01027,Vitvi01g01941,Vitvi10g01078,Vitvi12g00200,Vitvi08g00768,Vitvi07g01529,Vitvi07g00068,Vitvi12g00388,Vitvi19g00233,Vitvi11g00165,Vitvi03g00206,Vitvi17g00556,Vitvi15g01093,Vitvi07g01847,Vitvi14g00564,Vitvi11g00270,Vitvi11g00431,Vitvi18g00513,Vitvi10g00742,Vitvi05g00715",
+    "kegg_class": "Signal transduction"
+  },
+  {
+    "gene_id": "Vitvi17g00165,Vitvi04g00756,Vitvi02g00231,Vitvi18g00567,Vitvi01g00940,Vitvi18g00154,Vitvi11g01641,Vitvi08g00793,Vitvi14g00183,Vitvi10g00063,Vitvi19g00147,Vitvi12g00387,Vitvi07g01737,Vitvi07g00522,Vitvi11g01188,Vitvi02g00032,Vitvi10g00522,Vitvi02g00114,Vitvi02g00039,Vitvi16g01213,Vitvi14g01473,Vitvi10g00572,Vitvi11g00037,Vitvi07g01323,Vitvi01g01680,Vitvi06g00518,Vitvi07g02070,Vitvi18g00849,Vitvi17g00862,Vitvi01g01803,Vitvi12g01676,Vitvi06g00185,Vitvi12g01323,Vitvi12g00148,Vitvi14g01907,Vitvi11g01392,Vitvi19g00528,Vitvi01g01027,Vitvi01g01941,Vitvi10g01078,Vitvi12g00200,Vitvi08g00768,Vitvi07g01529,Vitvi07g00068,Vitvi12g00388,Vitvi19g00233,Vitvi11g00165,Vitvi03g00206,Vitvi17g00556,Vitvi15g01093,Vitvi07g01847,Vitvi14g00564,Vitvi11g00270,Vitvi11g00431,Vitvi18g00513,Vitvi10g00742,Vitvi05g00715",
+    "kegg_class": "Environmental Information Processing"
+  },
+  {
+    "gene_id": "Vitvi11g00403,Vitvi06g04429,Vitvi17g00972,Vitvi06g00637,Vitvi02g01279,Vitvi04g00423,Vitvi19g00641,Vitvi09g04085,Vitvi09g04084,Vitvi17g00561,Vitvi16g01210,Vitvi01g00211,Vitvi19g04260,Vitvi06g01949,Vitvi03g01833,Vitvi14g00043,Vitvi02g00082,Vitvi02g00083,Vitvi13g00638,Vitvi02g00086,Vitvi05g00243,Vitvi09g00303,Vitvi08g01493,Vitvi00g04617,Vitvi00g04616,Vitvi06g01950,Vitvi07g00534,Vitvi13g00221,Vitvi07g00311,Vitvi04g00425,Vitvi09g04152",
+    "kegg_class": "Membrane transport"
+  },
+  {
+    "gene_id": "Vitvi11g00403,Vitvi06g04429,Vitvi17g00972,Vitvi06g00637,Vitvi02g01279,Vitvi04g00423,Vitvi19g00641,Vitvi09g04085,Vitvi09g04084,Vitvi17g00561,Vitvi16g01210,Vitvi01g00211,Vitvi19g04260,Vitvi06g01949,Vitvi03g01833,Vitvi14g00043,Vitvi02g00082,Vitvi02g00083,Vitvi13g00638,Vitvi02g00086,Vitvi05g00243,Vitvi09g00303,Vitvi08g01493,Vitvi00g04617,Vitvi00g04616,Vitvi06g01950,Vitvi07g00534,Vitvi13g00221,Vitvi07g00311,Vitvi04g00425,Vitvi09g04152",
+    "kegg_class": "Environmental Information Processing"
+  },
+  {
+    "gene_id": "Vitvi12g01053,Vitvi01g01027,Vitvi18g00597,Vitvi06g00648,Vitvi06g00649,Vitvi12g01121,Vitvi13g01409,Vitvi08g01644,Vitvi07g00068",
+    "kegg_class": "Signal transduction"
+  },
+  {
+    "gene_id": "Vitvi12g01053,Vitvi01g01027,Vitvi18g00597,Vitvi06g00648,Vitvi06g00649,Vitvi12g01121,Vitvi13g01409,Vitvi08g01644,Vitvi07g00068",
+    "kegg_class": "Environmental Information Processing"
+  },
+  {
+    "gene_id": "Vitvi11g01268,Vitvi08g01710,Vitvi18g01570,Vitvi07g02042,Vitvi02g00231,Vitvi05g00403,Vitvi08g01678,Vitvi18g00154,Vitvi19g01665,Vitvi14g00483,Vitvi07g00151,Vitvi18g00310,Vitvi07g01323,Vitvi11g00431,Vitvi02g00507,Vitvi07g02070,Vitvi11g01265,Vitvi08g02051,Vitvi18g01091,Vitvi05g00382,Vitvi07g00293,Vitvi14g01473,Vitvi07g01644,Vitvi10g00572,Vitvi01g00249,Vitvi18g01681,Vitvi06g00518,Vitvi17g00664,Vitvi18g00567,Vitvi03g00586,Vitvi08g00768,Vitvi01g01027,Vitvi01g00672,Vitvi14g02950,Vitvi12g01323,Vitvi18g00635,Vitvi11g01392,Vitvi08g00668,Vitvi06g00937,Vitvi11g00165,Vitvi12g00200,Vitvi07g01529,Vitvi18g00260,Vitvi07g00068,Vitvi10g00522,Vitvi07g00242,Vitvi11g00305,Vitvi19g00061,Vitvi19g00369,Vitvi07g01325,Vitvi11g00301,Vitvi03g00542,Vitvi12g00119,Vitvi15g04511,Vitvi05g00838,Vitvi14g00564,Vitvi11g00270,Vitvi03g00122,Vitvi11g01208,Vitvi18g00513,Vitvi04g01483,Vitvi17g00732,Vitvi09g00046,Vitvi05g00715,Vitvi01g02293",
+    "kegg_class": "Signal transduction"
+  },
+  {
+    "gene_id": "Vitvi11g01268,Vitvi08g01710,Vitvi18g01570,Vitvi07g02042,Vitvi02g00231,Vitvi05g00403,Vitvi08g01678,Vitvi18g00154,Vitvi19g01665,Vitvi14g00483,Vitvi07g00151,Vitvi18g00310,Vitvi07g01323,Vitvi11g00431,Vitvi02g00507,Vitvi07g02070,Vitvi11g01265,Vitvi08g02051,Vitvi18g01091,Vitvi05g00382,Vitvi07g00293,Vitvi14g01473,Vitvi07g01644,Vitvi10g00572,Vitvi01g00249,Vitvi18g01681,Vitvi06g00518,Vitvi17g00664,Vitvi18g00567,Vitvi03g00586,Vitvi08g00768,Vitvi01g01027,Vitvi01g00672,Vitvi14g02950,Vitvi12g01323,Vitvi18g00635,Vitvi11g01392,Vitvi08g00668,Vitvi06g00937,Vitvi11g00165,Vitvi12g00200,Vitvi07g01529,Vitvi18g00260,Vitvi07g00068,Vitvi10g00522,Vitvi07g00242,Vitvi11g00305,Vitvi19g00061,Vitvi19g00369,Vitvi07g01325,Vitvi11g00301,Vitvi03g00542,Vitvi12g00119,Vitvi15g04511,Vitvi05g00838,Vitvi14g00564,Vitvi11g00270,Vitvi03g00122,Vitvi11g01208,Vitvi18g00513,Vitvi04g01483,Vitvi17g00732,Vitvi09g00046,Vitvi05g00715,Vitvi01g02293",
+    "kegg_class": "Environmental Information Processing"
+  },
+  {
+    "gene_id": "Vitvi11g00724,Vitvi07g01682,Vitvi06g00443,Vitvi13g01409,Vitvi18g00159,Vitvi10g01781,Vitvi11g00469,Vitvi13g00305,Vitvi04g00480,Vitvi17g00909,Vitvi07g00060,Vitvi18g00737,Vitvi14g00920,Vitvi08g01644,Vitvi06g00455",
+    "kegg_class": "Transport and catabolism"
+  },
+  {
+    "gene_id": "Vitvi11g00724,Vitvi07g01682,Vitvi06g00443,Vitvi13g01409,Vitvi18g00159,Vitvi10g01781,Vitvi11g00469,Vitvi13g00305,Vitvi04g00480,Vitvi17g00909,Vitvi07g00060,Vitvi18g00737,Vitvi14g00920,Vitvi08g01644,Vitvi06g00455",
+    "kegg_class": "Cellular Processes"
+  },
+  {
+    "gene_id": "Vitvi16g00671,Vitvi10g01499,Vitvi13g01857,Vitvi09g00355,Vitvi04g01425,Vitvi17g00372,Vitvi14g02558,Vitvi19g00235,Vitvi19g00609,Vitvi01g00233",
+    "kegg_class": "Cell motility"
+  },
+  {
+    "gene_id": "Vitvi16g00671,Vitvi10g01499,Vitvi13g01857,Vitvi09g00355,Vitvi04g01425,Vitvi17g00372,Vitvi14g02558,Vitvi19g00235,Vitvi19g00609,Vitvi01g00233",
+    "kegg_class": "Cellular Processes"
+  },
+  {
+    "gene_id": "Vitvi19g01352,Vitvi06g01261,Vitvi05g00787,Vitvi02g00128,Vitvi03g01605",
+    "kegg_class": "Transport and catabolism"
+  },
+  {
+    "gene_id": "Vitvi19g01352,Vitvi06g01261,Vitvi05g00787,Vitvi02g00128,Vitvi03g01605",
+    "kegg_class": "Cellular Processes"
+  },
+  {
+    "gene_id": "Vitvi16g01016",
+    "kegg_class": "Transport and catabolism"
+  },
+  {
+    "gene_id": "Vitvi16g01016",
+    "kegg_class": "Cellular Processes"
+  },
+  {
+    "gene_id": "Vitvi15g00869",
+    "kegg_class": "Transport and catabolism"
+  },
+  {
+    "gene_id": "Vitvi15g00869",
+    "kegg_class": "Cellular Processes"
+  },
+  {
+    "gene_id": "Vitvi09g01373,Vitvi07g04487,Vitvi02g00421,Vitvi01g00980,Vitvi04g00845,Vitvi05g00274,Vitvi11g01309,Vitvi05g01519,Vitvi06g00368",
+    "kegg_class": "Environmental adaptation"
+  },
+  {
+    "gene_id": "Vitvi09g01373,Vitvi07g04487,Vitvi02g00421,Vitvi01g00980,Vitvi04g00845,Vitvi05g00274,Vitvi11g01309,Vitvi05g01519,Vitvi06g00368",
+    "kegg_class": "Organismal Systems"
+  },
+  {
+    "gene_id": "Vitvi17g01523,Vitvi04g00736,Vitvi09g04134,Vitvi04g00756,Vitvi14g01797,Vitvi01g00940,Vitvi19g01651,Vitvi16g01103,Vitvi19g01654,Vitvi19g00233,Vitvi08g00793,Vitvi14g00183,Vitvi10g00063,Vitvi19g04204,Vitvi09g01650,Vitvi15g01021,Vitvi02g00093,Vitvi07g00054,Vitvi01g01027,Vitvi11g01188,Vitvi14g01504,Vitvi02g00114,Vitvi12g00163,Vitvi02g00039,Vitvi16g01213,Vitvi09g00540,Vitvi09g00532,Vitvi11g00037,Vitvi09g00691,Vitvi14g00949,Vitvi01g01680,Vitvi18g01681,Vitvi05g00605,Vitvi17g00131,Vitvi12g04613,Vitvi17g00862,Vitvi01g01803,Vitvi12g01676,Vitvi17g01520,Vitvi12g01323,Vitvi12g00148,Vitvi14g01907,Vitvi19g00048,Vitvi16g00630,Vitvi01g00817,Vitvi10g00742,Vitvi10g01078,Vitvi07g01760,Vitvi14g00273,Vitvi09g00893,Vitvi19g00064,Vitvi19g04033,Vitvi07g00068,Vitvi12g00388,Vitvi11g01641,Vitvi16g01772,Vitvi10g00521,Vitvi17g00556,Vitvi07g02885,Vitvi02g00025,Vitvi16g01201,Vitvi07g01847,Vitvi09g04207,Vitvi04g01216,Vitvi07g00892,Vitvi09g00504,Vitvi05g00616,Vitvi03g01434",
+    "kegg_class": "Environmental adaptation"
+  },
+  {
+    "gene_id": "Vitvi17g01523,Vitvi04g00736,Vitvi09g04134,Vitvi04g00756,Vitvi14g01797,Vitvi01g00940,Vitvi19g01651,Vitvi16g01103,Vitvi19g01654,Vitvi19g00233,Vitvi08g00793,Vitvi14g00183,Vitvi10g00063,Vitvi19g04204,Vitvi09g01650,Vitvi15g01021,Vitvi02g00093,Vitvi07g00054,Vitvi01g01027,Vitvi11g01188,Vitvi14g01504,Vitvi02g00114,Vitvi12g00163,Vitvi02g00039,Vitvi16g01213,Vitvi09g00540,Vitvi09g00532,Vitvi11g00037,Vitvi09g00691,Vitvi14g00949,Vitvi01g01680,Vitvi18g01681,Vitvi05g00605,Vitvi17g00131,Vitvi12g04613,Vitvi17g00862,Vitvi01g01803,Vitvi12g01676,Vitvi17g01520,Vitvi12g01323,Vitvi12g00148,Vitvi14g01907,Vitvi19g00048,Vitvi16g00630,Vitvi01g00817,Vitvi10g00742,Vitvi10g01078,Vitvi07g01760,Vitvi14g00273,Vitvi09g00893,Vitvi19g00064,Vitvi19g04033,Vitvi07g00068,Vitvi12g00388,Vitvi11g01641,Vitvi16g01772,Vitvi10g00521,Vitvi17g00556,Vitvi07g02885,Vitvi02g00025,Vitvi16g01201,Vitvi07g01847,Vitvi09g04207,Vitvi04g01216,Vitvi07g00892,Vitvi09g00504,Vitvi05g00616,Vitvi03g01434",
+    "kegg_class": "Organismal Systems"
+  }
+]

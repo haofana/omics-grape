@@ -1,129 +1,92 @@
 /* eslint-disable */
 const fs = require('fs');
-const readline = require('readline');
 const path = require('path');
+const csv = require('csv-parser');
 
-const ROOT_DIR = process.cwd();
-const PUBLIC_FILE_DIR = path.join(ROOT_DIR, 'raw_data');
-const OUT_DIR = path.join(ROOT_DIR, 'data');
+// 路径配置
+const srcCsv = path.join(__dirname, 'raw_data', 'new.csv');
+const dataDir = path.join(__dirname, 'data');
+const outGene2Ko = path.join(dataDir, 'gene2ko.json');
+const outKo2Path = path.join(dataDir, 'ko2pathway.json');
+const outKeggEnrich = path.join(dataDir, 'kegg_enrich_result.json');
 
-if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR);
+// 创建data目录
+if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 
-// ================= 1. 解析 OBO 生成 goInfo.json =================
-async function parseOBO() {
-  const oboPath = path.join(PUBLIC_FILE_DIR, 'go-basic.obo');
-  if (!fs.existsSync(oboPath)) {
-    console.error(`❌ 未找到 go-basic.obo！请将其放入 ${PUBLIC_FILE_DIR}`);
-    process.exit(1);
-  }
-  console.log('⏳ 正在解析 go-basic.obo...');
-  const rl = readline.createInterface({ input: fs.createReadStream(oboPath), crlfDelay: Infinity });
-  const goInfo = {};
-  let id = '', name = '', ns = '', inTerm = false;
-  const catMap = { biological_process: 'BP', molecular_function: 'MF', cellular_component: 'CC' };
+// 存储容器
+const gene2ko = {};
+const ko2pathway = {};
+// 通路：{pid: {pathwayId, pathwayName, genes: []}} 纯数组，无Set
+const pathwayMap = {};
 
-  for await (const line of rl) {
-    if (line === '[Term]') { inTerm = true; id = ''; name = ''; ns = ''; }
-    else if (line === '' && inTerm) {
-      if (id && name && ns) goInfo[id] = { name, category: catMap[ns] || 'BP' };
-      inTerm = false;
-    } else if (inTerm) {
-      if (line.startsWith('id: ')) id = line.slice(4);
-      else if (line.startsWith('name: ')) name = line.slice(6);
-      else if (line.startsWith('namespace: ')) ns = line.slice(11);
-    }
-  }
-  fs.writeFileSync(path.join(OUT_DIR, 'goInfo.json'), JSON.stringify(goInfo, null, 2));
-  console.log(`✅ goInfo.json 生成！共 ${Object.keys(goInfo).length} 个 GO terms。\n`);
-}
+fs.createReadStream(srcCsv)
+  .pipe(csv())
+  .on('data', (row) => {
+    const geneId = row['Gene ID'];
+    if (!geneId) return;
 
-// ================= 2. 解析 BioMart 导出的 TXT/CSV 文件 =================
-async function parseBioMartFile() {
-  const files = fs.readdirSync(PUBLIC_FILE_DIR);
-  // 支持 .txt, .csv, .tsv 格式
-  const targetFiles = files.filter(f =>
-    f.endsWith('.txt') || f.endsWith('.csv') || f.endsWith('.tsv')
-  );
+    const koRaw = row['ko_id'] || '';
+    const pathIdRaw = row['pathway_id'] || '';
+    const pathNameRaw = row['pathway_definition'] || '';
+    if (koRaw === '------' || pathIdRaw === '------') return;
 
-  if (targetFiles.length === 0) {
-    console.error(`❌ 在 ${PUBLIC_FILE_DIR} 未找到 .txt / .csv / .tsv 文件！`);
-    process.exit(1);
-  }
+    const koList = koRaw.split(';').map(s => s.trim()).filter(s => s);
+    const pathIdList = pathIdRaw.split(';').map(s => s.trim()).filter(s => s);
+    const pathNameList = pathNameRaw.split(';').map(s => s.trim()).filter(s => s);
 
-  console.log(`🔍 发现 ${targetFiles.length} 个数据文件，开始解析...\n`);
-  const gene2go = {};
+    gene2ko[geneId] = koList;
 
-  for (const file of targetFiles) {
-    const filePath = path.join(PUBLIC_FILE_DIR, file);
-    console.log(`📂 正在处理: ${file}`);
-
-    const rl = readline.createInterface({
-      input: fs.createReadStream(filePath),
-      crlfDelay: Infinity
+    // KO -> 通路映射
+    koList.forEach(ko => {
+      if (!ko2pathway[ko]) ko2pathway[ko] = [];
+      pathIdList.forEach(pid => {
+        if (!ko2pathway[ko].includes(pid)) ko2pathway[ko].push(pid);
+      });
     });
 
-    let matchCount = 0;
-    let geneIdx = 0; // 默认第1列是基因ID
-    let goIdx = 2;   // 默认第3列是GO ID
-    let isHeaderParsed = false;
-
-    for await (const line of rl) {
-      if (!line.trim()) continue;
-
-      // 智能判断分隔符 (兼容逗号 "," 和 制表符 "\t")
-      const separator = line.includes('\t') ? '\t' : ',';
-      const cols = line.split(separator).map(c => c.trim().replace(/^"|"$/g, '')); // 去除可能的双引号
-
-      // 1. 解析表头，动态定位列索引
-      if (!isHeaderParsed && (line.includes('Gene stable ID') || line.includes('GO term'))) {
-        geneIdx = cols.findIndex(c => /gene.*id/i.test(c));
-        goIdx = cols.findIndex(c => /go.*accession|go.*id/i.test(c));
-
-        if (geneIdx === -1) geneIdx = 0;
-        if (goIdx === -1) goIdx = cols.length - 1; // 兜底用最后一列
-
-        isHeaderParsed = true;
-        continue; // 跳过表头行
+    // 通路基因数组，不用Set，手动去重
+    pathIdList.forEach((pid, idx) => {
+      const pathName = pathNameList[idx] || 'unknown pathway';
+      // 不存在则初始化空数组
+      if (!pathwayMap[pid]) {
+        pathwayMap[pid] = {
+          pathwayId: pid,
+          pathwayName: pathName,
+          genes: []
+        };
       }
+      // 数组去重添加，替代Set.add
+      if (!pathwayMap[pid].genes.includes(geneId)) {
+        pathwayMap[pid].genes.push(geneId);
+      }
+    });
+  })
+  .on('end', () => {
+    // gene2ko
+    fs.writeFileSync(outGene2Ko, JSON.stringify(gene2ko, null, 2), 'utf8');
+    console.log(`✅ gene2ko.json 完成，基因：${Object.keys(gene2ko).length}`);
 
-      // 2. 提取数据
-      const geneId = cols[geneIdx];
-      const goId = cols[goIdx];
+    // ko2pathway
+    fs.writeFileSync(outKo2Path, JSON.stringify(ko2pathway, null, 2), 'utf8');
+    console.log(`✅ ko2pathway.json 完成，KO：${Object.keys(ko2pathway).length}`);
 
-      // 过滤掉没有 GO 注释的行 (如 Vitis15g00095,,)
-      if (!geneId || !goId || !goId.startsWith('GO:')) continue;
-
-      // 3. 存入字典 (使用 Set 自动去重)
-      if (!gene2go[geneId]) gene2go[geneId] = new Set();
-      gene2go[geneId].add(goId);
-      matchCount++;
+    // 组装kegg_enrich_result
+    const keggEnrichList = [];
+    for (const pid in pathwayMap) {
+      const item = pathwayMap[pid];
+      keggEnrichList.push({
+        pathwayId: item.pathwayId,
+        pathwayName: item.pathwayName,
+        geneCount: item.genes.length,
+        geneList: item.genes
+      });
     }
-
-    console.log(`   ↳ 成功提取 ${matchCount} 条基因-GO映射关系。\n`);
-  }
-
-  if (Object.keys(gene2go).length === 0) {
-    console.error('❌ 未提取到任何数据！请检查文件内容。');
-    return;
-  }
-
-  // 将 Set 转为 Array
-  const result = {};
-  for (const [gene, goSet] of Object.entries(gene2go)) {
-    result[gene] = Array.from(goSet);
-  }
-
-  fs.writeFileSync(path.join(OUT_DIR, 'gene2go.json'), JSON.stringify(result, null, 2));
-  console.log(`🎉 全部完成！共提取 ${Object.keys(result).length} 个独立葡萄基因的 GO 注释。`);
-  console.log(`📁 输出路径: ${path.join(OUT_DIR, 'gene2go.json')}`);
-}
-
-// 执行
-(async () => {
-  try {
-    await parseOBO();
-    await parseBioMartFile();
-  } catch (err) {
-    console.error('❌ 运行出错:', err);
-  }
-})();
+    // 按基因数量降序
+    keggEnrichList.sort((a, b) => b.geneCount - a.geneCount);
+    fs.writeFileSync(outKeggEnrich, JSON.stringify(keggEnrichList, null, 2), 'utf8');
+    console.log(`✅ kegg_enrich_result.json 生成，通路总数：${keggEnrichList.length}`);
+    console.log('全部文件生成成功！');
+  })
+  .on('error', (err) => {
+    console.error('读取CSV失败：', err);
+  });

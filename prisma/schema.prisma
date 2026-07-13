@@ -293,6 +293,7 @@ model FruitAroma {
   gene_biotype     String?
   gene_description String?
   no               Int     @id @default(autoincrement())
+  description String? @db.Text
 
   @@map("fruit_aroma")
 }
@@ -338,6 +339,7 @@ model FruitAstringent {
   gene_description String?
   tf_family        String?
   no               Int     @id @default(autoincrement())
+  description String? @db.Text
 
   @@map("fruit_astringent")
 }
@@ -366,6 +368,7 @@ model FruitDevelopment {
   fpkm_t3b Int?
   fpkm_t3c Int?
   no       Int     @id @default(autoincrement())
+  description String? @db.Text
 
   @@map("fruit_development")
 }
@@ -388,6 +391,7 @@ model FruitFirmness1 {
   fpkm_ta_2  Int?
   fpkm_ta_3  Int?
   no         Int     @id @default(autoincrement())
+  description String? @db.Text
 
   @@map("fruit_firmness_1")
 }
@@ -485,6 +489,7 @@ model FruitShape1 {
   fpkm_z1_2 Int?
   fpkm_z1_3 Int?
   no        Int     @id @default(autoincrement())
+  description String? @db.Text
 
   @@map("fruit_shape_1")
 }
