@@ -1,8 +1,22 @@
 import { useState, useRef, useEffect } from 'react'
-import * as echarts from 'echarts'
+// import * as echarts from 'echarts'
 import {Button, Card, Upload, Table, Select, Space, Empty, message, Input, theme, Layout} from 'antd'
 import { UploadOutlined, DownloadOutlined, FileTextOutlined } from '@ant-design/icons'
 import '../index.css';
+import { init } from 'echarts/core';
+import { ScatterChart, BarChart } from 'echarts/charts';
+import { TooltipComponent, GridComponent, AxisComponent } from 'echarts/components';
+import { CanvasRenderer } from 'echarts/renderers';
+
+// 注册所有用到的模块
+init.use([
+  ScatterChart,
+  BarChart,
+  TooltipComponent,
+  GridComponent,
+  AxisComponent,
+  CanvasRenderer
+]);
 
 const { Content } = Layout;
 const { TextArea } = Input;
@@ -88,7 +102,7 @@ Vitvi00g00615`
     const geneNum = data.map(i => i.hitCount)
 
     if (activeTab === 'bubble') {
-      bubbleChart = echarts.init(bubbleRef.current)
+      bubbleChart = init(bubbleRef.current)
       bubbleChart.setOption({
         tooltip: { trigger: 'item' },
         grid: { left: 180, right: 30 },
@@ -97,7 +111,7 @@ Vitvi00g00615`
         series: [{ type: 'scatter', data: xLogFdr.map((x, i) => [x, i, geneNum]), symbolSize: val => val[2] * 3, itemStyle: { color: '#1677ff' } }]
       })
     } else {
-      barChart = echarts.init(barRef.current)
+      barChart = init(barRef.current)
       barChart.setOption({
         tooltip: { trigger: 'axis' },
         grid: { left: 180 },
