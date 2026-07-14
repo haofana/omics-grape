@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import * as echarts from 'echarts'
+import echarts from 'echarts/dist/echarts.min.js';
 import {Button, Card, Upload, Table, Select, Space, Empty, message, Input, theme, Layout} from 'antd'
 import { UploadOutlined, DownloadOutlined, FileTextOutlined } from '@ant-design/icons'
 import '../index.css';
