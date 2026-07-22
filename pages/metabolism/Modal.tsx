@@ -1,24 +1,12 @@
 import { Modal, Table, theme } from 'antd';
 import React from 'react';
+import { useI18n } from '@/hooks/useI18n';
 
 interface TreatmentModalProps {
   open: boolean;
   onCancel: () => void;
 }
 
-const columns = [
-  {
-    title: '组别',
-    dataIndex: 'group',
-    key: 'group',
-    width: 100,
-  },
-  {
-    title: '处理方式',
-    dataIndex: 'treatment',
-    key: 'treatment',
-  },
-];
 
 const data = [
   { key: '1', group: 'CK', treatment: '0' },
@@ -40,16 +28,32 @@ const data = [
 
 const TreatmentModal: React.FC<TreatmentModalProps> = ({ open, onCancel }) => {
   const { token: { colorBorder, borderRadiusLG }, } = theme.useToken();
+  const t = useI18n();
+
+  const columns = [
+    {
+      title: t.group,
+      dataIndex: 'group',
+      key: 'group',
+      width: 100,
+    },
+    {
+      title: t.method,
+      dataIndex: 'treatment',
+      key: 'treatment',
+    },
+  ];
   return (
     <Modal
-      title="果实香气-植物生长调节剂处理葡之梦、丛林玫瑰、茉莉香"
+      title={t.mTitle2}
       open={open}
       onCancel={onCancel}
       footer={null}
       width={'60vw'}
     >
       <p style={{ marginBottom: 16, color: '#666' }}>
-        对5年生‘茉莉香’（mlx）、‘丛林玫瑰’（clmg）和‘葡之梦’（pzm）葡萄硬核期果实，采用外源植物生长调节剂处理。
+        {t.mContent2}
+        {/*对5年生‘茉莉香’（mlx）、‘丛林玫瑰’（clmg）和‘葡之梦’（pzm）葡萄硬核期果实，采用外源植物生长调节剂处理。*/}
       </p>
       <Table
         columns={columns}

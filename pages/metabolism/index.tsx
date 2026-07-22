@@ -331,6 +331,7 @@ const Metabolism = ({ type } : { type: string }) =>
         setLoading(false);
       }
     };
+    setTitle(items.filter(item=>item.key === activeKey)[0].label)
     setActiveColumn(activeKey === 'matUnvolatilize' ? columnsMatUnvolatilize : activeKey === 'matVolatilize' ? columnsMatVolatilize : columnsMatOther);
     fetchGrapeData();
   }, [page, pageSize, params, activeKey, t]);
