@@ -1,23 +1,11 @@
 import React from 'react';
-import { Carousel, Layout, theme } from 'antd';
-import Image from 'next/image';
-import img from './img.png';
-import bg from '../img/img_1.png';
+import { Layout, theme } from 'antd';
 import { useI18n } from '@/hooks/useI18n';
 
 const { Content } = Layout;
 
 export default function LabIntro() {
-  const { token: { colorBorder, borderRadiusLG }, } = theme.useToken();
-  const bannerImages = [
-    { src: '/about/6 .jpg', alt: '' },
-    { src: '/about/7.jpg', alt: '' },
-    { src: '/about/8 .jpg', alt: '' },
-    { src: '/about/9.jpg', alt: '' },
-    { src: '/about/10.png', alt: '' },
-    { src: '/about/11.png', alt: '' },
-    { src: '/about/12.png', alt: '' },
-  ];
+  const { token: { colorBorder }, } = theme.useToken();
   const t = useI18n();
 
   return (
@@ -176,31 +164,6 @@ export default function LabIntro() {
               <p className="text-xs text-gray-500">食品与营养：食品营养与健康 / 农产品贮藏保鲜</p>
             </div>
           </div>
-        </div>
-      <div className="w-full py-2">
-          <Carousel
-            autoplay
-            infinite
-            arrows
-            dots={{ className: 'custom-dots' }}
-            slidesToShow={4} // 桌面端一屏5张，自适应
-            slidesToScroll={1}
-            speed={800}
-            className="grape-carousel"
-          >
-            {bannerImages.map((item, index) => (
-              <div key={index} className="img-bg">
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  title={item.alt}
-                  width={300}
-                  height={100}
-                  className="object-cover hover:scale-110 transition-transform duration-500 mx-auto"
-                />
-              </div>
-            ))}
-          </Carousel>
         </div>
     </div>
     </Content>
