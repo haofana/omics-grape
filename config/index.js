@@ -32,6 +32,7 @@ export const menu = [
       { label: 'Fruit Cellulose', key: 'fruitCellulose' },
       { label: 'Glandular trichome and downy hair traits', key: 'fruitFuzz' },
       { label: 'Coloration of nutrient organs', key: 'fruitOrgan' },
+      { label: 'Gene ID harmonization', key: 'harmonization' },
     ]
   },
   {
@@ -117,6 +118,7 @@ export const menuZh = [
       { label: '纤维素', key: 'fruitCellulose' },
       { label: '腺毛绒毛性状', key: 'fruitFuzz' },
       { label: '营养器官着色', key: 'fruitOrgan' },
+      { label: '基因ID的统一化', key: 'harmonization' },
     ]
   },
   {

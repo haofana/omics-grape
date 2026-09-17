@@ -676,3 +676,20 @@ model GwasOrgan {
 
   @@map("gwas_organ")
 }
+
+model Harmonization {
+  qseqid   String?
+  sseqid   String  @id
+  pident   String?
+  length   Int?
+  mismatch Int?
+  gapopen  Int?
+  qstart   Int?
+  qend     Int?
+  sstart   Int?
+  send     Int?
+  evalue   String?
+  bitscore String?
+
+  @@map("harmonization")
+}

@@ -71,6 +71,13 @@ export default async function handler(
       ]);
       return res.json({ success: true, data: list as any, total });
     }
+    if (table === 'harmonization') {
+      const [list, total] = await Promise.all([
+        db.harmonization.findMany({ skip, take: Number(size), where }),
+        db.harmonization.count({ where: where }),
+      ]);
+      return res.json({ success: true, data: list as any, total });
+    }
     if (table === 'gwasColorPeel') {
       const [list, total] = await Promise.all([
         db.gwasColorPeel.findMany({ skip, take: Number(size), where, orderBy: { no: 'asc' } }),

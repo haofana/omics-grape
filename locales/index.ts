@@ -481,7 +481,20 @@ export const locales = {
     grape_skin_cellulose: "葡萄果皮纤维素",
     grape_flesh_cellulose: "葡萄果肉纤维素",
     grape_glandular_pubescent_traits: "葡萄腺毛茸毛性状",
-    grape_vegetative_organ_coloration: "葡萄营养器官着色"
+    grape_vegetative_organ_coloration: "葡萄营养器官着色",
+
+    "qseqid": "查询序列ID",
+    "sseqid": "目标序列ID",
+    "pident": "一致性(%)",
+    "mismatch": "错配数",
+    "gapopen": "空位数",
+    "qstart": "查询起始位",
+    "qend": "查询终止位",
+    "sstart": "目标起始位",
+    "send": "目标终止位",
+    "evalue": "E值",
+    "bitscore": "位分",
+    harmonization: '基因ID的统一化'
 },
 
   'en': {
@@ -963,5 +976,18 @@ export const locales = {
     grape_skin_cellulose: "Grape Skin Cellulose",
     grape_flesh_cellulose: "Grape Flesh Cellulose",
     reference: "Reference",
+
+    "qseqid": "Query ID",
+    "sseqid": "Subject ID",
+    "pident": "Identity (%)",
+    "mismatch": "Mismatch",
+    "gapopen": "Gap Open",
+    "qstart": "Query Start",
+    "qend": "Query End",
+    "sstart": "Subject Start",
+    "send": "Subject End",
+    "evalue": "E-value",
+    "bitscore": "Bit Score",
+    harmonization: 'Gene ID harmonization'
   },
 };
